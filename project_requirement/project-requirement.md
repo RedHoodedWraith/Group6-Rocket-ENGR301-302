@@ -21,7 +21,7 @@ One page overall introduction including sections 1.1 and 1.2.
 
 ### Client
 
-Identify the client and their contact details
+The Client for this project is Andre Geldhuis, and can bee contacted by andre.geldenhuis@vuw.ac.nz or through mattermost
 
 ### 1.1 Purpose
 
