@@ -81,18 +81,31 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 Define all inputs into and outputs from the software system. The description should complement the interface
 descriptions in 9.5.3.3.1 through 9.5.3.3.5, and should not repeat information there.
 Each interface defined should include the following content:
+
 a) Name of item;
+
 b) Description of purpose;
+
 c) Source of input or destination of output;
+
 d) Valid range, accuracy, and/or tolerance;
+
 e) Units of measure;
+
 f) Timing;
+
 g) Relationships to other inputs/outputs;
+
 h) Screen formats/organization;
+
 i) Window formats/organization;
+
 j) Data formats;
+
 k) Command formats;
+
 l) Endmessages.
+
 
 ### 3.2 Functions
 
