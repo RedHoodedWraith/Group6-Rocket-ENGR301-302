@@ -60,6 +60,12 @@ h) Site adaptation requirements.
 
 One page summary of the main functions of the product (9.5.4), briefly characterising the minimum viable product.
 
+The minimum requirements for this avionics system will consist of the following:
+-Launch vertically into an airbourne state.
+-Utilise onboard sensors and tuned error control to prolong vertical traversal.
+-Provide a compatible interface to be used in conjuction with a mission control system.
+-Provide a compatible interface utilise simulation data for pre-emptive calibration.
+
 #### 1.3.3 User characteristics   
 
 One page identifying the main classes of users and their characteristics (9.5.5) 
