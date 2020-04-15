@@ -109,7 +109,22 @@ l) Endmessages.
 
 ### 3.2 Functions
 
-This is typically the longest subsection in the document. List up to fifty use cases (in order of priority for development), and for at least top ten focal use cases, write a short goal statement and use case body (up to seven pages).  Identify the use cases that comprise a minimum viable product.
+-
+This is typically the longest subsection in the document.
+List up to fifty use cases (in order of priority for development),
+and for at least top ten focal use cases, write a short goal statement and
+use case body (up to seven pages).
+Identify the use cases that comprise a minimum viable product.
+-
+
+#Stakeholder Requirements:
+- Avionics package must entirely fit inside a ....
+- Avionics package must interface with the gimbal.
+- Avionics package must guide rocket on course.
+- Avionics package must stabilise the rocket so it stands in an upright position while preparing for launch.
+- Avionics package logical database will be human readable in the form of a text file.
+#Use Cases:
+- 
 
 ### 3.3 Usability Requirements
 
