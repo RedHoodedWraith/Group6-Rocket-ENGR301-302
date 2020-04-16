@@ -73,13 +73,10 @@ One page on the limitations on the product (9.5.6)
 References to other documents or standards. Follow the IEEE Citation  Reference scheme, available from the [IEEE website](https://www.ieee.org/) (please use the search box). (1 page, longer if required)
 
 ## 3. Specific requirements  
-** **
- To be changed below 
 
-This section will describe the external interfaces, functions, usability requirements, performance requirements, domain model requirements, deseign constraints, physical and environment requirements and software system atttributes of the avionics package.
-** **
+This section describes the external interfaces, functions, usability requirements, performance requirements, logical database requirements, design constraints, nonfunctional system attributes, physical and environment requirements and supporting information.
 
-*20 pages outlining the requirements of the system. You should apportion these pages across the following subsections to focus on the most important parts of your product.*
+
 
 ### 3.1 External interfaces
 
@@ -89,7 +86,7 @@ The inertial measurement unit (IMU) is an electronic device that measures accele
 
 #### Data Storage/Transfer - SD Card
 
-An SD card is required to store data that is produced from the IMU, radio antenna, GPS and any other potential sensors. This information is to be processed for control and to be later used for the analysis of the performance of the system. The system will need to be able to write to the SD card at a rate equivalent to the rocket's control loop. This rate will be required to be optimized so that it does not affect processing speed significantly although maintaining maximum control. The SD card must also be large enough to store all the potential data in a test run, with the data being stored in .txt or .csv file.
+An SD card is required to store data that is produced from the IMU, radio antenna, GPS and any other potential sensors. This information is to be processed for control and to be later used for the analysis of the performance of the system. The onboard system will need to be able to write to the SD card at a rate equivalent to the rocket's control loop. This rate will be required to be optimized so that it does not affect processing speed significantly while maintaining maximum control. The SD card must also be large enough to store all the potential data in a test run, with the data being stored in a .txt or .csv file.
 
 #### Communication - Radio Antenna
 
