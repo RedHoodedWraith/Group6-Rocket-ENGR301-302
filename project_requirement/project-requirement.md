@@ -60,6 +60,20 @@ h) Site adaptation requirements.
 
 One page summary of the main functions of the product (9.5.4), briefly characterising the minimum viable product.
 
+The minimum requirements for this avionics system will consist of the following:
+- Record all sensor data.
+- Aerodynamically stable launch.
+- To demonstrate mission control can change rocket's path, the gimble will set to full extension in one direction to perform a 'kickover' on final second of motor burn.
+- After motor has completed its burn, broadcast telemetry (location) over LoRa modules.
+
+- Utilise onboard sensors and tuned error control to prolong vertical traversal. 
+- Provide a compatible interface to be used in conjuction with a mission control system.
+- Provide a compatible interface utilise simulation data for calibration ahead of time.
+
+Ideally, the finalised package will incorperate the following:
+- Support parachute deployment.
+- Provide control for aerodynamically stable launches without a rail.
+
 #### 1.3.3 User characteristics   
 
 One page identifying the main classes of users and their characteristics (9.5.5) 
