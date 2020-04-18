@@ -25,11 +25,24 @@ The Client for this project is Andre Geldhuis, and can bee contacted by andre.ge
 
 ### 1.1 Purpose
 
-One sentence describing the purpose of the system (9.5.1)
+The purpose of this system is to build a rocket that can be launched from ground and guided by on-board computer systems.
 
 ### 1.2 Scope
 
-One paragraph describing the scope of the system (9.5.2)
+The rocket being made for the client(s) listed above for this project needs to be able to do the following:
+*  Thrust itself from ground in order to launch itself into the air
+*  Continue to propell itself in a largely vertical direction
+*  Self-adjust its propellant in order to continue travelling in an upwards direction
+*  Travel up to an altitude of at least [insert value here] metres above ground
+
+The development of this rocket will happen in 3 core stages. Hardware design stage, software design stage and trial testing.
+The Hardware Design Stage will focus on the physical build and design of the rocket, incorporating all the necessary components and
+maximising travel efficiency and minimising the physical obstacles. The Software Design Stage will focus on the programming the 
+on-board micro-controller to automatically adjust the rocket's propellants to self-correct the rocket's travel. Trial testing will 
+involve launching test rockets to observe how it performs in-situ and to return back to either design stages to modify the design to its
+improve performance. This project's development is limited by a variety of factors, most notably access to the internet and the civil restrictions
+in place due to the COVID-19 pandemic which heavily limits the availability of source parts for the rocket and opportunities to test the physical 
+rocket prototype in-situ.
 
 ### 1.3 Product overview 
 #### 1.3.1 Product perspective
