@@ -131,9 +131,17 @@ The typical usage of the avionics package would look like:
 Installation, calibration, launch, and post-flight analysis. 
 
 ##### Installation
-##### Calibration
+For ease of installation and reinstallation, the avionics package will uphold the following:
+- Minimal physical footprint to mitigate spatial occupation and excess weight.
+- Ensure as many components are fixated on a single unit rather than having components loose and untethered. 
+##### Configuration and Calibration
+- The avionics package should be easy to configure for all intended stakeholders.
 ##### Launch
 ##### Analysis
+
+Questions:
+- General Ignition specs?
+- Data broadcast during/after?
 
 ### 3.3 Usability Requirements
 
