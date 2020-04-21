@@ -90,11 +90,11 @@ An SD card is required to store data that is produced from the IMU, radio antenn
 
 #### Communication - Radio Antenna
 
-The radio antenna is required for limited communication of data from the avionics package to a nearby external computer for monitoring the data and minor adjustments/tuning. The antenna will receive signals from the avionics package and will output transmissions for a receiver antenna. The data sent will be required to be accurate enough to determine the state of the system in real-time and so it can be located easily using the satellite positioning system, GPS, in the case that it is lost. The units of measure for this data will all be SI units and degrees/minutes/seconds for the longitude and latitude. This will play an important role for mission control in the field.
+The radio antenna is required for limited communication of data from the avionics package, using LoRa, to a nearby external computer for monitoring the data and minor adjustments/tuning. The antenna will receive signals from the avionics package and will output transmissions for a receiver antenna. The data sent will be required to be accurate enough to determine the state of the system in real-time and so it can be located easily using the satellite positioning system, GPS, in the case that it is lost. Data transfered during the launch will need to be essential data only as communication should not compromise performace of the control system.  The units of measure for this data will all be SI units and degrees/minutes/seconds for the longitude and latitude. This will play an important role for mission control in the field.
 
 #### Mechanical - Gimbal
 
-The rocket's gimbal will control the angle of the thrust relative to the centre of mass and therefore, the direction of the rocket's propulsion, this stabilising and controlling it through the launch. This process is known as thrust vectoring. The gimbal will be controlled by the software on the avionics package which will adjust servos, altering the pitch and yaw. This will require a closed-loop control such as a Potential-Integral-Derivative system, input from the IMU and outputting to the Gimbal. 
+The rocket's gimbal will control the angle of the thrust relative to the centre of mass and therefore, the direction of the rocket's propulsion, this stabilising and controlling it through the launch. This process is known as thrust vectoring. The gimbal will be controlled by the software on the avionics package which will adjust servos, altering the pitch and yaw. This will require a closed-loop control such as a Proportional-Integral-Derivative system, input from the IMU and outputting to the Gimbal. 
 
 #### Control Hardware - Servos
 
@@ -104,13 +104,15 @@ Two servo motors will be required to control the gimbal, which is controlled by 
 
 The rocket will require a system to fire small igniters which serve as ejection charges for the parachute. These are to be set off at a predetermined height for the descent of the rocket. This will receive its signal from the avionics package which determines the height using the onboard barometer sensor. Some precaution is also required for the development of this component as it will need to be ensured that it won't fire while the rocket is being handled.
 
+#### Motor
 
+The motor is a single use component to produce the thrust for the rocket during the launch, by burning through a propellant which is released through a nozzle to produce powered flight. The ignition is required to be controlled by an electric igniter external from the rocket for safety. This motor is to be connected to the gimbal which will control the rocket. Motors vary in size depending on their total impulse, measured in Newton Seconds. This rocket will be required to use in motors in the range of classes from C to G, ranging from 5-160 Ns. These motors likely to have a diamater of 24mm, and some of the smaller ones being 18mm.
 
 
 ### 3.2 Functions
 
 This is typically the longest subsection in the document. List up to fifty use cases (in order of priority for development), and for at least top ten focal use cases, write a short goal statement and use case body (up to seven pages).  Identify the use cases that comprise a minimum viable product.
-
+`
 ### 3.3 Usability Requirements
 
 See 9.5.12. for most systems this will be around one page.
