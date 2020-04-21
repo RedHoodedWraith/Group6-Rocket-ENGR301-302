@@ -106,7 +106,7 @@ The rocket will require a system to fire small igniters which serve as ejection 
 
 #### Motor
 
-The motor is a single use component to produce the thrust for the rocket during the launch, by burning through a propellant which is released through a nozzle to produce powered flight. The ignition is required to be controlled by an electric igniter external from the rocket for safety. This motor is to be connected to the gimbal which will control the rocket. Motors vary in size depending on their total impulse, measured in Newton Seconds. This rocket will be required to use in motors in the range of classes from C to G, ranging from 5-160 Ns. These motors likely to have a diamater of 24mm, and some of the smaller ones being 18mm.
+The motor is a single-use component to produce the thrust for the rocket during the launch, by burning through a propellant which is released through a nozzle to produce powered flight. The ignition is required to be controlled by an electric igniter external from the rocket for safety. This motor is to be connected to the gimbal which will control the rocket. Motors vary in size depending on their total impulse, measured in Newton Seconds. This rocket will be required to use in motors in the range of classes from C to G, ranging from 5-160 Ns. These motors likely to have a diameter of 24mm, and some of the smaller ones being 18mm.
 
 
 ### 3.2 Functions
