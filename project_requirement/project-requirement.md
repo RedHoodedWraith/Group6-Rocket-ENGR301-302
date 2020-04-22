@@ -37,10 +37,10 @@ One paragraph describing the scope of the system (9.5.2)
 One page defining the system's relationship to other related products
 (9.5.3. but not the subsections in the standard.)
 
+The project, in its entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation, but carries the potential for extended development and commercial use through being open-source. 
+
 > **9.5.3 Product perspective** <br>
 > 
-> Testing 2
-
 > Define the system's relationship to other related products. 
 > 
 > If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
