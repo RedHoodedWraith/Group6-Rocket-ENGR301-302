@@ -39,6 +39,11 @@ One page defining the system's relationship to other related products
 
 The project, in its entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation, but carries the potential for extended development and commercial use through being open-source. 
 
+The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled movement such as, sensors, barometers and gyroscopes. 
+
+The hardware and software components of the avionics package are required to seamlessly communicate with the mission control and simulation segments of the project to ensure a successful launch and flight for the rocket. 
+
+
 > **9.5.3 Product perspective** <br>
 > 
 > Define the system's relationship to other related products. 
