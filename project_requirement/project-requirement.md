@@ -136,12 +136,15 @@ For ease of installation and reinstallation, the avionics package will uphold th
 - Ensure as many components are fixated on a single unit rather than having components loose and untethered. 
 ##### Configuration and Calibration
 - The avionics package should be easy to configure for all intended stakeholders.
+- The finished package should not require re-engineering to interface with control software during launch setup.
+- Calibration data from simulations should be preloaded and initialised onto the avionics package prior to launch. Calibration is crucial as the standalone error control is likely not adequately fast enough to ensure stable control of the rocket.
+- The calibration data will be stored on the SD card onboard the avionics package.
 ##### Launch
+Once the rocket is launched into powered flight, the rocket will be remotely controlled via the gimble to sustain vertical trajectory.
+At the stage of burnout, the avionics package will be automated to deploy the parachute as a step to mitigate risk during the process of landing.
 ##### Analysis
-
-Questions:
-- General Ignition specs?
-- Data broadcast during/after?
+The avionics package should ideally broadcast live location data via its wireless antenna during flight. <br></br>
+When the active flight is over, all logged data (measurements, instructions and gimble positions) should be stored to the SD card in a human-readable format. If still in range of the wireless signal, the avionics package will attempt to broadcast the data remotely to mission control.
 
 ### 3.3 Usability Requirements
 
