@@ -29,7 +29,7 @@ The purpose of this system is to build a rocket that can be launched from ground
 
 ### 1.2 Scope
 
-The rocket being made for the client(s) listed above for this project needs to be able to do the following:
+The rocket being made for the client(s) listed above needs to be able to do the following:
 *  Thrust itself from ground in order to launch itself into the air
 *  Continue to propell itself in a largely vertical direction
 *  Self-adjust propellant to its nozzle(s) in order to continue travelling in a controlled upwards direction
