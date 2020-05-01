@@ -79,8 +79,25 @@ Ideally, the finalised package will incorperate the following:
 One page identifying the main classes of users and their characteristics (9.5.5) 
 
 #### 1.3.4 Limitations
+Within project limitations, the team is faced with sereval limitations such as; 
+- Current worldwide affect(COVID-19): COVID-19 has resulted in a nationwide lockdown. This has limited the group options and approach towards the  current project. Certain aspects of the project will be adjusted from the original plan. The use of communication tools like Mattermost and  Zoom  will be crucial to the group. 
 
-One page on the limitations on the product (9.5.6)
+- Budget: The team has a very limited budget of approximately $333.00 NZD. The budget has designed to be spent on components for the hardware as well as 3D printing for the rocket body.   
+
+- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the obtdy of the rocket. 
+
+- Software: The software aspect of the project is not very limited from the lockdown. The software aspect will consist of improving code from a previous team and ensuring it is functional and efficient.  
+
+- Testing facilities: Due to COVID-19 lockdown, it will be unlikely that a testing facility is available for the group to use. The next step is to do testing via simulation. Working with a simulation team will be required. If circumstances change and access to testing facilities become available then the group will have to discuss the possible option. 
+
+- Time: This project runs over two papers ENGR 301 and ENGR 302. This gives the group 30 weeks, however with the first few weeks being introductions realistically the group has about ~27-26 weeks. The lockdown has resulted in a reconstruction of the academic year of Victoria            University of Wellington. This could result in less time.    
+
+- Control & policies: When testing the rocket system we have designed, we need to ensure it is in a controlled environment. We can not breach any laws and restrictions that have been imposed by the goverment due to COVID-19 and we need follow The NZ Rocketry Association rules and regulations.  
+
+- Team interactions: The main form of communication will be through Zoom and Mattermost due to the level 4 lockdown. Zoom meetings are hled every Friday and Monday, and Mattermost chat is constant.
+
+- Personal limitations: All members have personal limitations that should be taken into consideration. This will ensure all members of the group are treated fairly. Other members of the group as well, take other papers. Due dates of important assignments and test will be taken into account, this is design to reduce stress levels of the group. 
+
 
 ## 2. References
 
