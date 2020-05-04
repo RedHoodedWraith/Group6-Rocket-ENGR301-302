@@ -187,6 +187,27 @@ Write a short natural language description of the top nonfunctional requirements
 ### 3.8 Physical and Environmental Requirements 
 
 For systems with hardware components, identify the physical characteristics of that hardware (9.4.10) and environment conditions in which it must operate (9.4.11).  Depending on the project, this section may be from one page up to 5 pages.
+The system Hardware components:
+- Micro-controller(Teensy 3.6)
+- gyroscope/accelerometer sensor
+- sensor module(IMU)
+- wireless antenna 
+- rocket motors
+- servos
+- Gimble
+- parachute + ejection charge 
+- rocket body 
+- launch pad
+The hardware components must be able to still function within the environment that the rocket will be tested in. This means that the rocket will need to function under certain enviromental condition(s) that are present in the testing environment. The current testing environment is a wide-open park located in Lower Hut Wellington. A certain environmentally condition is the wind. Wind levels are never constant and can vairy extremely (especially in our testing environment of Lower Hut Wellington). This means hardware of the rocket must be functioning under considerable wind levels. 
+
+The largest effect wind has on the rocket is displacement. The wind is able to till (or even move) the rocket off its current trajectory. This means that hardware of the rocket must be to account for this issue. Combination of the electronic components (micro-controller, gyroscope and sensor module) and the gimble are involved in accounting for the displacement. Using the sensor(s) to detect the displacement, then micro-controller communicates to the gimble to make an adjustment for the displacement. 
+
+The rocket body design is also important to account for wind. A more aerodynamic design will mean that the wind drag will have less of the effect of the rocket. Meaning a more aerodynamic design will result in a smaller displacement. 
+
+Wind will also greatly affect the rocket while the rocket is coming down. The rocket slow descend due to the parachute being deployed. However, with the parachute deployed the rocket is very susceptible to wind drag. Which means that the rocket might be displaced a large distance from the launch site. A GPS connected to the micro-controller will allow us to track where the rocket lands. Also, modelling of the rockets launch will be done to estimate where the rocket could land. 
+
+Another enviromental condition that will need to be taken into account is radio frequency (RF) noise. To communicate to the rocket microcontroller we use a signal in the microwave frequency. So before we can launch the rocket, we will need to check the level of RF noise. If the level of RF noise is to high the launch of the rocket will be postpone, there is no solution where we launch the rocket in high RF noise. If the rocket is launch in during high RF noise we could lose communication with the rocket.
+
 
 ### 3.9 Supporting information
 
