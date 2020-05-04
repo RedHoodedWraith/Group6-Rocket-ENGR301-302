@@ -109,22 +109,23 @@ l) Endmessages.
 
 ### 3.2 Functions
 
-
-> This is typically the longest subsection in the document.
 > List up to fifty use cases (in order of priority for development),
-> and for at least top ten focal use cases, write a short goal statement and
-> use case body (up to seven pages).
-> Identify the use cases that comprise a minimum viable product.
+
 
 
 #### Stakeholder Requirements:
-- Avionics package must entirely fit inside a ....
+- Avionics package must entirely fit inside the rocket's shell.
 - Avionics package must interface with the gimbal.
 - Avionics package must guide rocket on course.
 - Avionics package must stabilise the rocket so it stands in an upright position while preparing for launch.
 - Avionics package logical database will be human readable in the form of a text file.
+- Avionics package should be comprised of fixated and durable components.
+- Avionics package in the rocket must interface intuitively with the base station.
+- Avionics package must ensure onboard power management can cope with each stage of the rocket's execution.
+
 #### Use Cases:
-The purpose of this avionics package is to control and guide the rocket.
+Upon delivery to the primary client (Andre), the extended branch of stakeholders will include open-source hobbyists.
+The purpose of this avionics package is to provide control and guidance for the rocket.
 To do so, it needs to be installed, configured and calibrated prior to launch.
 The user(s) should be able to expect recorded data from the flight.
 The typical usage of the avionics package would look like:
@@ -134,6 +135,8 @@ Installation, calibration, launch, and post-flight analysis.
 For ease of installation and reinstallation, the avionics package will uphold the following:
 - Minimal physical footprint to mitigate spatial occupation and excess weight.
 - Ensure as many components are fixated on a single unit rather than having components loose and untethered. 
+- Trouble-free pairing with the base station.
+
 ##### Configuration and Calibration
 - The avionics package should be easy to configure for all intended stakeholders.
 - The finished package should not require re-engineering to interface with control software during launch setup.
@@ -141,10 +144,11 @@ For ease of installation and reinstallation, the avionics package will uphold th
 - The calibration data will be stored on the SD card onboard the avionics package.
 ##### Launch
 Once the rocket is launched into powered flight, the rocket will be remotely controlled via the gimble to sustain vertical trajectory.
+Vital flight data will be communicated with the base station in real time.
 At the stage of burnout, the avionics package will be automated to deploy the parachute as a step to mitigate risk during the process of landing.
 ##### Analysis
-The avionics package should ideally broadcast live location data via its wireless antenna during flight. <br></br>
-When the active flight is over, all logged data (measurements, instructions and gimble positions) should be stored to the SD card in a human-readable format. If still in range of the wireless signal, the avionics package will attempt to broadcast the data remotely to mission control.
+The avionics package should broadcast vital data via its wireless antenna to the base station during flight. <br></br>
+When the active flight is over, all logged data (measurements, instructions and gimble positions) should be stored to the SD card, as a text file in a human-readable format. If still in range of the wireless signal, the avionics package will attempt to broadcast the data remotely to mission control. All data broadcasted to mission control must comply with the standards (units, parsing methods, encryption etc) of the mission control software.
 
 ### 3.3 Usability Requirements
 
