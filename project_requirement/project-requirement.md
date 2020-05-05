@@ -198,6 +198,7 @@ The system Hardware components:
 - parachute + ejection charge 
 - rocket body 
 - launch pad
+
 The hardware components must be able to still function within the environment that the rocket will be tested in. This means that the rocket will need to function under certain enviromental condition(s) that are present in the testing environment. The current testing environment is a wide-open park located in Lower Hut Wellington. A certain environmentally condition is the wind. Wind levels are never constant and can vairy extremely (especially in our testing environment of Lower Hut Wellington). This means hardware of the rocket must be functioning under considerable wind levels. 
 
 The largest effect wind has on the rocket is displacement. The wind is able to till (or even move) the rocket off its current trajectory. This means that hardware of the rocket must be to account for this issue. Combination of the electronic components (micro-controller, gyroscope and sensor module) and the gimble are involved in accounting for the displacement. Using the sensor(s) to detect the displacement, then micro-controller communicates to the gimble to make an adjustment for the displacement. 
