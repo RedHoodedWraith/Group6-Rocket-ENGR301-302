@@ -38,7 +38,7 @@ The project, in its entirety, is expected to address and solve the general issue
 
 The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled movement such as, sensors, barometers and gyroscopes. 
 
-In terms of the hardware component, an avionics board is to be assembled so that data can be remotely collected from the rocket and sensors as well as a gimballing motor to control the rocket. The software component will be developed to contribute in designing the control parameters for the avionics board.
+In terms of the hardware component, the physical rocket model will be constructed from scratch, adapting the template of a basic hobby rocket that incorporates a gimballing motor for control. Additionally, an avionics board is to be assembled so that data can be remotely collected from the rocket and sensors. The software component will be developed to contribute in designing the control parameters for the avionics board.
 
 The hardware and software components of the avionics package are required to seamlessly communicate with the mission control and simulation segments of the project to ensure a successful launch and flight for the rocket. 
 
