@@ -45,6 +45,8 @@ In terms of the hardware component, an avionics board is to be assembled so that
 
 The hardware and software components of the avionics package are required to seamlessly communicate with the mission control and simulation segments of the project to ensure a successful launch and flight for the rocket. 
 
+The avionics package will communicate with mission control to report its current pre-launch, launch and in-flight status. The simulation software will be used to aid in designing the rocket and determining estimates for the rocket control parameters. In this case, the software model of the control code developed in the avionics package will be required for simulation. 
+
 
 > **9.5.3 Product perspective** <br>
 > 
