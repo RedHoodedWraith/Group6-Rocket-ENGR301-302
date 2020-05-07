@@ -175,9 +175,19 @@ See 9.5.13. for most systems this will be around one page. Hardware projects als
 
 ### 3.5 Logical database requirements
 
-See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
+>See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram >of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
+>You should use right tools, preferabley PlantUML, to draw your URL diagrams which can be easily embedded into a Mardown file (PlantUML is also supported by GitLab and Foswiki).
 
-You should use right tools, preferabley PlantUML, to draw your URL diagrams which can be easily embedded into a Mardown file (PlantUML is also supported by GitLab and Foswiki).
+d and e:
+>d) Data entities and their relationships;
+>e) Integrity constraints; Maintain info quality. <br></br>
+
+*Domain Model Placeholder*
+
+#### Microcontroller
+Lorem
+#### Inertial Measurement Unit Driver
+#### SectionC
 
 ### 3.6 Design constraints
 
