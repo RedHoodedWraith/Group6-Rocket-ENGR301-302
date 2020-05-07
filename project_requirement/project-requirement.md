@@ -143,12 +143,12 @@ For ease of installation and reinstallation, the avionics package will uphold th
 - Calibration data from simulations should be preloaded and initialised onto the avionics package prior to launch. Calibration is crucial as the standalone error control is likely not adequately fast enough to ensure stable control of the rocket.
 - The calibration data will be stored on the SD card onboard the avionics package.
 ##### Launch
-Once the rocket is launched into powered flight, the rocket will be remotely controlled via the gimble to sustain vertical trajectory.
+Once the rocket is launched into powered flight, the rocket will be remotely controlled via the gimbal to sustain vertical trajectory.
 Vital flight data will be communicated with the base station in real time.
 At the stage of burnout, the avionics package will be automated to deploy the parachute as a step to mitigate risk during the process of landing.
 ##### Analysis
 The avionics package should broadcast vital data via its wireless antenna to the base station during flight. <br></br>
-When the active flight is over, all logged data (measurements, instructions and gimble positions) should be stored to the SD card, as a text file in a human-readable format.
+When the active flight is over, all logged data (measurements, instructions and gimbal positions) should be stored to the SD card, as a text file in a human-readable format.
 If the avionics package is still in range of the wireless signal, it will attempt to broadcast the data to mission control. All data broadcasted to mission control must comply with the standards (units, parsing methods, encryption etc) of the mission control software.
 
 ### 3.3 Usability Requirements
