@@ -118,7 +118,7 @@ l) Endmessages.
 - Avionics package must interface with the gimbal.
 - Avionics package must guide rocket on course.
 - Avionics package must stabilise the rocket so it stands in an upright position while preparing for launch.
-- Avionics package logical database will be human readable in the form of a text file.
+- Avionics package logical database will be comprehensible in the form of a text file.
 - Avionics package should be comprised of fixated and durable components.
 - Avionics package in the rocket must interface intuitively with the base station.
 - Avionics package must ensure onboard power management can cope with each stage of the rocket's execution.
@@ -148,7 +148,8 @@ Vital flight data will be communicated with the base station in real time.
 At the stage of burnout, the avionics package will be automated to deploy the parachute as a step to mitigate risk during the process of landing.
 ##### Analysis
 The avionics package should broadcast vital data via its wireless antenna to the base station during flight. <br></br>
-When the active flight is over, all logged data (measurements, instructions and gimble positions) should be stored to the SD card, as a text file in a human-readable format. If still in range of the wireless signal, the avionics package will attempt to broadcast the data remotely to mission control. All data broadcasted to mission control must comply with the standards (units, parsing methods, encryption etc) of the mission control software.
+When the active flight is over, all logged data (measurements, instructions and gimble positions) should be stored to the SD card, as a text file in a human-readable format.
+If the avionics package is still in range of the wireless signal, it will attempt to broadcast the data to mission control. All data broadcasted to mission control must comply with the standards (units, parsing methods, encryption etc) of the mission control software.
 
 ### 3.3 Usability Requirements
 
