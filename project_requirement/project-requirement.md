@@ -148,6 +148,18 @@ This is typically the longest subsection in the document. List up to fifty use c
 
 See 9.5.12. for most systems this will be around one page.
 
+The avionics package is usable if it is efficient and can successfully be operated and applied by no less than a rocket hobbyist. Therefore, the goal is to create an open-source avionics package that is accessible to the wider avionics community and applicable in all types of rocket-related use. 
+
+**Performance**
+
+In this context, the avionics package will be used as a major component of a controlled, rocket launch system. The performance of the avionics package is contingent upon the success rate of a favourable launch and flight. This is achieved by performing frequent, in-flight correction of the gimbal position to ensure high efficiency and furthermore high performance.
+
+**Uses**
+
+Launch:
+
+In-flight diagnostics:
+
 > **9.5.12 Usability requirements**<br>
 > Define usability (quality in use) requirements. Usability requirements and objectives for the software system include measurable effectiveness, efficiency, and satisfaction criteria in specific contexts of use.
 
