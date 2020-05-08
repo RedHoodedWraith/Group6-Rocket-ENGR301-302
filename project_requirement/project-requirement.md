@@ -60,13 +60,44 @@ h) Site adaptation requirements.
 
 One page summary of the main functions of the product (9.5.4), briefly characterising the minimum viable product.
 
+The minimum requirements for this avionics system will consist of the following:
+- Record all sensor data.
+- Aerodynamically stable launch.
+- To demonstrate mission control can change rocket's path, the gimble will set to full extension in one direction to perform a 'kickover' on final second of motor burn.
+- After motor has completed its burn, broadcast telemetry (location) over LoRa modules.
+
+- Utilise onboard sensors and tuned error control to prolong vertical traversal. 
+- Provide a compatible interface to be used in conjuction with a mission control system.
+- Provide a compatible interface utilise simulation data for calibration ahead of time.
+
+Ideally, the finalised package will incorperate the following:
+- Support parachute deployment.
+- Provide control for aerodynamically stable launches without a rail.
+
 #### 1.3.3 User characteristics   
 
 One page identifying the main classes of users and their characteristics (9.5.5) 
 
 #### 1.3.4 Limitations
+Within project limitations, the team is faced with sereval limitations such as; 
+- Current worldwide affect(COVID-19): COVID-19 has resulted in a nationwide lockdown. This has limited the group options and approach towards the  current project. Certain aspects of the project will be adjusted from the original plan. The use of communication tools like Mattermost and  Zoom  will be crucial to the group. 
 
-One page on the limitations on the product (9.5.6)
+- Budget: The team has a very limited budget of approximately $333.00 NZD. The budget has designed to be spent on components for the hardware as well as 3D printing for the rocket body.   
+
+- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the obtdy of the rocket. 
+
+- Software: The software aspect of the project is not very limited from the lockdown. The software aspect will consist of improving code from a previous team and ensuring it is functional and efficient.  
+
+- Testing facilities: Due to COVID-19 lockdown, it will be unlikely that a testing facility is available for the group to use. The next step is to do testing via simulation. Working with a simulation team will be required. If circumstances change and access to testing facilities become available then the group will have to discuss the possible option. 
+
+- Time: This project runs over two papers ENGR 301 and ENGR 302. This gives the group 30 weeks, however with the first few weeks being introductions realistically the group has about ~27-26 weeks. The lockdown has resulted in a reconstruction of the academic year of Victoria            University of Wellington. This could result in less time.    
+
+- Control & policies: When testing the rocket system we have designed, we need to ensure it is in a controlled environment. We can not breach any laws and restrictions that have been imposed by the goverment due to COVID-19 and we need follow The NZ Rocketry Association rules and regulations.  
+
+- Team interactions: The main form of communication will be through Zoom and Mattermost due to the level 4 lockdown. Zoom meetings are hled every Friday and Monday, and Mattermost chat is constant.
+
+- Personal limitations: All members have personal limitations that should be taken into consideration. This will ensure all members of the group are treated fairly. Other members of the group as well, take other papers. Due dates of important assignments and test will be taken into account, this is design to reduce stress levels of the group. 
+
 
 ## 2. References
 
@@ -74,37 +105,39 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 
 ## 3. Specific requirements  
 
-20 pages outlining the requirements of the system. You should apportion these pages across the following subsections to focus on the most important parts of your product.
+This section describes the external interfaces, functions, usability requirements, performance requirements, logical database requirements, design constraints, nonfunctional system attributes, physical and environment requirements and supporting information.
+
+
 
 ### 3.1 External interfaces
 
-Define all inputs into and outputs from the software system. The description should complement the interface
-descriptions in 9.5.3.3.1 through 9.5.3.3.5, and should not repeat information there.
-Each interface defined should include the following content:
+#### Sensors - Inertial Measurement Unit
 
-a) Name of item;
+The inertial measurement unit (IMU) is an electronic device that measures acceleration, gyroscopic and magnetism data on the avionics package, each in 3 dimensions. This will be used to specifically measure the changes in the linear acceleration, velocity, and orientation of the rocket. The data from this unit will be outputted onto the SD card onboard where the Teensy will also process this information and control the position of the gimbal. This component of the system will require good accuracy plus tolerance as it is vital for the control of the rocket and will need to have a measurable acceleration range suitable for the rocket. The orientation and position of the rocket will be measured on 3 dimensions, in units of metres and degrees respectively. This will be present as part of the onboard avionics package.
 
-b) Description of purpose;
+#### Data Storage/Transfer - SD Card
 
-c) Source of input or destination of output;
+An SD card is required to store data that is produced from the IMU, radio antenna, GPS and any other potential sensors. This information is to be processed for control and to be later used for the analysis of the performance of the system. The onboard system will need to be able to write to the SD card at a rate equivalent to the rocket's control loop. This rate will be required to be optimized so that it does not affect processing speed significantly while maintaining maximum control. The SD card must also be large enough to store all the potential data in a test run, with the data being stored in a .txt or .csv file.
 
-d) Valid range, accuracy, and/or tolerance;
+#### Communication - Radio Antenna
 
-e) Units of measure;
+The radio antenna is required for limited communication of data from the avionics package, using LoRa, to a nearby external computer for monitoring the data and minor adjustments/tuning. The antenna will receive signals from the avionics package and will output transmissions for a receiver antenna. The data sent will be required to be accurate enough to determine the state of the system in real-time and so it can be located easily using the satellite positioning system, GPS, in the case that it is lost. Data transferred during the launch will need to be essential data only as communication should not compromise performace of the control system.  The units of measure for this data will all be SI units and degrees/minutes/seconds for the longitude and latitude. This will play an important role for mission control in the field.
 
-f) Timing;
+#### Mechanical - Gimbal
 
-g) Relationships to other inputs/outputs;
+The rocket's gimbal will control the angle of the thrust relative to the centre of mass, thus stabilising and controlling the direction of the rocket's propulsion through the launch. This process is known as thrust vectoring. The gimbal will be controlled by the software on the avionics package which will adjust servos, altering the pitch and yaw. This will require a closed-loop control such as a Proportional-Integral-Derivative system, input from the IMU and outputting to the Gimbal. 
 
-h) Screen formats/organization;
+#### Control Hardware - Servos
 
-i) Window formats/organization;
+Two servo motors will be required to control the gimbal, that is controlled by an electric signal which determines the movement/angle of the shaft. This will be controlled from the avionics package and will alter the orientation of the gimbal. The servo's shaft rotation will be measured in degrees. The two motors will work individually, one to control the pitch and the other yaw. The timing response of this part is required to be minimised so that the rockets projection control can be as close to instantaneous as possible.
 
-j) Data formats;
+#### Ejection Ignition
 
-k) Command formats;
+The rocket will require a system to fire small igniters, which serve as ejection charges for the parachute. These are to be set off at a predetermined height for the descent of the rocket. This will receive its signal from the avionics package, which determines the height using the onboard barometer sensor. Some precaution is also required for the development of this component, as it will need to be ensured that it won't fire while the rocket is being handled.
 
-l) Endmessages.
+#### Motor
+
+The motor is a single-use component to produce the thrust for the rocket during the launch, by burning through a propellant which is released through a nozzle to produce powered flight. The ignition is required to be controlled by an electric igniter externally from the rocket for safety. This motor is to be connected to the gimbal, which will control the rocket. Motors vary in size depending on their total impulse, measured in Newton Seconds. This rocket will be required to use motors in the range of classes from C to G, ranging from 5-160 Ns. These motors likely to have a diameter of 24mm, and some of the smaller ones being 18mm.
 
 
 ### 3.2 Functions
