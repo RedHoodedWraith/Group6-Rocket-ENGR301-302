@@ -25,7 +25,7 @@ The Client for this project is Andre Geldhuis, and can bee contacted by andre.ge
 
 ### 1.1 Purpose
 
-The purpose of this system is to build a rocket that can be launched from ground and be guided by the on-board computer systems.
+The purpose of this system is to build off an an existing rocket system that and to improve its avionics and flight control.
 
 ### 1.2 Scope
 
