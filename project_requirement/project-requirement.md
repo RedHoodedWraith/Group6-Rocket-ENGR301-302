@@ -31,7 +31,7 @@ The purpose of this system is to build off an an existing rocket system that and
 
 The rocket being made for the client(s) listed above needs to be able to do the following:
 *  Thrust itself from ground in order to launch itself into the air
-*  Continue to propell itself in a largely vertical direction
+*  Continue to propel itself in a largely vertical direction
 *  Self-adjust propellant to its nozzle(s) in order to continue travelling in a controlled upwards direction
 *  Travel upwards at a velocity that demonstrates the rocket is being controlled by its on-board control systems
 
