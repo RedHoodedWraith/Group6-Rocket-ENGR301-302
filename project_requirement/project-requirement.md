@@ -185,9 +185,16 @@ d and e:
 *Domain Model Placeholder*
 
 #### Microcontroller
-Lorem
-#### Inertial Measurement Unit Driver
-#### SectionC
+The microcontroller is the programmable control piece of the system. It is central to the communication of sensors, Global Positioning System (GPS), radio, SD card, rocket peripherals, and the base station.
+#### Inertial Measurement Unit
+The Inertial Measurement Unit (IMU) module will provide readings from the integrated accelerometer, magnetometer, and gyroscope. These readings with be (analog/digital tbc) signals that will need to be processed by the microcontroller into logical units to further provide for the system.
+#### SD Card Port
+The SD card port is one of the outputs of the system that logs down timestamps, recieved input from mission control, and sensor data.
+#### Radio
+The radio module will provide real-time LoRa communication between the avionics package and the base station. During flight, live diagnostics, such as GPS data and sensor readings, will be sent to mission control from the avionics package. Likewise, mission control will also communicate via the radio module to manually control the avionics package.
+#### SD Card Port
+
+>LogicalDB: Domain model, business model, objects and classes, processes, states.
 
 ### 3.6 Design constraints
 
