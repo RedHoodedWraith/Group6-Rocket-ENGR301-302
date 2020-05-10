@@ -21,11 +21,11 @@ One page overall introduction including sections 1.1 and 1.2.
 
 ### Client
 
-The Client for this project is Andre Geldhuis, and can bee contacted by andre.geldenhuis@vuw.ac.nz or through Mattermost.
+The Client for this project is Andre Geldhuis, and can be contacted by andre.geldenhuis@vuw.ac.nz or through Mattermost.
 
 ### 1.1 Purpose
 
-The purpose of this system is to build off an existing rocket system that and to improve its avionics and flight control.
+The purpose of this system is to build off an existing rocket system and to improve its avionics and flight control.
 
 ### 1.2 Scope
 
@@ -36,13 +36,12 @@ The rocket being made for the client(s) listed above needs to be able to do the 
 *  Travel upwards at a velocity that demonstrates the rocket is being controlled by its on-board control systems
 
 The development of this rocket will happen in 3 core stages. Hardware design stage, software design stage and trial testing.
-The Hardware Design Stage will focus on the physical build and design of the rocket, incorporating all the necessary components and
+The Hardware Design Stage will focus on the physical build and design of the rocket, incorporating all the necessary components,
 maximising travel efficiency and minimising the physical obstacles. The Software Design Stage will focus on programming the
 on-board micro-controller to automatically adjust the rocket's propellants to self-correct the rocket's travel. Trial testing will
 involve launching test rockets to observe how it performs in-situ and to return back to either design stages to modify the design to
- its performance. This project's development is limited by a variety of factors, most notably access to the internet and the civil restrictions
-in place due to the COVID-19 pandemic which heavily limits the availability to source parts for the rocket and opportunities to test the physical
-rocket prototype in-situ.
+ its performance. This project's development is limited by a variety of factors, most notably access to the internet and the civil restrictions in place due to the COVID-19 pandemic.
+This heavily limits the availability to source parts for the rocket and opportunities to test the physical rocket prototype in-situ.
 
 ### 1.3 Product overview
 #### 1.3.1 Product perspective
