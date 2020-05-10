@@ -34,9 +34,9 @@ One paragraph describing the scope of the system (9.5.2)
 ### 1.3 Product overview 
 #### 1.3.1 Product perspective
 
-The project, in its entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation, but carries the potential for extended development and commercial use through being open-source. 
+The project, in it's entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source. 
 
-The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled movement such as, sensors, barometers and gyroscopes. 
+The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled flight such as, sensors, servos motors and transmitters. 
 
 In terms of the hardware component, the physical rocket model will be constructed from scratch, adapting the template of a basic hobby rocket that incorporates a gimballing motor for control. Additionally, an avionics board is to be assembled so that data can be remotely collected from the rocket and sensors. The software component will be developed to contribute in designing the control parameters for the avionics board.
 
