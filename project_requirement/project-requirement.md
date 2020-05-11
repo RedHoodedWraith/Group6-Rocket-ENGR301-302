@@ -34,10 +34,19 @@ One paragraph describing the scope of the system (9.5.2)
 ### 1.3 Product overview 
 #### 1.3.1 Product perspective
 
-One page defining the system's relationship to other related products
-(9.5.3. but not the subsections in the standard.)
+The project, in it's entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source. 
+
+The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled flight such as, sensors, servos motors and transmitters. 
+
+In terms of the hardware component, the physical rocket model will be constructed from scratch, adapting the template of a basic hobby rocket that incorporates a gimballing motor for control. Additionally, an avionics board is to be assembled so that data can be remotely collected from the rocket and sensors. The software component will be developed to contribute in designing the control parameters for the avionics board.
+
+The hardware and software components of the avionics package are required to seamlessly communicate with the mission control and simulation segments of the project to ensure a successful launch and flight for the rocket. 
+
+The avionics package will communicate with mission control to report its current pre-launch, launch and in-flight status. The simulation software will be used to aid in designing the rocket and determining estimates for the rocket control parameters. In this case, the software model of the control code developed in the avionics package will be required for simulation. 
+
 
 > **9.5.3 Product perspective** <br>
+> 
 > Define the system's relationship to other related products. 
 > 
 > If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
