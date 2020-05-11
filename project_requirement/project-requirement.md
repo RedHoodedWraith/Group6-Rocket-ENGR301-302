@@ -66,7 +66,7 @@ The minimum requirements for this avionics system will consist of the following:
     Altitude
     Deviation
     Critical Components
-- Achieve an aerodynamically stable and consistant launch
+- Achieve an aerodynamically stable and consistent launch
 - A demonstration of mission controls' ability to adjust flight trajectory post-liftoff by instructing the gimble to turn performing a kickover.
 - After motor has completed its burn, broadcast telemetry (location) over LoRa modules to a base station on the ground.
 - An easy to install and uninstall avionics package.
