@@ -209,6 +209,8 @@ Wind will also greatly affect the rocket while the rocket is coming down. The ro
 
 Another environmental condition that will need to be taken into account is radio frequency (RF) noise. To communicate to the rocket microcontroller we use a signal in the microwave frequency. So before we can launch the rocket, we will need to check the level of RF noise. If the level of RF noise is to high the launch of the rocket will be postpone, there is no solution where we launch the rocket in high RF noise. If the rocket is launch in during high RF noise we could lose communication with the rocket.
 
+Certain envionmental conditions like rain and extreme temperatures will mean that the rocket launch won’t be able to happen. However, these conditions can be prevented by choosing a day launch where these conditions aren’t present. 
+
 
 ### 3.9 Supporting information
 
