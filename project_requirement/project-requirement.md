@@ -259,6 +259,9 @@ For systems with hardware components, identify the physical characteristics of t
 ### 3.9 Supporting information
 
 see 9.5.19. 
+The purpose project is to improve and partial redesign a previous module rocket, which includes an improve design of the avionics system, to ensure working and effecient code and possibly redesign the rocket hull to make it more aerodynamic. End goal is to ensure a well delevop rocket that is able to launch. Firstly we need to test the rocket via simulation, then working with mission control to phyically test with a flight.
+
+By improving and developing this open source rocket project we are able to present the rocket comminuity with a possible new product. This result in new knowledge added to community, which could lead better design module rocket (or even better design rockets).
 
 ## 4. Verification
 
