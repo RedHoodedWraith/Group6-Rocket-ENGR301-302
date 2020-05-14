@@ -230,9 +230,7 @@ You should use right tools, preferabley PlantUML, to draw your URL diagrams whic
 
 ### 3.6 Design constraints
 
-Design Constraints 
-
-Software - Open Source
+ Software - Open Source
 
 For the final avionics package to qualify as open source, only open source resources may be used throughout its development. The open source resources used must be well documented and credited, where needed, in the package release. Closed source softwares may only be used if absolutely necessary and with the . Once finished all source code for the package must be released in accordance with the open source definition.
 
@@ -245,16 +243,16 @@ Hardware - Radio Antenna and the Satellite Navigation System Unit
 Hardware - Physical Construction
  
 In accordance with the New Zealand Civil Aviation Authority and the New Zealand Rocketry Association, the rocket at its maximum size must satisfy the following criteria [1][2]:
-The rocket cannot use more than 125g of propellant. 
-The rocket cannot produce more than 320 Newton seconds of total impulse. 
-The rocket must use a slow burning propellant. 
-The rocket is made from lightweight materials such as paper, wood, rubber and or plastic.
-The rocket must not have the nose cone, fins or body fabricated from metal. 
-The rocket must not exceed a gross mass (i.e including the propellant) of 1.5kg. 
-The rocket must not use an aerial firework as an ingredient to form its own jet.
-The rocket must only use certified commercially-made model rocket motors 
-The rocket motors must only be used in line with manufacturer's recommendations (i.e not tampering)
-The rocket must be launched with an electrical launch system and electrical motor igniters
+- The rocket cannot use more than 125g of propellant. 
+- The rocket cannot produce more than 320 Newton seconds of total impulse 
+- The rocket must use a slow burning propellant 
+- The rocket is made from lightweight materials such as paper, wood, rubber and or plastic
+- The rocket must not have the nose cone, fins or body fabricated from metal 
+- The rocket must not exceed a gross mass (i.e including the propellant) of 1.5kg 
+- The rocket must not use an aerial firework as an ingredient to form its own jet
+- The rocket must only use certified commercially-made model rocket motors 
+- The rocket motors must only be used in line with manufacturer's recommendations (i.e not tampering)
+- The rocket must be launched with an electrical launch system and electrical motor igniters
 
 
 ### 3.7 Nonfunctional system attributes
