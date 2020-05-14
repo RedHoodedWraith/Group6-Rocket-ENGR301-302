@@ -2,7 +2,7 @@
 
 The aim of this document is to specify the requirements of the system your group is to build. The focus of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. This document should communicate clearly to the supervisor, client and course coordinator what the system you build is going to do, and what constraints it must meet while doing so.
 
-The document should also demonstrate your understanding of the main analysis principles and quality guidelines, and applicable standards, using tools and notations as necessary to communicate the requirements precisely, unambiguously and clearly in a written technical document. Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those requirements that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification.
+The document should also demonstrate your understanding of the main analysis principles and quality guidelines, and applicable standards, using tools and notations as necessary to communicate the requirements precisely, unambiguously and clearly in a written tecgithnical document. Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those requirements that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification. 
 
 The ENGR 301 project proposal and requirements document should be based on the standard ISO/IEC/IEEE 29148:2011(E), primarily sections 8.4 and 9.5, plus section 9.4 for projects involving hardware and ISO 25010 SQuaRE for systemic requirements. While excerpts from the standard have been quoted within the template, to understand what is required it will be necessary to read earlier sections of the standards themselves. A supplementary treatment of requirements gathering in engineering projects may be found in [Requirements in Engineering Projects](https://victoria.rl.talis.com/items/F166DA94-DAD8-FBDB-0785-7A63C9BA3603.html?referrer=%2Flists%2F5886F297-2506-1F17-45D9-7F04CEE284EE.html%23item-F166DA94-DAD8-FBDB-0785-7A63C9BA3603) (Talis). The requirements document should contain the sections listed below, and conform to the formatting rules listed at the end of this brief.
 
@@ -46,12 +46,21 @@ This heavily limits the availability to source parts for the rocket and opportun
 ### 1.3 Product overview
 #### 1.3.1 Product perspective
 
-One page defining the system's relationship to other related products
-(9.5.3. but not the subsections in the standard.)
+The project, in it's entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source. 
+
+The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled flight such as, sensors, servos motors and transmitters. 
+
+In terms of the hardware component, the physical rocket model will be constructed from scratch, adapting the template of a basic hobby rocket that incorporates a gimballing motor for control. Additionally, an avionics board is to be assembled so that data can be remotely collected from the rocket and sensors. The software component will be developed to contribute in designing the control parameters for the avionics board.
+
+The hardware and software components of the avionics package are required to seamlessly communicate with the mission control and simulation segments of the project to ensure a successful launch and flight for the rocket. 
+
+The avionics package will communicate with mission control to report its current pre-launch, launch and in-flight status. The simulation software will be used to aid in designing the rocket and determining estimates for the rocket control parameters. In this case, the software model of the control code developed in the avionics package will be required for simulation. 
+
 
 > **9.5.3 Product perspective** <br>
-> Define the system's relationship to other related products.
->
+> 
+> Define the system's relationship to other related products. 
+> 
 > If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
 >
 > If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element.
@@ -72,13 +81,44 @@ h) Site adaptation requirements.
 
 One page summary of the main functions of the product (9.5.4), briefly characterising the minimum viable product.
 
+The minimum requirements for this avionics system will consist of the following:
+- Record all sensor data.
+- Aerodynamically stable launch.
+- To demonstrate mission control can change rocket's path, the gimble will set to full extension in one direction to perform a 'kickover' on final second of motor burn.
+- After motor has completed its burn, broadcast telemetry (location) over LoRa modules.
+
+- Utilise onboard sensors and tuned error control to prolong vertical traversal. 
+- Provide a compatible interface to be used in conjuction with a mission control system.
+- Provide a compatible interface utilise simulation data for calibration ahead of time.
+
+Ideally, the finalised package will incorperate the following:
+- Support parachute deployment.
+- Provide control for aerodynamically stable launches without a rail.
+
 #### 1.3.3 User characteristics   
 
 One page identifying the main classes of users and their characteristics (9.5.5)
 
 #### 1.3.4 Limitations
+Within project limitations, the team is faced with sereval limitations such as; 
+- Current worldwide affect(COVID-19): COVID-19 has resulted in a nationwide lockdown. This has limited the group options and approach towards the  current project. Certain aspects of the project will be adjusted from the original plan. The use of communication tools like Mattermost and  Zoom  will be crucial to the group. 
 
-One page on the limitations on the product (9.5.6)
+- Budget: The team has a very limited budget of approximately $333.00 NZD. The budget has designed to be spent on components for the hardware as well as 3D printing for the rocket body.   
+
+- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the obtdy of the rocket. 
+
+- Software: The software aspect of the project is not very limited from the lockdown. The software aspect will consist of improving code from a previous team and ensuring it is functional and efficient.  
+
+- Testing facilities: Due to COVID-19 lockdown, it will be unlikely that a testing facility is available for the group to use. The next step is to do testing via simulation. Working with a simulation team will be required. If circumstances change and access to testing facilities become available then the group will have to discuss the possible option. 
+
+- Time: This project runs over two papers ENGR 301 and ENGR 302. This gives the group 30 weeks, however with the first few weeks being introductions realistically the group has about ~27-26 weeks. The lockdown has resulted in a reconstruction of the academic year of Victoria            University of Wellington. This could result in less time.    
+
+- Control & policies: When testing the rocket system we have designed, we need to ensure it is in a controlled environment. We can not breach any laws and restrictions that have been imposed by the goverment due to COVID-19 and we need follow The NZ Rocketry Association rules and regulations.  
+
+- Team interactions: The main form of communication will be through Zoom and Mattermost due to the level 4 lockdown. Zoom meetings are hled every Friday and Monday, and Mattermost chat is constant.
+
+- Personal limitations: All members have personal limitations that should be taken into consideration. This will ensure all members of the group are treated fairly. Other members of the group as well, take other papers. Due dates of important assignments and test will be taken into account, this is design to reduce stress levels of the group. 
+
 
 ## 2. References
 
@@ -86,15 +126,84 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 
 ## 3. Specific requirements  
 
-20 pages outlining the requirements of the system. You should apportion these pages across the following subsections to focus on the most important parts of your product.
+This section describes the external interfaces, functions, usability requirements, performance requirements, logical database requirements, design constraints, nonfunctional system attributes, physical and environment requirements and supporting information.
+
+
 
 ### 3.1 External interfaces
 
-See 9.5.10. for most systems this will be around one page.
+#### Sensors - Inertial Measurement Unit
+
+The inertial measurement unit (IMU) is an electronic device that measures acceleration, gyroscopic and magnetism data on the avionics package, each in 3 dimensions. This will be used to specifically measure the changes in the linear acceleration, velocity, and orientation of the rocket. The data from this unit will be outputted onto the SD card onboard where the Teensy will also process this information and control the position of the gimbal. This component of the system will require good accuracy plus tolerance as it is vital for the control of the rocket and will need to have a measurable acceleration range suitable for the rocket. The orientation and position of the rocket will be measured on 3 dimensions, in units of metres and degrees respectively. This will be present as part of the onboard avionics package.
+
+#### Data Storage/Transfer - SD Card
+
+An SD card is required to store data that is produced from the IMU, radio antenna, GPS and any other potential sensors. This information is to be processed for control and to be later used for the analysis of the performance of the system. The onboard system will need to be able to write to the SD card at a rate equivalent to the rocket's control loop. This rate will be required to be optimized so that it does not affect processing speed significantly while maintaining maximum control. The SD card must also be large enough to store all the potential data in a test run, with the data being stored in a .txt or .csv file.
+
+#### Communication - Radio Antenna
+
+The radio antenna is required for limited communication of data from the avionics package, using LoRa, to a nearby external computer for monitoring the data and minor adjustments/tuning. The antenna will receive signals from the avionics package and will output transmissions for a receiver antenna. The data sent will be required to be accurate enough to determine the state of the system in real-time and so it can be located easily using the satellite positioning system, GPS, in the case that it is lost. Data transferred during the launch will need to be essential data only as communication should not compromise performace of the control system.  The units of measure for this data will all be SI units and degrees/minutes/seconds for the longitude and latitude. This will play an important role for mission control in the field.
+
+#### Mechanical - Gimbal
+
+The rocket's gimbal will control the angle of the thrust relative to the centre of mass, thus stabilising and controlling the direction of the rocket's propulsion through the launch. This process is known as thrust vectoring. The gimbal will be controlled by the software on the avionics package which will adjust servos, altering the pitch and yaw. This will require a closed-loop control such as a Proportional-Integral-Derivative system, input from the IMU and outputting to the Gimbal. 
+
+#### Control Hardware - Servos
+
+Two servo motors will be required to control the gimbal, that is controlled by an electric signal which determines the movement/angle of the shaft. This will be controlled from the avionics package and will alter the orientation of the gimbal. The servo's shaft rotation will be measured in degrees. The two motors will work individually, one to control the pitch and the other yaw. The timing response of this part is required to be minimised so that the rockets projection control can be as close to instantaneous as possible.
+
+#### Ejection Ignition
+
+The rocket will require a system to fire small igniters, which serve as ejection charges for the parachute. These are to be set off at a predetermined height for the descent of the rocket. This will receive its signal from the avionics package, which determines the height using the onboard barometer sensor. Some precaution is also required for the development of this component, as it will need to be ensured that it won't fire while the rocket is being handled.
+
+#### Motor
+
+The motor is a single-use component to produce the thrust for the rocket during the launch, by burning through a propellant which is released through a nozzle to produce powered flight. The ignition is required to be controlled by an electric igniter externally from the rocket for safety. This motor is to be connected to the gimbal, which will control the rocket. Motors vary in size depending on their total impulse, measured in Newton Seconds. This rocket will be required to use motors in the range of classes from C to G, ranging from 5-160 Ns. These motors likely to have a diameter of 24mm, and some of the smaller ones being 18mm.
+
 
 ### 3.2 Functions
 
-This is typically the longest subsection in the document. List up to fifty use cases (in order of priority for development), and for at least top ten focal use cases, write a short goal statement and use case body (up to seven pages).  Identify the use cases that comprise a minimum viable product.
+> List up to fifty use cases (in order of priority for development),
+
+
+
+#### Stakeholder Requirements:
+- Avionics package must entirely fit inside the rocket's shell.
+- Avionics package must interface with the gimbal.
+- Avionics package must guide rocket on course.
+- Avionics package must stabilise the rocket so it stands in an upright position while preparing for launch.
+- Avionics package logical database will be comprehensible in the form of a text file.
+- Avionics package should be comprised of fixated and durable components.
+- Avionics package in the rocket must interface intuitively with the base station.
+- Avionics package must ensure onboard power management can cope with each stage of the rocket's execution.
+
+#### Use Cases:
+Upon delivery to the primary client (Andre), the extended branch of stakeholders will include open-source hobbyists.
+The purpose of this avionics package is to provide control and guidance for the rocket.
+To do so, it needs to be installed, configured and calibrated prior to launch.
+The user(s) should be able to expect recorded data from the flight.
+The typical usage of the avionics package would look like:
+Installation, calibration, launch, and post-flight analysis. 
+
+##### Installation
+For ease of installation and reinstallation, the avionics package will uphold the following:
+- Minimal physical footprint to mitigate spatial occupation and excess weight.
+- Ensure as many components are fixated on a single unit rather than having components loose and untethered. 
+- Trouble-free pairing with the base station.
+
+##### Configuration and Calibration
+- The avionics package should be easy to configure for all intended stakeholders.
+- The finished package should not require re-engineering to interface with control software during launch setup.
+- Calibration data from simulations should be preloaded and initialised onto the avionics package prior to launch. Calibration is crucial as the standalone error control is likely not adequately fast enough to ensure stable control of the rocket.
+- The calibration data will be stored on the SD card onboard the avionics package.
+##### Launch
+Once the rocket is launched into powered flight, the rocket will be remotely controlled via the gimbal to sustain vertical trajectory.
+Vital flight data will be communicated with the base station in real time.
+At the stage of burnout, the avionics package will be automated to deploy the parachute as a step to mitigate risk during the process of landing.
+##### Analysis
+The avionics package should broadcast vital data via its wireless antenna to the base station during flight. <br></br>
+When the active flight is over, all logged data (measurements, instructions and gimbal positions) should be stored to the SD card, as a text file in a human-readable format.
+If the avionics package is still in range of the wireless signal, it will attempt to broadcast the data to mission control. All data broadcasted to mission control must comply with the standards (units, parsing methods, encryption etc) of the mission control software.
 
 ### 3.3 Usability Requirements
 
@@ -166,6 +275,25 @@ see 9.5.19.
 ## 4. Verification
 
 3 pages outlining how you will verify that the product meets the most important specific requirements. The format of this section should parallel section 3 of your document (see 9.5.18). Wherever possible (especially systemic requirements) you should indicate testable acceptance criteria.
+
+### 4.1 Verification External Interfaces
+
+### 4.2 Verification Functions
+
+### 4.3 Verification Usability Requirements
+
+### 4.4 Verification Performance Requirements
+
+### 4.5 Verification Logical Database Requirements
+
+### 4.6 Verification Design Constraints
+
+### 4.7 Verification Nonfunctional System Attributes
+
+### 4.8 Verification Physical and Environmental Requirements
+
+
+
 
 ## 5. Development schedule.
 
