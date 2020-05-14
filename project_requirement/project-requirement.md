@@ -152,7 +152,7 @@ The avionics package is usable if it is efficient and can successfully be operat
 
 **Performance**
 
-In this context, the avionics package will be used as a major component of a controlled, rocket launch system. The performance of the avionics package is contingent upon the success rate of a favourable launch and flight. This is achieved by performing frequent, in-flight correction of the gimbal position to ensure high efficiency and furthermore high performance.
+In this context, the avionics package will be used as a major component of a controlled, rocket launch system. The performance of the avionics package is contingent upon the success rate of a favourable launch and flight. This is achieved by performing frequent, in-flight correction of the gimbal position to ensure high efficiency and furthermore high performance. Additionally, the software model of the avionics package will need to be designed in a way where it can be applied by the simulation segment of the larger system. As a result, this will furthermore contribute to improving the performance of the rocket gimbal. 
 
 **Uses**
 
