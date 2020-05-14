@@ -232,7 +232,7 @@ You should use right tools, preferabley PlantUML, to draw your URL diagrams whic
 
  Software - Open Source
 
-For the final avionics package to qualify as open source, only open source resources may be used throughout its development. The open source resources used must be well documented and credited, where needed, in the package release. Closed source softwares may only be used if absolutely necessary and with the . Once finished all source code for the package must be released in accordance with the open source definition.
+For the final avionics package to qualify as open source, only open source resources may be used throughout its development. The open source resources used must be well documented and credited, where needed, in the package release. Closed source softwares may only be used if absolutely necessary. Once finished all source code for the package must be released in accordance with the open source definition.
 
 Software - API
 
