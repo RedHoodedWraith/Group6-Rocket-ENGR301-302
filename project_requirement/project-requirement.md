@@ -150,15 +150,19 @@ See 9.5.12. for most systems this will be around one page.
 
 The avionics package is usable if it is efficient and can successfully be operated and applied by no less than a rocket hobbyist. Therefore, the goal is to create an open-source avionics package that is accessible to the wider avionics community and applicable in all types of rocket-related use. 
 
-**Performance**
+In context, the avionics package will be used as a major component of a controlled, rocket launch system. The effectiveness of the avionics package is measurable by its performance, which is contingent upon the success rate of a favourable launch and flight. This is achieved by performing frequent in-flight correction of the gimbal position to ensure high efficiency and furthermore high performance. 
 
-In this context, the avionics package will be used as a major component of a controlled, rocket launch system. The performance of the avionics package is contingent upon the success rate of a favourable launch and flight. This is achieved by performing frequent, in-flight correction of the gimbal position to ensure high efficiency and furthermore high performance. Additionally, the software model of the avionics package will need to be designed in a way where it can be applied by the simulation segment of the larger system. As a result, this will furthermore contribute to improving the performance of the rocket gimbal. 
+Additionally, the software model of the avionics package will need to be designed in a way where it can be applied by the simulation segment of the larger system. As a result, this will furthermore contribute to improving the performance of the rocket gimbal. 
 
 **Uses**
 
 Launch:
 
-In-flight diagnostics:
+The rocket must be ready for launch within a set period of time following system activation. 
+
+In-flight:
+- Diagnostics: The data from the rocket and sensors are remotely collected. This will diagnose any in-flight issues with the rocket. 
+- Recovery Mode: Once the motor burns out, recovery mode is enabled and the parachute is ejected.  
 
 > **9.5.12 Usability requirements**<br>
 > Define usability (quality in use) requirements. Usability requirements and objectives for the software system include measurable effectiveness, efficiency, and satisfaction criteria in specific contexts of use.
