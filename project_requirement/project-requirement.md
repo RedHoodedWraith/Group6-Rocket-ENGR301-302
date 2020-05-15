@@ -230,15 +230,15 @@ You should use right tools, preferabley PlantUML, to draw your URL diagrams whic
 
 ### 3.6 Design constraints
 
- Software - Open Source
+**Software - Open Source**
 
 For the final avionics package to qualify as open source, only open source resources may be used throughout its development. The open source resources used must be well documented and credited, where needed, in the package release. Closed source softwares may only be used if absolutely necessary and has been consented by the client. Once finished all source code for the package must be released in accordance with the open source definition.
 
-Software - API
+**Software - API**
 
 For consistency and compatibility across the three different sections, system engineering, mission control and rocket simulations, the same API should be used. Using the same API also ensures that the final avionics package will work as a whole. 
 
-Hardware - Radio Antenna and the Satellite Navigation System Unit
+**Hardware - Radio Antenna and the Satellite Navigation System Unit**
 
 The radio antenna must follow the New Zealand Legislation, Regulation 9 of the Radiocommunications Regulations 2001 and only use the legally available frequencies with the rockets and solely for their intended purpose [3].
 
@@ -246,7 +246,7 @@ Similarly the satellite navigation system unit used must also follow the New Zea
 
 To avoid interference with nearby devices the radio antenna must use frequencies with the least use. Interference with other devices may result in corrupted data, which in turn could affect the satellite navigation system location of the rocket. 
 
-Hardware - Physical Construction
+**Hardware - Physical Construction**
  
 In accordance with the New Zealand Civil Aviation Authority and the New Zealand Rocketry Association, the rocket at its maximum size must satisfy the following criteria [1][5]:
 
