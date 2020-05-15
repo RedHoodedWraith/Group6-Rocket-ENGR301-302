@@ -69,15 +69,21 @@ One page identifying the main classes of users and their characteristics (9.5.5)
 One page on the limitations on the product (9.5.6)
 
 ## 2. References
-[1] Civil Aviation Authority of New Zealand, Civil Aviation Rules Part 101 Gyrogliders and Parasails, Unmanned
-Aircraft (including Balloons), Kites, and Rockets – Operating Rules, 10 March 2017. 
-https://www.caa.govt.nz/rules/Rule_Consolidations/Part_101_Consolidation.pdf. 
+[1] Civil Aviation Authority of New Zealand, “Civil Aviation Rules, Part 101 Gyrogliders and Parasails, Unmanned Aircraft (including Balloons), Kites, and Rockets Operating Rules” December 31st, 2018 [Online]. 
+Available: https://www.aviation.govt.nz/assets/rules/consolidations/Part_101_Consolidation.pdf [Accessed: May 13th, 2020]. 
+
 [2] National Aeronautics and Space Administration, Vectored Thrust, Glenn Research Center, Nancy Hall, 05 May 2015.
 https://www.grc.nasa.gov/WWW/K-12/airplane/vecthrst.html
+
 [3] New Zealand Legislation, Radiocommunications Regulations 2001, 10 September 2001. 
 http://www.legislation.govt.nz/regulation/public/2001/0240/latest/DLM71513.html. 
+
 [4] The Model Rocket, Model Rocket Engine Sizes and Classifications, Charlie Gasmire, 2020.
 https://themodelrocket.com/model-rocket-engine-sizes-and-classifications/
+
+[5] New Zealand Rocketry Association, “Rocket Safety, Model Rocketry Safety Code” [Online]. 
+Available: https://www.nzrocketry.org.nz/rocketry/rocket-safety [Accessed: May 13th, 2020]
+
 
 
 References to other documents or standards. Follow the IEEE Citation  Reference scheme, available from the [IEEE website](https://www.ieee.org/) (please use the search box). (1 page, longer if required)
