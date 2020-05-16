@@ -310,7 +310,9 @@ To meet the requirements of easy installation, the avioinics package must be ass
 
 To meet the requirements of intuitive configuration and calibration, the avionics package should be able to interface directly with the base station without having to re-engineer the hardware of software on either, the avionics package or mission control. Calibration data from simulation teams must be able transfered in a user-friendly manner, such as either directly writing to SD card or wirelessly via the base station. The software on the avionics package should not have to be manually recompiled from the toolchain. 
 
-To meet the requirements of the launch phase, the rocket must launch and sustain vertical trajectory, even under mild weather interference. The avionics package must also allow mission control to remotely tilt the trajectory of the rocket in-flight. 
+To meet the requirements of the launch phase, the rocket must launch and sustain vertical trajectory, even under mild weather interference. The avionics package must also allow mission control to remotely tilt the trajectory of the rocket in-flight. The rocket is also expect to land without taking on critical damage, though cosmetic wear is excusable. 
+
+The analysis and diagnosis stage of the rocket's flight also has to meet requirements. Live data such as gyroscope and accelerometer readings must be broadcasted to mission control in real-time. By the end of the flight, the SD card must have all logged flight data recorded as a text file in human-readable format. The avionics package should also be able to broadcast all the logged data if still in wireless range. Mission control should be able to parse all broadcasted data.
 
 ### 4.3 Verification Usability Requirements
 
