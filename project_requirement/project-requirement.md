@@ -152,7 +152,7 @@ In context, the avionics package will be used as a major component of a controll
 
 This is achieved by performing frequent in-flight correction of the gimbal position to ensure high efficiency and furthermore high performance. The software model of the avionics package will need to be designed in a way where it can easily be applied by the simulation segment of the larger system. As a result, this will contribute to improving the performance of the rocket gimbal. 
 
-Additionally, the software model should ideally be written using a common programming language used in avionics such as C to further improve its usability in the future. 
+Additionally, the software model should ideally be written using a common programming language used in avionics such as C to further improve its usability in the future. This will ensure that the software can be understood and applied by the regular avionics user.
 
 In terms of the hardware component, it is essential that the avionics package is constructed in a way that is adaptable to changes that can occur at any point in time. The manual controls on the rocket should also be easily accessible to the user even after construction is completed. 
 
