@@ -304,6 +304,14 @@ see 9.5.19.
 
 ### 4.2 Verification Functions
 
+To meet the stakeholder's requirements, ...
+
+To meet the requirements of easy installation, the avioinics package must be assembled into a single unit, with the exception of the battery unit. The avionics package must also be able to fixated with the rocket housing without any wobble.
+
+To meet the requirements of intuitive configuration and calibration, the avionics package should be able to interface directly with the base station without having to re-engineer the hardware of software on either, the avionics package or mission control. Calibration data from simulation teams must be able transfered in a user-friendly manner, such as either directly writing to SD card or wirelessly via the base station. The software on the avionics package should not have to be manually recompiled from the toolchain. 
+
+To meet the requirements of the launch phase, the rocket must launch and sustain vertical trajectory, even under mild weather interference. The avionics package must also allow mission control to remotely tilt the trajectory of the rocket in-flight. 
+
 ### 4.3 Verification Usability Requirements
 
 ### 4.4 Verification Performance Requirements
