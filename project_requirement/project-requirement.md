@@ -288,6 +288,14 @@ see 9.5.19.
 
 ### 4.6 Verification Design Constraints
 
+To meet the requirements of open source for the software side of the avionics package, only open source resources will be used throughout.
+
+To meet the requirements of a consistent API, the use and implementation of the same API will be discussed with the two other teams, mission control and rocket simulations. And then put into action.
+
+To meet the requirements of the New Zealand regulations on the radio Antenna and the satellite navigation system unit the Radiocommunications Regulations 2001, Regulation 9 will be closely followed.
+
+To meet the requirements of the New Zealand Civil Aviation Authority and the New Zealand Rocketry Association, on the rocket's physical construction, the design constraints laid out will be strictly followed.
+
 ### 4.7 Verification Nonfunctional System Attributes
 
 ### 4.8 Verification Physical and Environmental Requirements
