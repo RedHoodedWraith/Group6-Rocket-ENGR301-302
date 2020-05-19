@@ -323,13 +323,12 @@ see 9.5.19.
 
 ### 5.1 Schedule
 
-Identify dates for key project deliverables:
-
-1. architectural prototype
-1. minimum viable product
-1. further releases
-
-(1 page).
+*** Architectural prototype ***
+The architectural prototype will be finalised by early April, and further developed. A more specific date is yet to be confirmed.
+*** Minimum viable product ***
+Due to Covid-19, the future of this project is very unclear, as a product may never physically be developed. However, being optimistic the minimum viable product would be available in late June. Also, to be confirmed in the near future with more information.
+*** Further releases ***
+The final prototype of the design will be completed by November 8th 2020 at the latest, being at the end of 2nd university trimester.
 
 ### 5.2 Budget
 
