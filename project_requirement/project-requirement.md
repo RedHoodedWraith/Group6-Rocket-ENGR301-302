@@ -2,9 +2,9 @@
 
 The aim of this document is to specify the requirements of the system your group is to build. The focus of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. This document should communicate clearly to the supervisor, client and course coordinator what the system you build is going to do, and what constraints it must meet while doing so.
 
-The document should also demonstrate your understanding of the main analysis principles and quality guidelines, and applicable standards, using tools and notations as necessary to communicate the requirements precisely, unambiguously and clearly in a written tecgithnical document. Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those requirements that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification. 
+The document should also demonstrate your understanding of the main analysis principles and quality guidelines, and applicable standards, using tools and notations as necessary to communicate the requirements precisely, unambiguously and clearly in a written tecgithnical document. Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those requirements that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification.
 
-The ENGR 301 project proposal and requirements document should be based on the standard ISO/IEC/IEEE 29148:2011(E), primarily sections 8.4 and 9.5, plus section 9.4 for projects involving hardware and ISO 25010 SQuaRE for systemic requirements. While excerpts from the standard have been quoted within the template, to understand what is required it will be necessary to read earlier sections of the standards themselves. A supplementary treatment of requirements gathering in engineering projects may be found in [Requirements in Engineering Projects](https://victoria.rl.talis.com/items/F166DA94-DAD8-FBDB-0785-7A63C9BA3603.html?referrer=%2Flists%2F5886F297-2506-1F17-45D9-7F04CEE284EE.html%23item-F166DA94-DAD8-FBDB-0785-7A63C9BA3603) (Talis). The requirements document should contain the sections listed below, and conform to the formatting rules listed at the end of this brief. 
+The ENGR 301 project proposal and requirements document should be based on the standard ISO/IEC/IEEE 29148:2011(E), primarily sections 8.4 and 9.5, plus section 9.4 for projects involving hardware and ISO 25010 SQuaRE for systemic requirements. While excerpts from the standard have been quoted within the template, to understand what is required it will be necessary to read earlier sections of the standards themselves. A supplementary treatment of requirements gathering in engineering projects may be found in [Requirements in Engineering Projects](https://victoria.rl.talis.com/items/F166DA94-DAD8-FBDB-0785-7A63C9BA3603.html?referrer=%2Flists%2F5886F297-2506-1F17-45D9-7F04CEE284EE.html%23item-F166DA94-DAD8-FBDB-0785-7A63C9BA3603) (Talis). The requirements document should contain the sections listed below, and conform to the formatting rules listed at the end of this brief.
 
 All team members are expected to contribute equally to the document and list their contributions in section 6 of the document. You should work on your document in your team's GitLab repository. While collective contributions are expected to be the exception rather than the rule, if more than one team member has contributed to a particular commit then all those team member IDs should be included in the first line of the git commit message. `git blame`, `git diff`, file histories, etc. will be tools used to assess individual contributions, so everyone is encouraged to contribute individually, commit early and commit often. Any team wishing to separate individually contributed sections into a single file before collation into the single proposal document for submission is welcome to do so.
 
@@ -31,30 +31,30 @@ One sentence describing the purpose of the system (9.5.1)
 
 One paragraph describing the scope of the system (9.5.2)
 
-### 1.3 Product overview 
+### 1.3 Product overview
 #### 1.3.1 Product perspective
 
-The project, in it's entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source. 
+The project, in it's entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source.
 
-The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled flight such as, sensors, servos motors and transmitters. 
+The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled flight such as, sensors, servos motors and transmitters.
 
 In terms of the hardware component, the physical rocket model will be constructed from scratch, adapting the template of a basic hobby rocket that incorporates a gimballing motor for control. Additionally, an avionics board is to be assembled so that data can be remotely collected from the rocket and sensors. The software component will be developed to contribute in designing the control parameters for the avionics board.
 
-The hardware and software components of the avionics package are required to seamlessly communicate with the mission control and simulation segments of the project to ensure a successful launch and flight for the rocket. 
+The hardware and software components of the avionics package are required to seamlessly communicate with the mission control and simulation segments of the project to ensure a successful launch and flight for the rocket.
 
-The avionics package will communicate with mission control to report its current pre-launch, launch and in-flight status. The simulation software will be used to aid in designing the rocket and determining estimates for the rocket control parameters. In this case, the software model of the control code developed in the avionics package will be required for simulation. 
+The avionics package will communicate with mission control to report its current pre-launch, launch and in-flight status. The simulation software will be used to aid in designing the rocket and determining estimates for the rocket control parameters. In this case, the software model of the control code developed in the avionics package will be required for simulation.
 
 
 > **9.5.3 Product perspective** <br>
-> 
-> Define the system's relationship to other related products. 
-> 
+>
+> Define the system's relationship to other related products.
+>
 > If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
-> 
-> If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element. 
+>
+> If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element.
 >
 > A block diagram showing the major elements of the larger system, interconnections, and external interfaces can be helpful.
-> 
+>
 > Describe how the software operates within the following constraints:  
 a) System interfaces;  
 b) User interfaces;  
@@ -75,7 +75,7 @@ The minimum requirements for this avionics system will consist of the following:
 - To demonstrate mission control can change rocket's path, the gimble will set to full extension in one direction to perform a 'kickover' on final second of motor burn.
 - After motor has completed its burn, broadcast telemetry (location) over LoRa modules.
 
-- Utilise onboard sensors and tuned error control to prolong vertical traversal. 
+- Utilise onboard sensors and tuned error control to prolong vertical traversal.
 - Provide a compatible interface to be used in conjuction with a mission control system.
 - Provide a compatible interface utilise simulation data for calibration ahead of time.
 
@@ -85,19 +85,19 @@ Ideally, the finalised package will incorperate the following:
 
 #### 1.3.3 User characteristics   
 
-One page identifying the main classes of users and their characteristics (9.5.5) 
+One page identifying the main classes of users and their characteristics (9.5.5)
 
 #### 1.3.4 Limitations
-Within project limitations, the team is faced with sereval limitations such as; 
-- Current worldwide affect(COVID-19): COVID-19 has resulted in a nationwide lockdown. This has limited the group options and approach towards the  current project. Certain aspects of the project will be adjusted from the original plan. The use of communication tools like Mattermost and  Zoom  will be crucial to the group. 
+Within project limitations, the team is faced with sereval limitations such as;
+- Current worldwide affect(COVID-19): COVID-19 has resulted in a nationwide lockdown. This has limited the group options and approach towards the  current project. Certain aspects of the project will be adjusted from the original plan. The use of communication tools like Mattermost and  Zoom  will be crucial to the group.
 
 - Budget: The team has a very limited budget of approximately $333.00 NZD. The budget has designed to be spent on components for the hardware as well as 3D printing for the rocket body.   
 
-- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the obtdy of the rocket. 
+- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the obtdy of the rocket.
 
 - Software: The software aspect of the project is not very limited from the lockdown. The software aspect will consist of improving code from a previous team and ensuring it is functional and efficient.  
 
-- Testing facilities: Due to COVID-19 lockdown, it will be unlikely that a testing facility is available for the group to use. The next step is to do testing via simulation. Working with a simulation team will be required. If circumstances change and access to testing facilities become available then the group will have to discuss the possible option. 
+- Testing facilities: Due to COVID-19 lockdown, it will be unlikely that a testing facility is available for the group to use. The next step is to do testing via simulation. Working with a simulation team will be required. If circumstances change and access to testing facilities become available then the group will have to discuss the possible option.
 
 - Time: This project runs over two papers ENGR 301 and ENGR 302. This gives the group 30 weeks, however with the first few weeks being introductions realistically the group has about ~27-26 weeks. The lockdown has resulted in a reconstruction of the academic year of Victoria            University of Wellington. This could result in less time.    
 
@@ -105,7 +105,7 @@ Within project limitations, the team is faced with sereval limitations such as;
 
 - Team interactions: The main form of communication will be through Zoom and Mattermost due to the level 4 lockdown. Zoom meetings are hled every Friday and Monday, and Mattermost chat is constant.
 
-- Personal limitations: All members have personal limitations that should be taken into consideration. This will ensure all members of the group are treated fairly. Other members of the group as well, take other papers. Due dates of important assignments and test will be taken into account, this is design to reduce stress levels of the group. 
+- Personal limitations: All members have personal limitations that should be taken into consideration. This will ensure all members of the group are treated fairly. Other members of the group as well, take other papers. Due dates of important assignments and test will be taken into account, this is design to reduce stress levels of the group.
 
 
 ## 2. References
@@ -134,7 +134,7 @@ The radio antenna is required for limited communication of data from the avionic
 
 #### Mechanical - Gimbal
 
-The rocket's gimbal will control the angle of the thrust relative to the centre of mass, thus stabilising and controlling the direction of the rocket's propulsion through the launch. This process is known as thrust vectoring. The gimbal will be controlled by the software on the avionics package which will adjust servos, altering the pitch and yaw. This will require a closed-loop control such as a Proportional-Integral-Derivative system, input from the IMU and outputting to the Gimbal. 
+The rocket's gimbal will control the angle of the thrust relative to the centre of mass, thus stabilising and controlling the direction of the rocket's propulsion through the launch. This process is known as thrust vectoring. The gimbal will be controlled by the software on the avionics package which will adjust servos, altering the pitch and yaw. This will require a closed-loop control such as a Proportional-Integral-Derivative system, input from the IMU and outputting to the Gimbal.
 
 #### Control Hardware - Servos
 
@@ -171,12 +171,12 @@ The purpose of this avionics package is to provide control and guidance for the 
 To do so, it needs to be installed, configured and calibrated prior to launch.
 The user(s) should be able to expect recorded data from the flight.
 The typical usage of the avionics package would look like:
-Installation, calibration, launch, and post-flight analysis. 
+Installation, calibration, launch, and post-flight analysis.
 
 ##### Installation
 For ease of installation and reinstallation, the avionics package will uphold the following:
 - Minimal physical footprint to mitigate spatial occupation and excess weight.
-- Ensure as many components are fixated on a single unit rather than having components loose and untethered. 
+- Ensure as many components are fixated on a single unit rather than having components loose and untethered.
 - Trouble-free pairing with the base station.
 
 ##### Configuration and Calibration
@@ -205,20 +205,20 @@ See 9.5.12. for most systems this will be around one page.
 See 9.5.13. for most systems this will be around one page. Hardware projects also see section 9.4.6.
 
 > **9.5.13 Performance requirements** <br>
-> Specify both the static and the dynamic numerical requirements placed on the software or on human interaction with the software as a whole. 
-> 
+> Specify both the static and the dynamic numerical requirements placed on the software or on human interaction with the software as a whole.
+>
 > Static numerical requirements may include the following:
-> 
+>
 > a) The number of terminals to be supported;  
 > b) The number of simultaneous users to be supported;  
 > c) Amount and type of information to be handled.
-> 
+>
 > Static numerical requirements are sometimes identified under a separate section entitled Capacity.
-> 
+>
 > Dynamic numerical requirements may include, for example, the numbers of transactions and tasks and the amount of data to be processed within certain time periods for both normal and peak workload conditions. The performance requirements should be stated in measurable terms.
-> 
+>
 >  For example, "_95 % of the transactions shall be processed in less than 1 second._" rather than, "An operator shall not have to wait for the transaction to complete."
-> 
+>
 > NOTE Numerical limits applied to one specific function are normally specified as part of the processing subparagraph description of that function.
 
 
@@ -234,15 +234,15 @@ see 9.5.15 and 9.5.16. for most systems, this will be around one page.
 
 > 9.5.15 Design constraints<br>
 > Specify constraints on the system design imposed by external standards, regulatory requirements, or project limitations.
-> 
+>
 > 9.5.16 Standards compliance<br>
 > Specify the requirements derived from existing standards or regulations, including:
-> 
+>
 > a) Report format;<br>
 > b) Data naming;<br>
 > c) Accounting procedures;<br>
 > d) Audit tracing.
-> 
+>
 > For example, this could specify the requirement for software to trace processing activity. Such traces are needed for some applications to meet minimum regulatory or financial standards. An audit trace requirement may, for example, state that all changes to a payroll database shall be recorded in a trace file with before and after values.
 
 ### 3.7 Nonfunctional system attributes
@@ -251,14 +251,34 @@ Present the systemic (aka nonfunctional) requirements of the product (see ISO/IE
 List up to twenty systemic requirements / attributes.
 Write a short natural language description of the top nonfunctional requirements (approx. five pages).
 
+1. Safety
+  - The rocket's operations must not cause nor contribute to harm or death to people or animals, including but not limited to its operators, nearby bystanders, pets and the local biodiversity.
+  - The rocket's operations must not cause damage to property nor the local enivornment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptible.
 
-### 3.8 Physical and Environmental Requirements 
+1. Flight
+  - The rocket needs to be able to thrust itself from the launchpad.
+  - The rocket needs to be able to continue to propell itself upward when it is expected to do so.
+  - The force exerted by the propellant needs to exceed the opposing forces, such as the force of gravity onto the rocket's mass and air resistance.
+
+1. Robustness
+  - The essential systems contributing to the rocket's flight must remain sufficiently intact during the rocket's operation.
+  - Obstacles must not compromise the rocket's essential system processes that allows it to function.
+
+1. Control
+  - The rocket's operation (during flight) must be sufficiently controlled by its operators.
+  - Any unintended effects from the rocket's operation must be able to brought back into the control of the operators.
+  - The rocket must be able to be controllable in order to increase Safety.
+  - The rocket must be able to be brought back to a stationary or non-functioning state when expect it is expected to.
+  - The rocket must be able to travel along the intended flight path of the operators' choosing.
+
+
+### 3.8 Physical and Environmental Requirements
 
 For systems with hardware components, identify the physical characteristics of that hardware (9.4.10) and environment conditions in which it must operate (9.4.11).  Depending on the project, this section may be from one page up to 5 pages.
 
 ### 3.9 Supporting information
 
-see 9.5.19. 
+see 9.5.19.
 
 ## 4. Verification
 
@@ -287,7 +307,7 @@ see 9.5.19.
 
 ### 5.1 Schedule
 
-Identify dates for key project deliverables: 
+Identify dates for key project deliverables:
 
 1. architectural prototype
 1. minimum viable product
@@ -297,9 +317,9 @@ Identify dates for key project deliverables:
 
 ### 5.2 Budget
 
-Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall). 
+Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall).
 
-### 5.3 Risks 
+### 5.3 Risks
 
 Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
 
@@ -311,7 +331,7 @@ Document here project requirements for Health and Safety. All teams must state i
 
 1. How teams will manage computer-related risks such as Occupational Over Use, Cable management, etc.  
 
-2. Whether project work requires work or testing at any external (off-campus) workplaces/sites. If so, state the team's plans for receiving a Health and Safety induction for the external workplaces/sites. If the team has already received such an induction, state the date it was received. 
+2. Whether project work requires work or testing at any external (off-campus) workplaces/sites. If so, state the team's plans for receiving a Health and Safety induction for the external workplaces/sites. If the team has already received such an induction, state the date it was received.
 
 3. Whether project work requires the team test with human or animal subjects? If so, explain why there is no option but for the team to perform this testing, and state the team's plans for receiving Ethics Approval _prior_ to testing.
 
@@ -338,7 +358,7 @@ _If the project is purely software and requires no contact risks involving physi
 
 
 ## 6. Appendices
-### 6.1 Assumptions and dependencies 
+### 6.1 Assumptions and dependencies
 
 One page on assumptions and dependencies (9.5.7).
 
@@ -352,7 +372,7 @@ A one page statement of contributions, including a list of each member of the gr
 
 ---
 
-## Formatting Rules 
+## Formatting Rules
 
  * Write your document using [Markdown](https://gitlab.ecs.vuw.ac.nz/help/user/markdown#gitlab-flavored-markdown-gfm) and ensure you commit your work to your team's GitLab repository.
  * Major sections should be separated by a horizontal rule.
@@ -360,7 +380,7 @@ A one page statement of contributions, including a list of each member of the gr
 
 ## Assessment  
 
-The goal of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. The most important factor in the assessmernt of the document is how will it meet that goal. The document will be assessed for both presentation and content. 
+The goal of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. The most important factor in the assessmernt of the document is how will it meet that goal. The document will be assessed for both presentation and content.
 
 The presentation will be based on how easy it is to read, correct spelling, grammar, punctuation, clear diagrams, and so on.
 
