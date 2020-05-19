@@ -62,7 +62,7 @@ One page summary of the main functions of the product (9.5.4), briefly character
 
 #### 1.3.3 User characteristics   
 
-The avionics package will be open source meaning anyone can access it. The intended main class of users for this project however, is the wider model rocketry/high power rocketry community. And so general user characteristics which are expected include:
+The avionics package will be open-source meaning anyone can access it. However, the intended main class of users for this project is the wider model rocketry/high power rocketry community. And so general user characteristics which are expected include:
 
 - An understanding of rocket avionics 
 - Technical expertise when installing different components of the rocket
