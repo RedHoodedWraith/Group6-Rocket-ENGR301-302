@@ -146,7 +146,7 @@ This is typically the longest subsection in the document. List up to fifty use c
 `
 ### 3.3 Usability Requirements
 
-The avionics package is usable if it is efficient and can successfully be operated and applied by no less than a rocket hobbyist. Therefore, the goal is to create an open-source avionics package that is accessible to the wider avionics community and applicable in all types of rocket-related use. The rocket should also be able to perform and endure through various external factors such as, wind. This means that it is important to build a versatile avionics package that can withstand the external factors and mitigate the risks that follow. 
+The avionics package is usable if it is efficient and can successfully be operated and applied by no less than a rocket hobbyist. Therefore, the goal is to create an open-source avionics package that is accessible to the wider avionics community and applicable in all types of rocket-related use. The rocket should also be able to perform and endure through various external factors such as wind. This means that it is important to build a versatile avionics package that can withstand the external factors and mitigate the risks that follow. 
 
 In context, the avionics package will be used as a major component of a controlled rocket launch system. The effectiveness of the avionics package is measurable by its performance, which is contingent upon the success rate of a favourable launch and flight. 
 
