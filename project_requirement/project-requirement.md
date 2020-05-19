@@ -252,27 +252,27 @@ List up to twenty systemic requirements / attributes.
 Write a short natural language description of the top nonfunctional requirements (approx. five pages).
 
 1. Safety
-    - The rocket's operations must not cause nor contribute to harm or death to people or animals, including but not limited to its operators, nearby bystanders, pets and the local biodiversity.
-    - The rocket's operations must not cause damage to property nor the local enivornment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptible.
+   - The rocket's operations must not cause nor contribute to harm or death to people or animals, including but not limited to its operators, nearby bystanders, pets and the local biodiversity.
+   - The rocket's operations must not cause damage to property nor the local enivornment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptible.
 
 
 1. Flight
-    - The rocket needs to be able to thrust itself from the launchpad.
-    - The rocket needs to be able to continue to propell itself upward when it is expected to do so.
-    - The force exerted by the propellant needs to exceed the opposing forces, such as the force of gravity onto the rocket's mass and air resistance.
+   - The rocket needs to be able to thrust itself from the launchpad.
+   - The rocket needs to be able to continue to propell itself upward when it is expected to do so.
+   - The force exerted by the propellant needs to exceed the opposing forces, such as the force of gravity onto the rocket's mass and air resistance.
 
 
 1. Robustness
-    - The essential systems contributing to the rocket's flight must remain sufficiently intact during the rocket's operation.
-    - Obstacles must not compromise the rocket's essential system processes that allows it to function.
+   - The essential systems contributing to the rocket's flight must remain sufficiently intact during the rocket's operation.
+   - Obstacles must not compromise the rocket's essential system processes that allows it to function.
 
 
 1. Control
-    - The rocket's operation (during flight) must be sufficiently controlled by its operators.
-    - Any unintended effects from the rocket's operation must be able to brought back into the control of the operators.
-    - The rocket must be able to be controllable in order to increase Safety.
-    - The rocket must be able to be brought back to a stationary or non-functioning state when expect it is expected to.
-    - The rocket must be able to travel along the intended flight path of the operators' choosing.
+   - The rocket's operation (during flight) must be sufficiently controlled by its operators.
+   - Any unintended effects from the rocket's operation must be able to brought back into the control of the operators.
+   - The rocket must be able to be controllable in order to increase Safety.
+   - The rocket must be able to be brought back to a stationary or non-functioning state when expect it is expected to.
+   - The rocket must be able to travel along the intended flight path of the operators' choosing.
 
 
 ### 3.8 Physical and Environmental Requirements
