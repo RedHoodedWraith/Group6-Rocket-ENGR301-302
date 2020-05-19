@@ -252,8 +252,8 @@ List up to twenty systemic requirements / attributes.
 Write a short natural language description of the top nonfunctional requirements (approx. five pages).
 
 1. Safety
-  - The rocket's operations must not cause nor contribute to harm or death to people or animals, including but not limited to its operators, nearby bystanders, pets and the local biodiversity.
-  - The rocket's operations must not cause damage to property nor the local enivornment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptible.
+    - The rocket's operations must not cause nor contribute to harm or death to people or animals, including but not limited to its operators, nearby bystanders, pets and the local biodiversity.
+    - The rocket's operations must not cause damage to property nor the local enivornment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptible.
 
 1. Flight
   - The rocket needs to be able to thrust itself from the launchpad.
@@ -270,6 +270,8 @@ Write a short natural language description of the top nonfunctional requirements
   - The rocket must be able to be controllable in order to increase Safety.
   - The rocket must be able to be brought back to a stationary or non-functioning state when expect it is expected to.
   - The rocket must be able to travel along the intended flight path of the operators' choosing.
+
+1.
 
 
 ### 3.8 Physical and Environmental Requirements
