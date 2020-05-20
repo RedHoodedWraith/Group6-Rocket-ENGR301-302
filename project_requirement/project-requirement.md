@@ -261,7 +261,7 @@ For systems with hardware components, identify the physical characteristics of t
 see 9.5.19. 
 The purpose project is to improve and partial redesign a previous module rocket, which includes an improved design of the avionics system, to ensure working and efficient code and possibly redesign the rocket hull to make it more aerodynamic. The end goal is to ensure a well develop rocket that is able to launch. Firstly we need to test the rocket via simulation, then working with mission control to physically test with a flight. 
 
-By improving and developing this open-source rocket project we are able to present the rocket community with a possible new product. This result in new knowledge added to the model rocket community. This will hopefully lead to a better design module rocket.
+By improving and developing this open-source rocket project we are able to present the rocket community with a possible new product. This resulting in new knowledge added to the model rocket community. This will hopefully lead to a better design module rocket.
 ## 4. Verification
 
 3 pages outlining how you will verify that the product meets the most important specific requirements. The format of this section should parallel section 3 of your document (see 9.5.18). Wherever possible (especially systemic requirements) you should indicate testable acceptance criteria.
