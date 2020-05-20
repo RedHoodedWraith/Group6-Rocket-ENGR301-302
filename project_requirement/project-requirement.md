@@ -97,7 +97,18 @@ Ideally, the finalised package will incorperate the following:
 
 #### 1.3.3 User characteristics   
 
-One page identifying the main classes of users and their characteristics (9.5.5)
+The avionics package will be open-source meaning anyone can access it. However, the intended main class of users for this project is the wider model rocketry/high power rocketry community. And so general user characteristics which are expected include:
+
+- An understanding of rocket avionics 
+- Technical expertise when installing different components of the rocket
+- An understanding of those components and how they function within the system
+- Technical expertise in telemetry systems 
+- An understanding of how the software will interact with the hardware
+- Experience in operating aircraft applications
+- Knowledge in Civil Aviation Authority (CAA) regulations 
+
+Due to health and safety concerns users testing the rocket in the field should not have any physical and or mental disabilities that would put them at risk.
+
 
 #### 1.3.4 Limitations
 Within project limitations, the team is faced with sereval limitations such as; 
