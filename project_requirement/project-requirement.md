@@ -253,20 +253,39 @@ You should use right tools, preferabley PlantUML, to draw your URL diagrams whic
 
 ### 3.6 Design constraints
 
-see 9.5.15 and 9.5.16. for most systems, this will be around one page.
+**Software - Open Source**
 
-> 9.5.15 Design constraints<br>
-> Specify constraints on the system design imposed by external standards, regulatory requirements, or project limitations.
->
-> 9.5.16 Standards compliance<br>
-> Specify the requirements derived from existing standards or regulations, including:
->
-> a) Report format;<br>
-> b) Data naming;<br>
-> c) Accounting procedures;<br>
-> d) Audit tracing.
->
-> For example, this could specify the requirement for software to trace processing activity. Such traces are needed for some applications to meet minimum regulatory or financial standards. An audit trace requirement may, for example, state that all changes to a payroll database shall be recorded in a trace file with before and after values.
+For the final avionics package to qualify as open-source, only open-source resources may be used throughout its development. The open-source resources used must be well documented and credited, where needed, in the package release. Softwares, which are not open-source, may only be used if absolutely necessary and has been consented by the client. Once finished all source code for the package must be released in accordance with the open source definition.
+
+**Software - API**
+
+For consistency and compatibility across the three different sections, system engineering, mission control and rocket simulations, the same API should be used. Using the same API also ensures that the final avionics package will work as a whole. 
+
+**Hardware - Radio Antenna and the Satellite Navigation System Unit**
+
+The radio antenna must follow the New Zealand Legislation, Regulation 9 of the Radiocommunications Regulations 2001 and only use the legally available frequencies with the rockets and solely for their intended purpose [3].
+
+Similarly, the satellite navigation system unit used must also follow the New Zealand Legislation, Regulation 9 of the Radiocommunications Regulations 2001 and only use the legally available satellite navigation frequencies for New Zealand [3].
+
+To avoid interference with nearby devices the radio antenna must use frequencies with the least use. Interference with other devices may result in corrupted data, which in turn could affect the satellite navigation system location of the rocket. 
+
+**Hardware - Physical Construction**
+ 
+In accordance with the New Zealand Civil Aviation Authority and the New Zealand Rocketry Association, the rocket at its maximum size must satisfy the following criteria [1][5]:
+
+- The rocket cannot use more than 125g of propellant 
+- The rocket cannot produce more than 320 Newton seconds of total impulse 
+- The rocket must use a slow-burning propellant 
+- The rocket is made from lightweight materials such as paper, wood, rubber and or plastic
+- The rocket must not have the nose cone, fins or body fabricated from metal
+- The rocket must not exceed a gross mass (i.e including the propellant) of 1.5kg
+- The rocket must not use an aerial firework as an ingredient to form its own jet
+- The rocket must only use certified commercially-made model rocket motors 
+- The rocket motors must only be used in line with the manufacturer's recommendations (i.e no tampering)
+- The rocket must be launched with an electrical launch system and electrical motor igniters
+
+The physical construction of the rocket will also be limited to our budget, what we have access to in the labs and (due to Covid-19) when. Similarly delays in shipments because of the virus will also limit us in what parts we can order online.
+
 
 ### 3.7 Nonfunctional system attributes
 
