@@ -338,6 +338,13 @@ see 9.5.19.
 
 ### 4.4 Verification Performance Requirements
 
+The general performance of the rocket will be verified by inducing the environment conditions, software simulations of the launch and test flights. The structural integrity of the rocket will be verified by using simulation software and from there test flights. Also, visual inspection has the potential to show weaker parts. To verify the longevity of the rocket the system will need to have at least 10 test flights to be confident. The performance of the rocket's ascent will be verified by measuring the vertical climb and the GPS location to compute the vertical-to-horizontal distance travelled relationship.
+
+The software's performance requirements will be more simple to verify as they should not require any physical flights. The delay between the sensors and actuators can be verified in the laboratory to get precise response times. Communication between the rocket and base station can be verified by simulating the rocket and using artificial data. The data rate and sample rates of the system can also be easily verified without test flights, using signal generators and comparing the data.
+
+To verify the power consumption and supply performance requirements the systems will be tested multiple times over some time to see what the effect it has on the supply. This process can be broken down to determine the specific power consumption of each component. The performance of the servos will be verified in the laboratory by measuring their response to varying inputs similar to those expected in practice. The GPS performance can be verified by varying the location of the system and analysing the accuracy of the data according to how the system was moved. The radio communication can be tested by inducing the maximum transmission distance expected in similar terrain and reflecting on its performance. The structural integrity of the individual components will be verified during test flights and also a visual inspection. The final part of the hardware to be verified is the parachute ejection interface which can be tested without a flight to confirm functionality.
+
+
 ### 4.5 Verification Logical Database Requirements
 
 ### 4.6 Verification Design Constraints
