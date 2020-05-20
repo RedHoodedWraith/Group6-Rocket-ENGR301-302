@@ -378,6 +378,11 @@ Identify the ten most important project risks to achieving project goals: their 
 
 If the project will involve any work outside the ECS laboratories, i.e. off-campus activities, these should be included in the following section.
 
+| Risk | Risk Type | Likelihood | Impact | Mitigation Strategies |
+| ------ | ------ | ------ | ------ | ------ | 
+| cell | cell | cell | cell | cell |
+| cell | cell | cell | cell | cell |
+
 ### 5.4 Health and Safety
 
 Document here project requirements for Health and Safety. All teams must state in this section:
