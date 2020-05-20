@@ -330,6 +330,9 @@ Due to Covid-19, the future of this project is very unclear, as a product may ne
 #### Further releases
 The final prototype of the design will be completed by November 8th 2020 at the latest, being at the end of 2nd university trimester.
 
+#### Delivery Method
+Sections of work will be planned to be completed every 2 weeks in sprints. The content of these sections will be determined every fortnight on Monday and previous sprint will be reflected on.
+
 ### 5.2 Budget
 
 Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall).
