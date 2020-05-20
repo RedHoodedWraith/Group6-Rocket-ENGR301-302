@@ -378,7 +378,13 @@ Identify the ten most important project risks to achieving project goals: their 
 
 If the project will involve any work outside the ECS laboratories, i.e. off-campus activities, these should be included in the following section.
 
-| #### Risk | #### Risk Type | #### Likelihood | #### Impact | #### Mitigation Strategies |
+* Risk: outlining the risk generally.
+* Risk Type: what class does the risk fall into.
+* Likelihood: on a scale of 1-10, how likely is it that it will occur.
+* Impact: on a scale of 1-10, how much damage would this cause people, product, or development.
+*Mitigation Strategies: what actions will the team take to try reduce the severity and chance of these risks occuring.
+
+| **Risk** | **Risk Type** | **Likelihood** | **Impact** | **Mitigation Strategies** |
 | ------ | ------ | ------ | ------ | ------ | 
 | cell | cell | cell | cell | cell |
 | cell | cell | cell | cell | cell |
