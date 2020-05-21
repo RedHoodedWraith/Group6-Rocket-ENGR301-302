@@ -105,7 +105,7 @@ Within project limitations, the team is faced with sereval limitations such as;
 
 - Budget: The team has a very limited budget of approximately $333.00 NZD. The budget has designed to be spent on components for the hardware as well as 3D printing for the rocket body.   
 
-- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the obtdy of the rocket. 
+- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the body of the rocket. 
 
 - Software: The software aspect of the project is not very limited from the lockdown. The software aspect will consist of improving code from a previous team and ensuring it is functional and efficient.  
 
@@ -265,8 +265,6 @@ Write a short natural language description of the top nonfunctional requirements
 
 
 ### 3.8 Physical and Environmental Requirements
-
-For systems with hardware components, identify the physical characteristics of that hardware (9.4.10) and environment conditions in which it must operate (9.4.11).  Depending on the project, this section may be from one page up to 5 pages.
 The system Hardware components:
 - microcontroller(Teensy 3.6)
 - gyroscope/accelerometer sensor
@@ -279,7 +277,7 @@ The system Hardware components:
 - rocket body 
 - launch pad (this includes, barometer, gps and the base station)
 
-The hardware components must be able to still function within the environment that the rocket will be tested in, this means that the rocket will need to function under certain enviromental condition(s) that are present in the testing environment. The current testing environment is a wide-open park located in Lower Hut Wellington. A certain environmental condition is the wind. Wind levels are never constant and can vairy extremely (especially in our testing environment of Lower Hut Wellington). This means hardware of the rocket must be functioning under considerable wind levels. 
+The hardware components must be able to still function within the environment that the rocket will be tested in, this means that the rocket will need to function under certain enviromental condition(s) that are present in the testing environment. The current testing environment is a wide-open park located in Upper Hutt Wellington. A certain environmental condition is the wind. Wind levels are never constant and can vairy extremely (especially in our testing environment of Upper Hutt Wellington). This means hardware of the rocket must be functioning under considerable wind levels. 
 
 The largest effect wind has on the rocket is displacement. The wind is able to tilt (or even move) the rocket off its current trajectory. This means that hardware of the rocket must be to account for this issue. Combination of the electronic components (microcontroller, gyroscope and sensor module) and the gimble are involved in accounting for the displacement. Using the sensor(s) to detect the displacement, then micro-controller communicates to the gimble to make an adjustment for the displacement. 
 
@@ -315,7 +313,21 @@ see 9.5.19.
 ### 4.7 Verification Nonfunctional System Attributes
 
 ### 4.8 Verification Physical and Environmental Requirements
+At this point of time, it is currently unclear of what hardware component can be sourced, and which need to be bought. The only known physical component that can be sourced is the 3d print parts (like the body of the rocket), will be able to construct and printed within the university. The hardware system which that makes up the avionics package(Teensy 3.6 micro controller, gyroscope, IMU and the wireless antenna) will need to fit into the body of the rocket with the parachute and ejection charge. This needs to fit into a cone-like shape of 9X13 cm (9cm in height and 13cm in width).
 
+The current testing location is a large park located in Upper Hutt, Wellington (the name of the park is currently unknown). The day of launch will be planned ahead, meaning that weather conditions will be known in advanced. The optimum goal is to launch the rocket on a clear day (with very little to no wind). It possible for the weather to change or over environmental conditions to happen. Environmental conditions that prevent launch from happening are:
+- rain/hail
+- temperatures below 5 degrees celsius
+- cloud coverage greater than 50%
+- high amounts of radiofrequency noise (enough to interfere with rocket communication)
+- Wind speeds greater than 30 km/h 
+
+
+During rocket launch all requirements and regulations of both physical system and the Environment. The requirements and regulations must be able to be in line with the following organisations:
+- NZ Rocketry Association
+- Civil Aviation 
+- Wellington region and local council  
+- Victoria University of Wellington Faculty of Engineering and Computer Science 
 
 
 
