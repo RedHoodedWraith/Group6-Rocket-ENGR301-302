@@ -372,6 +372,16 @@ To verify the power consumption and supply performance requirements the systems 
 
 ### 4.6 Verification Design Constraints
 
+To meet the requirements of open-source for the software side of the avionics package, only open-source resources will be used throughout. Software that is not open-source may only be used with client consent.
+
+To meet the requirements of a consistent API, the use and implementation of the same API will be discussed with the two other teams, mission control and rocket simulations. And then put into action accordingly.
+
+To meet the requirements of the New Zealand regulations on the radio Antenna and the satellite navigation system unit the Radiocommunications Regulations 2001, Regulation 9 will be closely followed [3].
+
+To meet the requirements of the New Zealand Civil Aviation Authority and the New Zealand Rocketry Association, on the rocket's physical construction, the design constraints laid out will be strictly followed [1][5]. 
+
+To meet the requirements of our budget and deadline, rocket parts bought overseas will be limited to our budget and also to their shipment times.
+
 ### 4.7 Verification Nonfunctional System Attributes
 
 ### 4.8 Verification Physical and Environmental Requirements
