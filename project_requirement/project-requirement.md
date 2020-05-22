@@ -225,24 +225,16 @@ See 9.5.12. for most systems this will be around one page.
 
 ### 3.4 Performance requirements
 
-See 9.5.13. for most systems this will be around one page. Hardware projects also see section 9.4.6.
+This section defines the expectations of the rocket's functions and qualities, what the product should demonstrate to the user on a quantitative and qualitative level. The rocket will be constructed of many different functioning components, establishing a range of software and hardware performance requirements along with the rocket's general performance itself.
 
-> **9.5.13 Performance requirements** <br>
-> Specify both the static and the dynamic numerical requirements placed on the software or on human interaction with the software as a whole.
->
-> Static numerical requirements may include the following:
->
-> a) The number of terminals to be supported;  
-> b) The number of simultaneous users to be supported;  
-> c) Amount and type of information to be handled.
->
-> Static numerical requirements are sometimes identified under a separate section entitled Capacity.
->
-> Dynamic numerical requirements may include, for example, the numbers of transactions and tasks and the amount of data to be processed within certain time periods for both normal and peak workload conditions. The performance requirements should be stated in measurable terms.
->
->  For example, "_95 % of the transactions shall be processed in less than 1 second._" rather than, "An operator shall not have to wait for the transaction to complete."
->
-> NOTE Numerical limits applied to one specific function are normally specified as part of the processing subparagraph description of that function.
+A key requirement of the rocket's performance is that it has a strong structual integrity, so that it is able to withstand stress, acceleration, velocity, vibration and heat that will be present during launch. This will ensure functionality and longevity of the rocket. It is required that the system can be tested at least 10 times, with any deficient parts after that to be easily replaced. The environment has a strong impact on the performance of the rocket, the most critical factor being the wind. Ideally the rocket will launch when there is minimal wind however this can be expected to increase with altitude. The system will be required to control the rocket in wind speeds up to 15 m/s. The general performance of the system is required to have a vertical-to-horizontal distance travelled ratio exceeding 90% at the completion of climbing flight.
+
+The performance of the software will have a strong influence on the rocket's control so the system will require minimum delay between sensors and actuators. This delay will be determined by the maximum operating speeds of the components, such as the servos and the IMU. Another key aspect of the software performance is the communication of data through out each stage of the launch. It is essential that information to mission control is continous. It is important to note that however this load will vary depending on the stage. The required data is the state of the rocket, the location and potentially some kinetic data. An additional software requirement is for a fast data rate on to the SD card, which will need to be taking readings from the sensors at least every 50ms more good analysis of the flight.
+
+
+The core part of the systems performance is dependent on a power supply which makes the batteries performance vital. It is required that the system does not deplete more than 50% of the capacity throughout the launch process, leaving the remaining power for initiation and retreival. This will be later detailed with more knowledge of the power consumption and specifications. It is also required that the servos are performing at a rotational speed sufficient enough to emulate the control system and also strong enough to manipulate gimbal. The geographical location of the rocket is important for finding it after launch so the gps is required to perform within an error of 10 metres. To ensure communication during this stage the LoRa radio system will be required to transmit and receive up to 2 kilometers away, so the rocket may be retrieved if it was to travel far during descent. Like the structual integrity of the rocket, the individual components will need be able to with stand the induced environment factors during launch for longevity, this will require strong connections and a good quality of wiring. A vital part of the systems performance is that it is required to eject a parachute at the top of ascent, this needs to be certain so tests will be required to be implemented.
+
+
 
 
 ### 3.5 Logical database requirements
