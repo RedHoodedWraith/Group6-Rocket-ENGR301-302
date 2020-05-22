@@ -218,7 +218,26 @@ If the avionics package is still in range of the wireless signal, it will attemp
 
 ### 3.3 Usability Requirements
 
-See 9.5.12. for most systems this will be around one page.
+The avionics package is usable if it is efficient and can successfully be operated and applied by no less than a rocket hobbyist. Therefore, the goal is to create an open-source avionics package that is accessible to the wider avionics community and applicable in all types of rocket-related use. The rocket should also be able to perform and endure through various external factors such as wind. This means that it is important to build a versatile avionics package that can withstand the external factors and mitigate the risks that follow. 
+
+In context, the avionics package will be used as a major component of a controlled rocket launch system. The effectiveness of the avionics package is measurable by its performance, which is contingent upon the success rate of a favourable launch and flight. 
+
+This is achieved by performing frequent in-flight correction of the gimbal position to ensure high efficiency and furthermore high performance. The software model of the avionics package will need to be designed in a way where it can easily be applied by the simulation segment of the larger system. As a result, this will contribute to improving the performance of the rocket gimbal. 
+
+Additionally, the software model should ideally be written using a common programming language used in avionics such as C to further improve its usability in the future. This will ensure that the software can be understood and applied by the regular avionics user.
+
+In terms of the hardware component, it is essential that the avionics package is constructed in a way that is adaptable to changes that can occur at any point in time. The manual controls on the rocket should also be easily accessible to the user even after construction is completed. 
+
+
+**Uses**
+
+Launch:
+
+The rocket must be ready for launch within a set period of time following system activation. 
+
+In-flight:
+- Diagnostics: The data from the rocket and sensors are remotely collected. This will diagnose any in-flight issues with the rocket. 
+- Recovery Mode: Once the motor burns out, recovery mode is enabled and the parachute is ejected.  
 
 > **9.5.12 Usability requirements**<br>
 > Define usability (quality in use) requirements. Usability requirements and objectives for the software system include measurable effectiveness, efficiency, and satisfaction criteria in specific contexts of use.
