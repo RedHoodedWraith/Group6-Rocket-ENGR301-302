@@ -253,19 +253,19 @@ Write a short natural language description of the top nonfunctional requirements
 
 1. Safety
    - The rocket's operations must not cause nor contribute to harm or death to people or animals, including but not limited to its operators, nearby bystanders, pets and the local biodiversity.
-   - The rocket's operations must not cause damage to property nor the local enivornment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptible.
+   - The rocket's operations must not cause damage to property nor the local environment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptable.
    - Operators must be able to know sufficient real time information with regards to the condition, location and effects of the rocket during its operation.
 
 1. Flight
    - The rocket needs to be able to thrust itself from the launchpad.
-   - The rocket needs to be able to continue to propell itself upward when it is expected to do so.
+   - The rocket needs to be able to continue to propel itself upward when it is expected to do so.
    - The force exerted by the propellant needs to exceed the opposing forces, such as the force of gravity onto the rocket's mass and air resistance.
 
 1. Robustness
    - The essential systems contributing to the rocket's flight must remain sufficiently intact during the rocket's operation.
    - Obstacles must not compromise the rocket's essential system processes that allows it to function.
    - The essential systems that contribute to the rocket's flight must be able to continue functioning when performing its task.
-   - Essential system operations must not compromise each other during their operations.
+   - Essential system operations must not compromise each other system's functionality during their operations.
 
 1. Control
    - The rocket's operation (during flight) must be sufficiently controlled by its operators.
@@ -277,7 +277,11 @@ Write a short natural language description of the top nonfunctional requirements
 1. Trackability
    - At minimum, sufficient data of the rocket's operation must be available to rocket's operators during its operation. This means data expected to be delivered in real time during the rocket's operation must be delivered in real time.
    - The rocket's location must be able to be monitored and known at all times during its operation, as per the requirement of Saftey and the Client's requirement.
-   - Essential data that is not expected to be collected in realtime, must be able to be retrieved after the rocket's operation has ended.
+   - Essential data that is not expected to be collected in real-time, must be able to be retrieved after the rocket's operation has ended.
+
+1. Legal
+   - This project must be performed legally and with the permission of the applicable property owner(s).
+   - What we make and test must adhere to the rules and regulations of the relevant local authorities
 
 
 ### 3.8 Physical and Environmental Requirements
