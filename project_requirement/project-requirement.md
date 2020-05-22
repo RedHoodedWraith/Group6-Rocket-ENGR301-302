@@ -67,13 +67,13 @@ The minimum requirements for this avionics system will consist of the following:
     Deviation
     Critical Components
 - Achieve an aerodynamically stable and consistent launch
-- A demonstration of mission controls' ability to adjust flight trajectory post-liftoff by instructing the gimble to turn performing a kickover.
-- After motor has completed its burn, broadcast telemetry (location) over LoRa modules to a base station on the ground.
-- An easy to install and uninstall avionics package.
-- A hardware "On" and/or "Reset" switch that initialises launch in the event of software launch failure.
+- A demonstration of mission controls' ability to adjust flight trajectory post-liftoff by instructing the gimble to turn, performing a kickover.
+- After the motor has completed its burn, broadcast telemetry (location) over LoRa modules to a base station on the ground.
+- An easy to install and uninstall the avionics package.
+- A hardware "On" and/or "Reset" switch that initialises launch in the event of the software launch failure.
 - "Fast" hardware and software setup. Ideally, 10 minutes or less.
 - Utilise onboard sensors and tuned error control to prolong vertical traversal. 
-- Provide a compatible interface to be used in conjuction with a mission control system.
+- Provide a compatible interface to be used in conjunction with a mission control system.
 - Provide a compatible interface utilise simulation data for calibration ahead of time.
 
 Ideally, the finalised package will incorporate the following:
