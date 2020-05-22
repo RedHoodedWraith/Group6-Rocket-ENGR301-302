@@ -373,27 +373,27 @@ To verify the power consumption and supply performance requirements the systems 
 1. Safety
    * Ensure there is adequate distance between people and the launch site.
    * Have a functioning fire extinguisher ready and on-hand during testing.
-   * Choosing a wide open space environment outdoors to perform the test it.
+   * Choosing a wide-open space environment outdoors to perform the test it.
    * Cordon off the test area if need be.
    * Have someone watch where the rocket flies to and where it is falling.
-   * Ensure that the rocket doesn't fly high enough it could hurt someone if it free fell.
+   * Ensure that the rocket does not fly high enough it could hurt someone if it free fell.
    * Use of a parachute for freefall events.
    * Ensure there is a shutoff mechanism where applicable.
 
 1. Flight
-   * Testing the rocket with fuel
+   * Testing the rocket with fuel.
    * Performing some calculations to figure out how much force should be exerted to lift the rocket and using sufficient amount rocket fuel.
    * Ensure the physical design is catered to follow the intended flight path.
 
 1. Robustness
    * Testing each system before combining them.
-   * Performing the tests on an small scale or in a simulated environment.
-   * Deciding what the core systems are, checking if there are any process conflicts and amending the design to not conflict if there are conflicts. (example of a conflict: a mechanism dislodges another mechanism)
+   * Performing the tests on a small scale or in a simulated environment.
+   * Deciding what the core systems are, checking if there are any process conflicts and amending the design to not conflict if there are conflicts (example of a conflict: a mechanism dislodges another mechanism).
 
 1. Control
    * Have someone watch where the rocket flies to and where it is falling at all times during the test.
    * Ensure the physical design is catered to follow the intended flight path.
-   * Ensure the rocket fuel is only loaded sufficient to its maximum intended use. Don't put in extra fuel if it's not planned to be used.
+   * Ensure the rocket fuel is only loaded sufficient to its maximum intended use. Do not put in extra fuel if it's not planned to be used.
    * Ensure the correct amount of rocket fuel is ignited at the correct times.
    * Use of a parachute if a freefall is expected.
    * Ensure the rocket can communicate to mission control within a timely manner.
