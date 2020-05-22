@@ -1,8 +1,8 @@
-# ENGR 301: Project Requirements Document
+environmental# ENGR 301: Project Requirements Document
 
 The aim of this document is to specify the requirements of the system your group is to build. The focus of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. This document should communicate clearly to the supervisor, client and course coordinator what the system you build is going to do, and what constraints it must meet while doing so.
 
-The document should also demonstrate your understanding of the main analysis principles and quality guidelines, and applicable standards, using tools and notations as necessary to communicate the requirements precisely, unambiguously and clearly in a written tecgithnical document. Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those requirements that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification.
+The document should also demonstrate your understanding of the main analysis principles and quality guidelines, and applicable standards, using tools and notations as necessary to communicate the requirements precisely, unambiguously and clearly in a written technical document. Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those requirements that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification.
 
 The ENGR 301 project proposal and requirements document should be based on the standard ISO/IEC/IEEE 29148:2011(E), primarily sections 8.4 and 9.5, plus section 9.4 for projects involving hardware and ISO 25010 SQuaRE for systemic requirements. While excerpts from the standard have been quoted within the template, to understand what is required it will be necessary to read earlier sections of the standards themselves. A supplementary treatment of requirements gathering in engineering projects may be found in [Requirements in Engineering Projects](https://victoria.rl.talis.com/items/F166DA94-DAD8-FBDB-0785-7A63C9BA3603.html?referrer=%2Flists%2F5886F297-2506-1F17-45D9-7F04CEE284EE.html%23item-F166DA94-DAD8-FBDB-0785-7A63C9BA3603) (Talis). The requirements document should contain the sections listed below, and conform to the formatting rules listed at the end of this brief.
 
@@ -46,7 +46,7 @@ This heavily limits the availability to source parts for the rocket and opportun
 ### 1.3 Product overview
 #### 1.3.1 Product perspective
 
-The project, in it's entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source.
+The project, in its entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source.
 
 The avionics element of the project must imitate the functionalities of a contemporary, off-the-shelf version and provide control features for the rocket as well. In particular, the system is required to manage various components of the rocket that ensure controlled flight such as, sensors, servos motors and transmitters.
 
@@ -88,10 +88,10 @@ The minimum requirements for this avionics system will consist of the following:
 - After motor has completed its burn, broadcast telemetry (location) over LoRa modules.
 
 - Utilise onboard sensors and tuned error control to prolong vertical traversal.
-- Provide a compatible interface to be used in conjuction with a mission control system.
+- Provide a compatible interface to be used in conjunction with a mission control system.
 - Provide a compatible interface utilise simulation data for calibration ahead of time.
 
-Ideally, the finalised package will incorperate the following:
+Ideally, the finalised package will incorporate the following:
 - Support parachute deployment.
 - Provide control for aerodynamically stable launches without a rail.
 
@@ -111,12 +111,12 @@ Due to health and safety concerns users testing the rocket in the field should n
 
 
 #### 1.3.4 Limitations
-Within project limitations, the team is faced with sereval limitations such as;
+Within project limitations, the team is faced with several limitations such as;
 - Current worldwide affect(COVID-19): COVID-19 has resulted in a nationwide lockdown. This has limited the group options and approach towards the  current project. Certain aspects of the project will be adjusted from the original plan. The use of communication tools like Mattermost and  Zoom  will be crucial to the group.
 
 - Budget: The team has a very limited budget of approximately $333.00 NZD. The budget has designed to be spent on components for the hardware as well as 3D printing for the rocket body.   
 
-- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the obtdy of the rocket.
+- Hardware accessibility: Due to the effect COVID-19 has had on the university, our hardware accessibility is been very limited. The extension of the hardware is improving on the control system of a previous team and on using *Onshape* to improve the design of the outer body of the rocket.
 
 - Software: The software aspect of the project is not very limited from the lockdown. The software aspect will consist of improving code from a previous team and ensuring it is functional and efficient.  
 
@@ -124,9 +124,9 @@ Within project limitations, the team is faced with sereval limitations such as;
 
 - Time: This project runs over two papers ENGR 301 and ENGR 302. This gives the group 30 weeks, however with the first few weeks being introductions realistically the group has about ~27-26 weeks. The lockdown has resulted in a reconstruction of the academic year of Victoria            University of Wellington. This could result in less time.    
 
-- Control & policies: When testing the rocket system we have designed, we need to ensure it is in a controlled environment. We can not breach any laws and restrictions that have been imposed by the goverment due to COVID-19 and we need follow The NZ Rocketry Association rules and regulations.  
+- Control & policies: When testing the rocket system we have designed, we need to ensure it is in a controlled environment. We can not breach any laws and restrictions that have been imposed by the government due to COVID-19 and we need follow The NZ Rocketry Association rules and regulations.  
 
-- Team interactions: The main form of communication will be through Zoom and Mattermost due to the level 4 lockdown. Zoom meetings are hled every Friday and Monday, and Mattermost chat is constant.
+- Team interactions: The main form of communication will be through Zoom and Mattermost due to the level 4 lockdown. Zoom meetings are held every Friday and Monday, and Mattermost chat is constant.
 
 - Personal limitations: All members have personal limitations that should be taken into consideration. This will ensure all members of the group are treated fairly. Other members of the group as well, take other papers. Due dates of important assignments and test will be taken into account, this is design to reduce stress levels of the group.
 
@@ -137,7 +137,7 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 
 ## 3. Specific requirements  
 
-This section describes the external interfaces, functions, usability requirements, performance requirements, logical database requirements, design constraints, nonfunctional system attributes, physical and environment requirements and supporting information.
+This section describes the external interfaces, functions, usability requirements, performance requirements, logical database requirements, design constraints, non-functional system attributes, physical and environment requirements and supporting information.
 
 
 
@@ -153,7 +153,7 @@ An SD card is required to store data that is produced from the IMU, radio antenn
 
 #### Communication - Radio Antenna
 
-The radio antenna is required for limited communication of data from the avionics package, using LoRa, to a nearby external computer for monitoring the data and minor adjustments/tuning. The antenna will receive signals from the avionics package and will output transmissions for a receiver antenna. The data sent will be required to be accurate enough to determine the state of the system in real-time and so it can be located easily using the satellite positioning system, GPS, in the case that it is lost. Data transferred during the launch will need to be essential data only as communication should not compromise performace of the control system.  The units of measure for this data will all be SI units and degrees/minutes/seconds for the longitude and latitude. This will play an important role for mission control in the field.
+The radio antenna is required for limited communication of data from the avionics package, using LoRa, to a nearby external computer for monitoring the data and minor adjustments/tuning. The antenna will receive signals from the avionics package and will output transmissions for a receiver antenna. The data sent will be required to be accurate enough to determine the state of the system in real-time and so it can be located easily using the satellite positioning system, GPS, in the case that it is lost. Data transferred during the launch will need to be essential data only as communication should not compromise performance of the control system.  The units of measure for this data will all be SI units and degrees/minutes/seconds for the longitude and latitude. This will play an important role for mission control in the field.
 
 #### Mechanical - Gimbal
 
@@ -246,12 +246,12 @@ In-flight:
 
 This section defines the expectations of the rocket's functions and qualities, what the product should demonstrate to the user on a quantitative and qualitative level. The rocket will be constructed of many different functioning components, establishing a range of software and hardware performance requirements along with the rocket's general performance itself.
 
-A key requirement of the rocket's performance is that it has a strong structual integrity, so that it is able to withstand stress, acceleration, velocity, vibration and heat that will be present during launch. This will ensure functionality and longevity of the rocket. It is required that the system can be tested at least 10 times, with any deficient parts after that to be easily replaced. The environment has a strong impact on the performance of the rocket, the most critical factor being the wind. Ideally the rocket will launch when there is minimal wind however this can be expected to increase with altitude. The system will be required to control the rocket in wind speeds up to 15 m/s. The general performance of the system is required to have a vertical-to-horizontal distance travelled ratio exceeding 90% at the completion of climbing flight.
+A key requirement of the rocket's performance is that it has a strong structural integrity, so that it is able to withstand stress, acceleration, velocity, vibration and heat that will be present during launch. This will ensure functionality and longevity of the rocket. It is required that the system can be tested at least 10 times, with any deficient parts after that to be easily replaced. The environment has a strong impact on the performance of the rocket, the most critical factor being the wind. Ideally the rocket will launch when there is minimal wind however this can be expected to increase with altitude. The system will be required to control the rocket in wind speeds up to 15 m/s. The general performance of the system is required to have a vertical-to-horizontal distance travelled ratio exceeding 90% at the completion of climbing flight.
 
-The performance of the software will have a strong influence on the rocket's control so the system will require minimum delay between sensors and actuators. This delay will be determined by the maximum operating speeds of the components, such as the servos and the IMU. Another key aspect of the software performance is the communication of data through out each stage of the launch. It is essential that information to mission control is continous. It is important to note that however this load will vary depending on the stage. The required data is the state of the rocket, the location and potentially some kinetic data. An additional software requirement is for a fast data rate on to the SD card, which will need to be taking readings from the sensors at least every 50ms more good analysis of the flight.
+The performance of the software will have a strong influence on the rocket's control so the system will require minimum delay between sensors and actuators. This delay will be determined by the maximum operating speeds of the components, such as the servos and the IMU. Another key aspect of the software performance is the communication of data through out each stage of the launch. It is essential that information to mission control is continuous. It is important to note that however this load will vary depending on the stage. The required data is the state of the rocket, the location and potentially some kinetic data. An additional software requirement is for a fast data rate on to the SD card, which will need to be taking readings from the sensors at least every 50ms more good analysis of the flight.
 
 
-The core part of the systems performance is dependent on a power supply which makes the batteries performance vital. It is required that the system does not deplete more than 50% of the capacity throughout the launch process, leaving the remaining power for initiation and retreival. This will be later detailed with more knowledge of the power consumption and specifications. It is also required that the servos are performing at a rotational speed sufficient enough to emulate the control system and also strong enough to manipulate gimbal. The geographical location of the rocket is important for finding it after launch so the gps is required to perform within an error of 10 metres. To ensure communication during this stage the LoRa radio system will be required to transmit and receive up to 2 kilometers away, so the rocket may be retrieved if it was to travel far during descent. Like the structual integrity of the rocket, the individual components will need be able to with stand the induced environment factors during launch for longevity, this will require strong connections and a good quality of wiring. A vital part of the systems performance is that it is required to eject a parachute at the top of ascent, this needs to be certain so tests will be required to be implemented.
+The core part of the systems performance is dependent on a power supply which makes the batteries performance vital. It is required that the system does not deplete more than 50% of the capacity throughout the launch process, leaving the remaining power for initiation and retrieval. This will be later detailed with more knowledge of the power consumption and specifications. It is also required that the servos are performing at a rotational speed sufficient enough to emulate the control system and also strong enough to manipulate gimbal. The geographical location of the rocket is important for finding it after launch so the GPS is required to perform within an error of 10 metres. To ensure communication during this stage the LoRa radio system will be required to transmit and receive up to 2 kilometres away, so the rocket may be retrieved if it was to travel far during descent. Like the structural integrity of the rocket, the individual components will need be able to with stand the induced environment factors during launch for longevity, this will require strong connections and a good quality of wiring. A vital part of the systems performance is that it is required to eject a parachute at the top of ascent, this needs to be certain so tests will be required to be implemented.
 
 
 
@@ -260,7 +260,7 @@ The core part of the systems performance is dependent on a power supply which ma
 
 See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
 
-You should use right tools, preferabley PlantUML, to draw your URL diagrams which can be easily embedded into a Mardown file (PlantUML is also supported by GitLab and Foswiki).
+You should use right tools, preferably PlantUML, to draw your URL diagrams which can be easily embedded into a Markdown file (PlantUML is also supported by GitLab and Foswiki).
 
 ### 3.6 Design constraints
 
@@ -289,10 +289,10 @@ In accordance with the New Zealand Civil Aviation Authority and the New Zealand 
 - The rocket must use a slow-burning propellant
 - The rocket is made from lightweight materials such as paper, wood, rubber and or plastic
 - The rocket must not have the nose cone, fins or body fabricated from metal
-- The rocket must not exceed a gross mass (i.e including the propellant) of 1.5kg
+- The rocket must not exceed a gross mass (i.e. including the propellant) of 1.5kg
 - The rocket must not use an aerial firework as an ingredient to form its own jet
 - The rocket must only use certified commercially-made model rocket motors
-- The rocket motors must only be used in line with the manufacturer's recommendations (i.e no tampering)
+- The rocket motors must only be used in line with the manufacturer's recommendations (i.e. no tampering)
 - The rocket must be launched with an electrical launch system and electrical motor igniters
 
 The physical construction of the rocket will also be limited to our budget, what we have access to in the labs and (due to Covid-19) when. Similarly delays in shipments because of the virus will also limit us in what parts we can order online.
@@ -320,7 +320,7 @@ The system Hardware components:
 - rocket body
 - launch pad (this includes, barometer, gps and the base station)
 
-The hardware components must be able to still function within the environment that the rocket will be tested in, this means that the rocket will need to function under certain enviromental condition(s) that are present in the testing environment. The current testing environment is a wide-open park located in Lower Hut Wellington. A certain environmental condition is the wind. Wind levels are never constant and can vairy extremely (especially in our testing environment of Lower Hut Wellington). This means hardware of the rocket must be functioning under considerable wind levels.
+The hardware components must be able to still function within the environment that the rocket will be tested in, this means that the rocket will need to function under certain environmental condition(s) that are present in the testing environment. The current testing environment is a wide-open park located in Lower Hut Wellington. A certain environmental condition is the wind. Wind levels are never constant and can vairy extremely (especially in our testing environment of Lower Hut Wellington). This means hardware of the rocket must be functioning under considerable wind levels.
 
 The largest effect wind has on the rocket is displacement. The wind is able to tilt (or even move) the rocket off its current trajectory. This means that hardware of the rocket must be to account for this issue. Combination of the electronic components (microcontroller, gyroscope and sensor module) and the gimble are involved in accounting for the displacement. Using the sensor(s) to detect the displacement, then micro-controller communicates to the gimble to make an adjustment for the displacement.
 
@@ -347,7 +347,7 @@ see 9.5.19.
 
 To meet the requirements of easy installation, the avionics package must be assembled into a single unit, with the exception of the battery unit. The avionics package must also be fixated with the rocket housing without any wobble.
 
-To meet the requirements of intuitive configuration and calibration, the avionics package should be able to interface directly with the base station without having to re-engineer the hardware of software on either, the avionics package or mission control. Calibration data from the simulation teams must be transfered in a user-friendly manner, such as either directly writing to SD card or wirelessly via the base station. The software on the avionics package should not have to be manually recompiled from the toolchain.
+To meet the requirements of intuitive configuration and calibration, the avionics package should be able to interface directly with the base station without having to re-engineer the hardware of software on either, the avionics package or mission control. Calibration data from the simulation teams must be transferred in a user-friendly manner, such as either directly writing to SD card or wirelessly via the base station. The software on the avionics package should not have to be manually recompiled from the toolchain.
 
 To meet the requirements of the launch and flight phase, the rocket must launch and sustain vertical trajectory, even under mild weather interference. The avionics package must also allow mission control to remotely tilt the trajectory of the rocket in-flight. The rocket is also expected to land without taking on critical damage, though cosmetic wear is excusable. Throughout the launch and flight phase, power management must ensure a stable power supply system-wide meaning no components should malfunction due to inadequate power.
 
