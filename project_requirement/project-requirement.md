@@ -313,14 +313,14 @@ see 9.5.19.
 ### 4.7 Verification Nonfunctional System Attributes
 
 ### 4.8 Verification Physical and Environmental Requirements
-At this point of time, it is currently unclear of what hardware component can be sourced, and which need to be bought. The only known physical component that can be sourced is the 3d print parts (like the body of the rocket), will be able to construct and printed within the university. The hardware system which that makes up the avionics package(Teensy 3.6 micro controller, gyroscope, IMU and the wireless antenna) will need to fit into the body of the rocket with the parachute and ejection charge. This needs to fit into a cone-like shape of 9X13 cm (9cm in height and 13cm in width).
+At this point of time, it is currently unclear of what hardware component can be sourced, and which need to be bought. The only known physical component that can be sourced is the 3D printed parts (like the body of the rocket), will be able to construct and printed within the university. The hardware system which that makes up the avionics package (Teensy 3.6 microcontroller, gyroscope, IMU and the wireless antenna) will need to fit into the body of the rocket with the parachute and ejection charge. This needs to fit into a cone-like shape of 9X13 cm (9cm in height and 13cm in width).
 
-The current testing location is a large park located in Upper Hutt, Wellington (the name of the park is currently unknown). The day of launch will be planned ahead, meaning that weather conditions will be known in advanced. The optimum goal is to launch the rocket on a clear day (with very little to no wind). It possible for the weather to change or over environmental conditions to happen. Environmental conditions that prevent launch from happening are:
+The current testing location is a large park located in Upper Hutt, Wellington (the specific park is currently unknown). The day of launch will be planned ahead, meaning that weather conditions will be known in advanced. The optimum goal is to launch the rocket on a clear day (with very little to no wind). It possible for the weather to change or over environmental conditions to happen. Environmental conditions that prevent launch from happening are:
 - rain/hail
 - temperatures below 5 degrees celsius
-- cloud coverage greater than 50%
+- cloud coverage greater than 4 oktas
 - high amounts of radiofrequency noise (enough to interfere with rocket communication)
-- Wind speeds greater than 30 km/h 
+- wind speeds greater than 30 km/h 
 
 
 During rocket launch all requirements and regulations of both physical system and the Environment. The requirements and regulations must be able to be in line with the following organisations:
