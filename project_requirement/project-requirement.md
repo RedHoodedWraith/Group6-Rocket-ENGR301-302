@@ -4,7 +4,7 @@ The aim of this document is to specify the requirements of the system your group
 
 The document should also demonstrate your understanding of the main analysis principles and quality guidelines, and applicable standards, using tools and notations as necessary to communicate the requirements precisely, unambiguously and clearly in a written tecgithnical document. Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those requirements that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification. 
 
-The ENGR 301 project proposal and requirements document should be based on the standard ISO/IEC/IEEE 29148:2011(E), primarily sections 8.4 and 9.5, plus section 9.4 for projects involving hardware and ISO 25010 SQuaRE for systemic requirements. While excerpts from the standard have been quoted within the template, to understand what is required it will be necessary to read earlier sections of the standards themselves. A supplementary treatment of requirements gathering in engineering projects may be found in [Requirements in Engineering Projects](https://victoria.rl.talis.com/items/F166DA94-DAD8-FBDB-0785-7A63C9BA3603.html?referrer=%2Flists%2F5886F297-2506-1F17-45D9-7F04CEE284EE.html%23item-F166DA94-DAD8-FBDB-0785-7A63C9BA3603) (Talis). The requirements document should contain the sections listed below, and conform to the formatting rules listed at the end of this brief. 
+The ENGR 301 project proposal and requirements document should be based on the standard ISO/IEC/IEEE 29148:2011(E), primarily sections 8.4 and 9.5, plus section 9.4 for projects involving hardware and ISO 25010 SQuaRE for systemic requirements. While excerpts from the standard have been quoted within the template, to understand what is required it will be necessary to read earlier sections of the standards themselves. A supplementary treatment of requirements gathering in engineering projects may be found in [Requirements in Engineering Projects](https://victoria.rl.talis.com/items/F166DA94-DAD8-FBDB-0785-7A63C9BA3603.html?referrer=%2Flists%2F5886F297-2506-1F17-45D9-7F04CEE284EE.html%23item-F166DA94-DAD8-FBDB-0785-7A63C9BA3603) (Talis). The requirements document should contain the sections listed below, and conform to the formatting rules listed at the end of this brief.
 
 All team members are expected to contribute equally to the document and list their contributions in section 6 of the document. You should work on your document in your team's GitLab repository. While collective contributions are expected to be the exception rather than the rule, if more than one team member has contributed to a particular commit then all those team member IDs should be included in the first line of the git commit message. `git blame`, `git diff`, file histories, etc. will be tools used to assess individual contributions, so everyone is encouraged to contribute individually, commit early and commit often. Any team wishing to separate individually contributed sections into a single file before collation into the single proposal document for submission is welcome to do so.
 
@@ -21,17 +21,29 @@ One page overall introduction including sections 1.1 and 1.2.
 
 ### Client
 
-The Client for this project is Andre Geldhuis, and can bee contacted by andre.geldenhuis@vuw.ac.nz or through mattermost
+The Client for this project is Andre Geldhuis, and can be contacted by andre.geldenhuis@vuw.ac.nz or through Mattermost.
 
 ### 1.1 Purpose
 
-One sentence describing the purpose of the system (9.5.1)
+The purpose of this system is to build off an existing rocket system and to improve its avionics and flight control.
 
 ### 1.2 Scope
 
-One paragraph describing the scope of the system (9.5.2)
+The rocket being made for the client(s) listed above needs to be able to do the following:
+*  Thrust itself from ground in order to launch itself into the air
+*  Continue to propel itself in a largely vertical direction
+*  Self-adjust propellant to its nozzle(s) in order to continue travelling in a controlled upwards direction
+*  Travel upwards at a velocity that demonstrates the rocket is being controlled by its on-board control systems
 
-### 1.3 Product overview 
+The development of this rocket will happen in 3 core stages. Hardware design stage, software design stage and trial testing.
+The Hardware Design Stage will focus on the physical build and design of the rocket, incorporating all the necessary components,
+maximising travel efficiency and minimising the physical obstacles. The Software Design Stage will focus on programming the
+on-board micro-controller to automatically adjust the rocket's propellants to self-correct the rocket's travel. Trial testing will
+involve launching test rockets to observe how it performs in-situ and to return back to either design stages to modify the design to
+ its performance. This project's development is limited by a variety of factors, most notably access to the internet and the civil restrictions in place due to the COVID-19 pandemic.
+This heavily limits the availability to source parts for the rocket and opportunities to test the physical rocket prototype in-situ.
+
+### 1.3 Product overview
 #### 1.3.1 Product perspective
 
 The project, in it's entirety, is expected to address and solve the general issue of producing a controlled rocket using open-source software and open-hardware. The intended use for this rocket will primarily be for private operation but carries the potential for extended development and commercial use through being open-source. 
@@ -50,11 +62,11 @@ The avionics package will communicate with mission control to report its current
 > Define the system's relationship to other related products. 
 > 
 > If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
-> 
-> If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element. 
+>
+> If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element.
 >
 > A block diagram showing the major elements of the larger system, interconnections, and external interfaces can be helpful.
-> 
+>
 > Describe how the software operates within the following constraints:  
 a) System interfaces;  
 b) User interfaces;  
@@ -85,7 +97,18 @@ Ideally, the finalised package will incorperate the following:
 
 #### 1.3.3 User characteristics   
 
-One page identifying the main classes of users and their characteristics (9.5.5) 
+The avionics package will be open-source meaning anyone can access it. However, the intended main class of users for this project is the wider model rocketry/high power rocketry community. And so general user characteristics which are expected include:
+
+- An understanding of rocket avionics 
+- Technical expertise when installing different components of the rocket
+- An understanding of those components and how they function within the system
+- Technical expertise in telemetry systems 
+- An understanding of how the software will interact with the hardware
+- Experience in operating aircraft applications
+- Knowledge in Civil Aviation Authority (CAA) regulations 
+
+Due to health and safety concerns users testing the rocket in the field should not have any physical and or mental disabilities that would put them at risk.
+
 
 #### 1.3.4 Limitations
 Within project limitations, the team is faced with sereval limitations such as; 
@@ -205,20 +228,20 @@ See 9.5.12. for most systems this will be around one page.
 See 9.5.13. for most systems this will be around one page. Hardware projects also see section 9.4.6.
 
 > **9.5.13 Performance requirements** <br>
-> Specify both the static and the dynamic numerical requirements placed on the software or on human interaction with the software as a whole. 
-> 
+> Specify both the static and the dynamic numerical requirements placed on the software or on human interaction with the software as a whole.
+>
 > Static numerical requirements may include the following:
-> 
+>
 > a) The number of terminals to be supported;  
 > b) The number of simultaneous users to be supported;  
 > c) Amount and type of information to be handled.
-> 
+>
 > Static numerical requirements are sometimes identified under a separate section entitled Capacity.
-> 
+>
 > Dynamic numerical requirements may include, for example, the numbers of transactions and tasks and the amount of data to be processed within certain time periods for both normal and peak workload conditions. The performance requirements should be stated in measurable terms.
-> 
+>
 >  For example, "_95 % of the transactions shall be processed in less than 1 second._" rather than, "An operator shall not have to wait for the transaction to complete."
-> 
+>
 > NOTE Numerical limits applied to one specific function are normally specified as part of the processing subparagraph description of that function.
 
 
@@ -230,20 +253,39 @@ You should use right tools, preferabley PlantUML, to draw your URL diagrams whic
 
 ### 3.6 Design constraints
 
-see 9.5.15 and 9.5.16. for most systems, this will be around one page.
+**Software - Open Source**
 
-> 9.5.15 Design constraints<br>
-> Specify constraints on the system design imposed by external standards, regulatory requirements, or project limitations.
-> 
-> 9.5.16 Standards compliance<br>
-> Specify the requirements derived from existing standards or regulations, including:
-> 
-> a) Report format;<br>
-> b) Data naming;<br>
-> c) Accounting procedures;<br>
-> d) Audit tracing.
-> 
-> For example, this could specify the requirement for software to trace processing activity. Such traces are needed for some applications to meet minimum regulatory or financial standards. An audit trace requirement may, for example, state that all changes to a payroll database shall be recorded in a trace file with before and after values.
+For the final avionics package to qualify as open-source, only open-source resources may be used throughout its development. The open-source resources used must be well documented and credited, where needed, in the package release. Softwares, which are not open-source, may only be used if absolutely necessary and has been consented by the client. Once finished all source code for the package must be released in accordance with the open source definition.
+
+**Software - API**
+
+For consistency and compatibility across the three different sections, system engineering, mission control and rocket simulations, the same API should be used. Using the same API also ensures that the final avionics package will work as a whole. 
+
+**Hardware - Radio Antenna and the Satellite Navigation System Unit**
+
+The radio antenna must follow the New Zealand Legislation, Regulation 9 of the Radiocommunications Regulations 2001 and only use the legally available frequencies with the rockets and solely for their intended purpose [3].
+
+Similarly, the satellite navigation system unit used must also follow the New Zealand Legislation, Regulation 9 of the Radiocommunications Regulations 2001 and only use the legally available satellite navigation frequencies for New Zealand [3].
+
+To avoid interference with nearby devices the radio antenna must use frequencies with the least use. Interference with other devices may result in corrupted data, which in turn could affect the satellite navigation system location of the rocket. 
+
+**Hardware - Physical Construction**
+ 
+In accordance with the New Zealand Civil Aviation Authority and the New Zealand Rocketry Association, the rocket at its maximum size must satisfy the following criteria [1][5]:
+
+- The rocket cannot use more than 125g of propellant 
+- The rocket cannot produce more than 320 Newton seconds of total impulse 
+- The rocket must use a slow-burning propellant 
+- The rocket is made from lightweight materials such as paper, wood, rubber and or plastic
+- The rocket must not have the nose cone, fins or body fabricated from metal
+- The rocket must not exceed a gross mass (i.e including the propellant) of 1.5kg
+- The rocket must not use an aerial firework as an ingredient to form its own jet
+- The rocket must only use certified commercially-made model rocket motors 
+- The rocket motors must only be used in line with the manufacturer's recommendations (i.e no tampering)
+- The rocket must be launched with an electrical launch system and electrical motor igniters
+
+The physical construction of the rocket will also be limited to our budget, what we have access to in the labs and (due to Covid-19) when. Similarly delays in shipments because of the virus will also limit us in what parts we can order online.
+
 
 ### 3.7 Nonfunctional system attributes
 
@@ -252,9 +294,33 @@ List up to twenty systemic requirements / attributes.
 Write a short natural language description of the top nonfunctional requirements (approx. five pages).
 
 
-### 3.8 Physical and Environmental Requirements 
+### 3.8 Physical and Environmental Requirements
 
 For systems with hardware components, identify the physical characteristics of that hardware (9.4.10) and environment conditions in which it must operate (9.4.11).  Depending on the project, this section may be from one page up to 5 pages.
+The system Hardware components:
+- microcontroller(Teensy 3.6)
+- gyroscope/accelerometer sensor
+- sensor module(IMU)
+- wireless antenna 
+- rocket motors
+- servos
+- gimble
+- parachute + ejection charge 
+- rocket body 
+- launch pad (this includes, barometer, gps and the base station)
+
+The hardware components must be able to still function within the environment that the rocket will be tested in, this means that the rocket will need to function under certain enviromental condition(s) that are present in the testing environment. The current testing environment is a wide-open park located in Lower Hut Wellington. A certain environmental condition is the wind. Wind levels are never constant and can vairy extremely (especially in our testing environment of Lower Hut Wellington). This means hardware of the rocket must be functioning under considerable wind levels. 
+
+The largest effect wind has on the rocket is displacement. The wind is able to tilt (or even move) the rocket off its current trajectory. This means that hardware of the rocket must be to account for this issue. Combination of the electronic components (microcontroller, gyroscope and sensor module) and the gimble are involved in accounting for the displacement. Using the sensor(s) to detect the displacement, then micro-controller communicates to the gimble to make an adjustment for the displacement. 
+
+The rocket body design is also important to account for wind. A more aerodynamic design will mean that the wind drag will have less of the effect of the rocket. Meaning a more aerodynamic design will result in a smaller displacement. 
+
+Wind will also greatly affect the rocket while the rocket is coming down. The rocket slowly descend due to the parachute being deployed. However, with the parachute deployed the rocket is very susceptible to wind drag. Which means that the rocket might be displaced a large distance from the launch site. A GPS connected to the micro-controller will allow us to track where the rocket lands. Also, modelling of the rockets launch will be done to estimate where the rocket could land. 
+
+Another environmental condition that will need to be taken into account is radio frequency (RF) noise. To communicate to the rocket microcontroller we use a signal in the microwave frequency. So before we can launch the rocket, we will need to check the level of RF noise. If the level of RF noise is too high the launch of the rocket will be postpone, there is no solution where we launch the rocket in high RF noise. If the rocket is launch in during high RF noise we could lose communication with the rocket.
+
+Certain envionmental conditions like rain, high cloud coverage and extreme temperatures will mean that the rocket launch won’t be able to happen. However, these conditions can be prevented by choosing a day launch where these conditions aren’t present. Finally the rocket should not be launch at night time. 
+
 
 ### 3.9 Supporting information
 The purpose project is to improve and partial redesign a previous module rocket, which includes an improved design of the avionics system, to ensure working and efficient code and possibly redesign the rocket hull to make it more aerodynamic. The end goal is to ensure a well develop rocket that is able to launch. Firstly we need to test the rocket via simulation, then working with mission control to physically test with a flight. 
@@ -264,11 +330,45 @@ By improving and developing this open-source rocket project we are able to prese
 
 3 pages outlining how you will verify that the product meets the most important specific requirements. The format of this section should parallel section 3 of your document (see 9.5.18). Wherever possible (especially systemic requirements) you should indicate testable acceptance criteria.
 
+### 4.1 Verification External Interfaces
+
+### 4.2 Verification Functions
+
+To meet the requirements of easy installation, the avionics package must be assembled into a single unit, with the exception of the battery unit. The avionics package must also be fixated with the rocket housing without any wobble.
+
+To meet the requirements of intuitive configuration and calibration, the avionics package should be able to interface directly with the base station without having to re-engineer the hardware of software on either, the avionics package or mission control. Calibration data from the simulation teams must be transfered in a user-friendly manner, such as either directly writing to SD card or wirelessly via the base station. The software on the avionics package should not have to be manually recompiled from the toolchain. 
+
+To meet the requirements of the launch and flight phase, the rocket must launch and sustain vertical trajectory, even under mild weather interference. The avionics package must also allow mission control to remotely tilt the trajectory of the rocket in-flight. The rocket is also expected to land without taking on critical damage, though cosmetic wear is excusable. Throughout the launch and flight phase, power management must ensure a stable power supply system-wide meaning no components should malfunction due to inadequate power.
+
+The analysis and diagnosis stage of the rocket's flight also has to meet requirements. Live data such as gyroscope and accelerometer readings must be broadcasted to mission control in real-time. By the end of the flight, the SD card must have all logged flight data recorded as a text file in a comprehensible format. The avionics package should also be able to broadcast all the logged data if still in wireless range. Mission control should be able to parse all broadcasted data.
+
+### 4.3 Verification Usability Requirements
+
+### 4.4 Verification Performance Requirements
+
+The general performance of the rocket will be verified by inducing the environment conditions, software simulations of the launch and test flights. The structural integrity of the rocket will be verified by using simulation software and from there test flights. Also, visual inspection has the potential to show weaker parts. To verify the longevity of the rocket the system will need to have at least 10 test flights to be confident. The performance of the rocket's ascent will be verified by measuring the vertical climb and the GPS location to compute the vertical-to-horizontal distance travelled relationship.
+
+The software's performance requirements will be more simple to verify as they should not require any physical flights. The delay between the sensors and actuators can be verified in the laboratory to get precise response times. Communication between the rocket and base station can be verified by simulating the rocket and using artificial data. The data rate and sample rates of the system can also be easily verified without test flights, using signal generators and comparing the data.
+
+To verify the power consumption and supply performance requirements the systems will be tested multiple times over some time to see what the effect it has on the supply. This process can be broken down to determine the specific power consumption of each component. The performance of the servos will be verified in the laboratory by measuring their response to varying inputs similar to those expected in practice. The GPS performance can be verified by varying the location of the system and analysing the accuracy of the data according to how the system was moved. The radio communication can be tested by inducing the maximum transmission distance expected in similar terrain and reflecting on its performance. The structural integrity of the individual components will be verified during test flights and also a visual inspection. The final part of the hardware to be verified is the parachute ejection interface which can be tested without a flight to confirm functionality.
+
+
+### 4.5 Verification Logical Database Requirements
+
+### 4.6 Verification Design Constraints
+
+### 4.7 Verification Nonfunctional System Attributes
+
+### 4.8 Verification Physical and Environmental Requirements
+
+
+
+
 ## 5. Development schedule.
 
 ### 5.1 Schedule
 
-Identify dates for key project deliverables: 
+Identify dates for key project deliverables:
 
 1. architectural prototype
 1. minimum viable product
@@ -278,9 +378,9 @@ Identify dates for key project deliverables:
 
 ### 5.2 Budget
 
-Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall). 
+Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall).
 
-### 5.3 Risks 
+### 5.3 Risks
 
 Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
 
@@ -292,7 +392,7 @@ Document here project requirements for Health and Safety. All teams must state i
 
 1. How teams will manage computer-related risks such as Occupational Over Use, Cable management, etc.  
 
-2. Whether project work requires work or testing at any external (off-campus) workplaces/sites. If so, state the team's plans for receiving a Health and Safety induction for the external workplaces/sites. If the team has already received such an induction, state the date it was received. 
+2. Whether project work requires work or testing at any external (off-campus) workplaces/sites. If so, state the team's plans for receiving a Health and Safety induction for the external workplaces/sites. If the team has already received such an induction, state the date it was received.
 
 3. Whether project work requires the team test with human or animal subjects? If so, explain why there is no option but for the team to perform this testing, and state the team's plans for receiving Ethics Approval _prior_ to testing.
 
@@ -319,7 +419,7 @@ _If the project is purely software and requires no contact risks involving physi
 
 
 ## 6. Appendices
-### 6.1 Assumptions and dependencies 
+### 6.1 Assumptions and dependencies
 
 One page on assumptions and dependencies (9.5.7).
 
@@ -333,7 +433,7 @@ A one page statement of contributions, including a list of each member of the gr
 
 ---
 
-## Formatting Rules 
+## Formatting Rules
 
  * Write your document using [Markdown](https://gitlab.ecs.vuw.ac.nz/help/user/markdown#gitlab-flavored-markdown-gfm) and ensure you commit your work to your team's GitLab repository.
  * Major sections should be separated by a horizontal rule.
@@ -341,7 +441,7 @@ A one page statement of contributions, including a list of each member of the gr
 
 ## Assessment  
 
-The goal of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. The most important factor in the assessmernt of the document is how will it meet that goal. The document will be assessed for both presentation and content. 
+The goal of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. The most important factor in the assessmernt of the document is how will it meet that goal. The document will be assessed for both presentation and content.
 
 The presentation will be based on how easy it is to read, correct spelling, grammar, punctuation, clear diagrams, and so on.
 
