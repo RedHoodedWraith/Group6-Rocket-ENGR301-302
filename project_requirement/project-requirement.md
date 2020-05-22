@@ -342,6 +342,10 @@ see 9.5.19.
 3 pages outlining how you will verify that the product meets the most important specific requirements. The format of this section should parallel section 3 of your document (see 9.5.18). Wherever possible (especially systemic requirements) you should indicate testable acceptance criteria.
 
 ### 4.1 Verification External Interfaces
+To verify the external interfaces of the system are meeting the specified requirements they will be tested in environmental conditions to simulate the launch, where their qualities can be formally verified. During these simulations it will be determined if the interfaces are fitting their purpose, working in the desired range, accuracy and/or tolerance, functioning with other interfaces, in the correct formats and meeting functioning specifications.
+
+The IMU component will be verified by analysing the data and making sure it corresponds with the rocket's kinematics, this will also be reflected in the control system. The data transfer between the system and the SD card is verified after/or during a simulation or launch by reading the SD card and checks that it meets expectations. Wireless radio communication will be verified as the connection is tested over the potential distance range. The gimbal and servos performance requirements will be verified by meeting the specifications; moving in the full range of accurate angles, exerting enough force, and adequate response times. All these attributes will be measured. The ejection ignition interface will be verified by testing its response to input signals, and observing the outputs. Additionally doing a test run would be ideal. Since the motor is being outsourced, the only aspects of it to be verified is that it is the correct size and that the ignition operates.
+	
 
 ### 4.2 Verification Functions
 
