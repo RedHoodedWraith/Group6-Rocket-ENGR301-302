@@ -304,6 +304,38 @@ Present the systemic (aka nonfunctional) requirements of the product (see ISO/IE
 List up to twenty systemic requirements / attributes.
 Write a short natural language description of the top nonfunctional requirements (approx. five pages).
 
+1. Safety
+   - The rocket's operations must not cause nor contribute to harm or death to people or animals, including but not limited to its operators, nearby bystanders, pets and the local biodiversity.
+   - The rocket's operations must not cause damage to property nor the local environment external to its operational scope. Example: Burnt Fuel Residue to the launchpad is accepted as it is expected as part of its operation. Cracking the windscreen of a nearby vehicle is not acceptable.
+   - Operators must be able to know sufficient real time information with regards to the condition, location and effects of the rocket during its operation.
+
+1. Flight
+   - The rocket needs to be able to thrust itself from the launchpad.
+   - The rocket needs to be able to continue to propel itself upward when it is expected to do so.
+   - The force exerted by the propellant needs to exceed the opposing forces, such as the force of gravity onto the rocket's mass and air resistance.
+
+1. Robustness
+   - The essential systems contributing to the rocket's flight must remain sufficiently intact during the rocket's operation.
+   - Obstacles must not compromise the rocket's essential system processes that allows it to function.
+   - The essential systems that contribute to the rocket's flight must be able to continue functioning when performing its task.
+   - Essential system operations must not compromise each other system's functionality during their operations.
+
+1. Control
+   - The rocket's operation (during flight) must be sufficiently controlled by its operators.
+   - Any unintended effects from the rocket's operation must be able to brought back into the control of the operators.
+   - The rocket must be able to be controllable in order to increase Safety.
+   - The rocket must be able to be brought back to a stationary or non-functioning state when expect it is expected to.
+   - The rocket must be able to travel along the intended flight path of the operators' choosing.
+
+1. Trackability
+   - At minimum, sufficient data of the rocket's operation must be available to rocket's operators during its operation. This means data expected to be delivered in real time during the rocket's operation must be delivered in real time.
+   - The rocket's location must be able to be monitored and known at all times during its operation, as per the requirement of Saftey and the Client's requirement.
+   - Essential data that is not expected to be collected in real-time, must be able to be retrieved after the rocket's operation has ended.
+
+1. Legal
+   - This project must be performed legally and with the permission of the applicable property owner(s).
+   - What we make and test must adhere to the rules and regulations of the relevant local authorities
+
 
 ### 3.8 Physical and Environmental Requirements
 
@@ -334,14 +366,18 @@ Certain envionmental conditions like rain, high cloud coverage and extreme tempe
 
 
 ### 3.9 Supporting information
+The purpose project is to improve and partial redesign a previous module rocket, which includes an improved design of the avionics system, to ensure working and efficient code and possibly redesign the rocket hull to make it more aerodynamic. The end goal is to ensure a well develop rocket that is able to launch. Firstly we need to test the rocket via simulation, then working with mission control to physically test with a flight. 
 
-see 9.5.19.
-
+By improving and developing this open-source rocket project we are able to present the rocket community with a possible new product. This resulting in new knowledge added to the model rocket community. This will hopefully lead to a better design module rocket.
 ## 4. Verification
 
 3 pages outlining how you will verify that the product meets the most important specific requirements. The format of this section should parallel section 3 of your document (see 9.5.18). Wherever possible (especially systemic requirements) you should indicate testable acceptance criteria.
 
 ### 4.1 Verification External Interfaces
+To verify the external interfaces of the system are meeting the specified requirements they will be tested in environmental conditions to simulate the launch, where their qualities can be formally verified. During these simulations it will be determined if the interfaces are fitting their purpose, working in the desired range, accuracy and/or tolerance, functioning with other interfaces, in the correct formats and meeting functioning specifications.
+
+The IMU component will be verified by analysing the data and making sure it corresponds with the rocket's kinematics, this will also be reflected in the control system. The data transfer between the system and the SD card is verified after/or during a simulation or launch by reading the SD card and checks that it meets expectations. Wireless radio communication will be verified as the connection is tested over the potential distance range. The gimbal and servos performance requirements will be verified by meeting the specifications; moving in the full range of accurate angles, exerting enough force, and adequate response times. All these attributes will be measured. The ejection ignition interface will be verified by testing its response to input signals, and observing the outputs. Additionally doing a test run would be ideal. Since the motor is being outsourced, the only aspects of it to be verified is that it is the correct size and that the ignition operates.
+	
 
 ### 4.2 Verification Functions
 
@@ -367,6 +403,16 @@ To verify the power consumption and supply performance requirements the systems 
 ### 4.5 Verification Logical Database Requirements
 
 ### 4.6 Verification Design Constraints
+
+To meet the requirements of open-source for the software side of the avionics package, only open-source resources will be used throughout. Software that is not open-source may only be used with client consent.
+
+To meet the requirements of a consistent API, the use and implementation of the same API will be discussed with the two other teams, mission control and rocket simulations. And then put into action accordingly.
+
+To meet the requirements of the New Zealand regulations on the radio Antenna and the satellite navigation system unit the Radiocommunications Regulations 2001, Regulation 9 will be closely followed [3].
+
+To meet the requirements of the New Zealand Civil Aviation Authority and the New Zealand Rocketry Association, on the rocket's physical construction, the design constraints laid out will be strictly followed [1][5]. 
+
+To meet the requirements of our budget and deadline, rocket parts bought overseas will be limited to our budget and also to their shipment times.
 
 ### 4.7 Verification Nonfunctional System Attributes
 
