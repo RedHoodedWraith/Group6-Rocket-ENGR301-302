@@ -391,6 +391,12 @@ The analysis and diagnosis stage of the rocket's flight also has to meet require
 
 ### 4.3 Verification Usability Requirements
 
+In order to meet the usability requirements, the avionics package must firstly achieve a successful launch and flight regardless of the external factors that may affect its performance. This can be measured by testing the rocket on different days in varied environmental conditions. If the rocket endures all tests with a satisfactory performance, the usability requirements have been passed. 
+
+In terms of hardware, it is required that the avionics package be constructed in a way that is adaptable to change. This requirement is fulfilled when if at any stage of the development process modifications are required, the rocket will be able to adjust without complete deconstruction. 
+
+Additionally, the software component should be open source and written applying a commonly-used programming language in avionics. The software model should also be programmed in a way that is understandable for other users. This can be shown by using effective code commenting and other types of documentation methods. In the context of this project, the software model of the source code should be accessible to the simulation developers and easily adaptable in order to aid in accurately estimating the PID control parameters. 
+
 ### 4.4 Verification Performance Requirements
 
 The general performance of the rocket will be verified by inducing the environment conditions, software simulations of the launch and test flights. The structural integrity of the rocket will be verified by using simulation software and from there test flights. Also, visual inspection has the potential to show weaker parts. To verify the longevity of the rocket the system will need to have at least 10 test flights to be confident. The performance of the rocket's ascent will be verified by measuring the vertical climb and the GPS location to compute the vertical-to-horizontal distance travelled relationship.
