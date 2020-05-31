@@ -260,6 +260,29 @@ The core part of the systems performance is dependent on a power supply which ma
 
 In order to analyse the the system that will be implemented, the use of a domain model for the purpose of demonstrating the logical database requirements would be useful. For the purposes of this design, elements that will be implemented include the use of inertial motion units(IMUs) that are the sensors that collect the data that will be provided for the use of the overall system, including the controller. Additionally, this data will be fed into a microcontroller. Additonal data that will be fed into the microcontroller is the GPS data. However, this data will not be used for the actual control of the system. Furthermore, data from the microcontroller will be sent to the SD Card Data Writer for the purpose of locally saving the flight data. And fainally, there will be a radio module that will be used to broadcast the data to mission control remotely.
 
+@startuml
+
+title Relationships - Class Diagram
+
+
+class IMU {
+  +Gyrometer
+  +Acceleromter
+  +Magnetometer
+}
+
+class Microcontroller
+class RadioModule
+class GPSModule
+class SDCardWriter
+
+IMU --> Microcontroller
+GPSModule --> Microcontroller
+Microcontroller --> SDCardWriter
+Microcontroller --> RadioModule
+
+@enduml
+
 **Gyroscope**
 
 A gyroscope will collect data with reference to the potential rotation of the rocket with reference to the ground. This will be a key data point for the determination by the microcontroller on if or when any changes need to be made with respect to the gimble. Rotational energy that deviates outside of an expected range could lead to the rocket flying fully off course or even catastrophic failure.
