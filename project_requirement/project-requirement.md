@@ -387,8 +387,13 @@ If the project will involve any work outside the ECS laboratories, i.e. off-camp
 | **Risk** | **Risk Type** | **Likelihood** | **Impact** | **Mitigation Strategies** |
 | ------ | ------ | ------ | ------ | ------ | 
 | Rocket falls on a person causing injury | cell | cell | cell | cell |
-| cell | cell | cell | cell | cell |
-| cell | cell | cell | cell | cell |
+| Premature Motor Igntion | cell | cell | cell | cell |
+| Premature Parachute Ignition | cell | cell | cell | cell |
+| Flammable Surfaces | cell | cell | cell | cell |
+| High Winds | cell | cell | cell | cell |
+| Ejected Materials | cell | cell | cell | cell |
+| Intercepting Other Aircraft | cell | cell | cell | cell |
+| Uncontrollable Flight | cell | cell | cell | cell |
 | cell | cell | cell | cell | cell |
 | cell | cell | cell | cell | cell |
 
