@@ -386,6 +386,9 @@ If the project will involve any work outside the ECS laboratories, i.e. off-camp
 
 | **Risk** | **Risk Type** | **Likelihood** | **Impact** | **Mitigation Strategies** |
 | ------ | ------ | ------ | ------ | ------ | 
+| Rocket falls on a person causing injury | cell | cell | cell | cell |
+| cell | cell | cell | cell | cell |
+| cell | cell | cell | cell | cell |
 | cell | cell | cell | cell | cell |
 | cell | cell | cell | cell | cell |
 
