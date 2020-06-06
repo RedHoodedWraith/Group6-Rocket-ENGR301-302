@@ -310,9 +310,6 @@ The SD card writer will be the component that keeps the log of all the data coll
 **Radio Module**
 The radio module will retain the purpose of being able to send radio data (including that which would be written to the SD card) to mission control. The collection of this data during flight would allow for mission control to determine if any manual changes need to be made that override the microcontroller. As such, this radio module would also need to be able to receive signals from mission control. 
 
-See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
-
-You should use right tools, preferabley PlantUML, to draw your URL diagrams which can be easily embedded into a Mardown file (PlantUML is also supported by GitLab and Foswiki).
 
 ### 3.6 Design constraints
 
