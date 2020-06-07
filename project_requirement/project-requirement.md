@@ -483,14 +483,15 @@ Identify dates for key project deliverables:
 (1 page).
 
 ### 5.2 Budget
-Currently know components;
-| Component  |      Purpose     |  Price(NZD) |
-|----------|:-------------:|------:|
-| Teensy 3.6 board | Microcontroller for base station | $47.75 |
-| Teensy 3.2 board | Microcontroller for rocket | $32.48 |
-| 3D printing | Parts for rocket | depending |
-| PCB | Cicuitry for rocket and/or base station | depending |
-| Batteries | To power rocket | depending | 
+Currently know components
+
+| Component        |      Purpose                            |  Price(NZD) |
+|------------------|-----------------------------------------|-------------|
+| Teensy 3.6 board | Microcontroller for base station        | $47.75      |
+| Teensy 3.2 board | Microcontroller for rocket              | $32.48      |
+| 3D printing      | Parts for rocket                        | depending   |
+| PCB              | Cicuitry for rocket and/or base station | depending   |
+| Batteries        | To power rocket                         | depending   | 
 
 | Tables   |      Are      |  Cool |
 |----------|:-------------:|------:|
