@@ -491,6 +491,12 @@ Currently know components;
 | 3D printing | Parts for rocket | depending |
 | PCB | Cicuitry for rocket and/or base station | depending |
 | Batteries | To power rocket | depending | 
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
 ### 5.3 Risks
 
 Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
