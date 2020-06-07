@@ -483,7 +483,7 @@ Identify dates for key project deliverables:
 (1 page).
 
 ### 5.2 Budget
-Currently know components
+Currently know components:
 
 | Component        |      Purpose                            |  Price(NZD) |
 |------------------|-----------------------------------------|-------------|
@@ -493,11 +493,17 @@ Currently know components
 | PCB              | Cicuitry for rocket and/or base station | depending   |
 | Batteries        | To power rocket                         | depending   | 
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+
+Specific components to be confirmed: 
+
+| Component         | Previous team specific component | Price(NZD)          |
+|-------------------|----------------------------------|---------------------|
+| Radio transceiver |  RFM90                           | ~$28                |
+| GPS               |  MPA‑154‑ANT L1 GPS              | $9.45               |
+| Servo             | HK-282A                          | $8.21               |
+| Servo             | HC2422T 7.5kg                    | No longer continued |
+| Signal receiver   | FUNcube dongle                   | $33.83              |
+| Voltage regulator | L7805                            | $2.25               |
 ### 5.3 Risks
 
 Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
