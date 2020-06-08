@@ -483,7 +483,7 @@ Identify dates for key project deliverables:
 (1 page).
 
 ### 5.2 Budget
-Currently know components:
+Currently known components:
 
 | Component        |      Purpose                            |  Price(NZD) |
 |------------------|-----------------------------------------|-------------|
