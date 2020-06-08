@@ -390,13 +390,23 @@ If the project will involve any work outside the ECS laboratories, i.e. off-camp
 | Premature Parachute Ignition causing burns or injury | Health & Safety  | 3 | 5 | Hardware and software safety interlocks will be required and also keeping the pyrotechnic charge away from heat sources or other potential igniters. |
 | Flammable Surfaces during launch and landing | Environment Damage | 3 | 4 | The launch site will be required to have an absence of flammable material, such as dry grass. In addition, a fire extinguisher will be on hand ready for use. Also emergency services may be called if needed. |
 | High Winds/Excessive Drift causing damage to a person or property | Health & Safety/Environmental Damage | 5 | 4 | The forecast will be analysed prior to launch, and wind measurements exceeding the determined will result in cancelling the launch. Wind speeds at various altitudes will be taken into account. |
-| Descending Rocket falling onto persons or property | Health & Safety/Environmental Damage | 4 | 6 | All participants will remain at least 10 meters from the launch site during launch and flight. All public will be warned and the launch will only take place if the site is not busy, exceeding 10 people. The launch site will not be close to any private property or populated areas.|
-| Descending debris falling onto persons or property | Health & Safety/Environmental Damage | 3 | 5 | cell |
-| Intercepting other aircraft | Health & Safety | 2 | 7 | cell |
+| Descending Rocket falling onto persons or property | Health & Safety/Environmental Damage | 4 | 6 | All participants will remain at least 10 meters from the launch site during launch and flight. All nearby public will be warned and the launch will only take place if the site is not busy, exceeding 10 people. The launch site will not be close to any private property or populated areas.|
+| Descending debris falling onto persons or property | Health & Safety/Environmental Damage | 3 | 5 | The structual integrity of the rocket will be required to be very sturdy. All nearby public will be warned and the launch will only take place if the site is not busy, exceeding 10 people. The launch site will not be close to any private property or populated areas. |
+| Intercepting other aircraft | Health & Safety | 2 | 7 | The maximum possible height will be determined and if this exceeds the minimum height for aircrafta NOTAM will be meet CAA regulations. In addition, the launch site will not be near any aerodrome to minimalise potential hazards. |
 | Uncontrollable flight during launch | Health & Safety/Environmental Damage | 4 | 6 | cell |
 | cell | cell | cell | cell | cell |
 | cell | cell | cell | cell | cell |
-
+When using a C motor the
+maximum apogee is around 60
+meters which places the rocket
+well below the minimum flying
+height for aircraft. If a larger motor
+is used the site will be moved
+beyond the safe range of the
+nearest aerodrome and a NOTAM
+will be issued informing all aircraft
+pilots of the launch in accordance
+with CAA regulations part 101.
 ### 5.4 Health and Safety
 
 Document here project requirements for Health and Safety. All teams must state in this section:
