@@ -17,7 +17,6 @@ All team members are expected to contribute equally to the document and list the
 
 ## 1. Introduction
 
-One page overall introduction including sections 1.1 and 1.2.
 
 ### Client
 
@@ -56,26 +55,6 @@ The hardware and software components of the avionics package are required to sea
 
 The avionics package will communicate with mission control to report its current pre-launch, launch and in-flight status. The simulation software will be used to aid in designing the rocket and determining estimates for the rocket control parameters. In this case, the software model of the control code developed in the avionics package will be required for simulation.
 
-
-> **9.5.3 Product perspective** <br>
->
-> Define the system's relationship to other related products.
->
-> If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
->
-> If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element.
->
-> A block diagram showing the major elements of the larger system, interconnections, and external interfaces can be helpful.
->
-> Describe how the software operates within the following constraints:  
-a) System interfaces;  
-b) User interfaces;  
-c) Hardware interfaces;  
-d) Software interfaces;  
-e) Communications interfaces;  
-f) Memory;  
-g) Operations;  
-h) Site adaptation requirements.
 
 #### 1.3.2 Product functions
 
@@ -242,9 +221,6 @@ The rocket must be ready for launch within a set period of time following system
 In-flight:
 - Diagnostics: The data from the rocket and sensors are remotely collected. This will diagnose any in-flight issues with the rocket.
 - Recovery Mode: Once the motor burns out, recovery mode is enabled and the parachute is ejected.  
-
-> **9.5.12 Usability requirements**<br>
-> Define usability (quality in use) requirements. Usability requirements and objectives for the software system include measurable effectiveness, efficiency, and satisfaction criteria in specific contexts of use.
 
 ### 3.4 Performance requirements
 
@@ -527,11 +503,19 @@ _If the project is purely software and requires no contact risks involving physi
 ## 6. Appendices
 ### 6.1 Assumptions and dependencies
 
-One page on assumptions and dependencies (9.5.7).
 
 ### 6.2 Acronyms and abbreviations
 
-One page glossary _as required_.
+CAA (Civil Aviation Authority): The Civil Aviation Authority of New Zealand is the government agency tasked with establishing civil aviation safety and security standards in New Zealand.
+
+IMU (Inertial Measurement Unit): An inertial measurement unit is an electronic device that uses a combination of magnetometers, gyroscopes and accelerometers to measure the change of forces and movement.
+
+NOTAM (Notice to Airmen): A notice to airmen is a notice filed with an aviation authority to alert aircraft pilots of potential hazards along a flight route or at a location that could affect the safety of the flight. 
+
+IEEE (Institute of Electrical and Electronics Engineers): This is a professional association for electronic engineering and electrical engineering.
+
+GPS (Global Positioning System): A GPS unit is actually a receiver that collects signals from satellites to determine location around the globe.
+
 
 ## 7. Contributions
 
