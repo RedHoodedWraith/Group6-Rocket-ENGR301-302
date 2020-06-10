@@ -374,15 +374,7 @@ Present a budget for the project (table), and justify each budget item (one para
 
 ### 5.3 Risks
 
-Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
-
-If the project will involve any work outside the ECS laboratories, i.e. off-campus activities, these should be included in the following section.
-
-* Risk: outlining the risk generally.
-* Risk Type: what class does the risk fall into.
-* Likelihood: on a scale of 1-10, how likely is it that it will occur.
-* Impact: on a scale of 1-10, how much damage would this cause people, product, or development.
-*Mitigation Strategies: what actions will the team take to try reduce the severity and chance of these risks occuring.
+This table identifies the most important risks to achieving project goals. The majority of these risks comes down to product testing. The likelihood and impact for each of these risks have been rated on a value from 1-10. Based on how likely is it that it will occur and how much damage this would cause people, product, or development.
 
 | **Risk** | **Risk Type** | **Likelihood** | **Impact** | **Mitigation Strategies** |
 | ------ | ------ | ------ | ------ | ------ | 
@@ -390,10 +382,12 @@ If the project will involve any work outside the ECS laboratories, i.e. off-camp
 | Premature Parachute Ignition causing burns or injury | Health & Safety  | 3 | 5 | Hardware and software safety interlocks will be required and also keeping the pyrotechnic charge away from heat sources or other potential igniters. |
 | Flammable Surfaces during launch and landing | Environment Damage | 3 | 4 | The launch site will be required to have an absence of flammable material, such as dry grass. In addition, a fire extinguisher will be on hand ready for use. Also, emergency services may be called if needed. |
 | High Winds/Excessive Drift causing damage to a person or property | Health & Safety/Environmental Damage | 5 | 4 | The forecast will be analysed prior to launch, and wind measurements exceeding the determined will result in cancelling the launch. Wind speeds at various altitudes will be taken into account. |
-| Descending Rocket falling onto persons or property | Health & Safety/Environmental Damage | 4 | 6 | All participants will remain at least 10 meters from the launch site during launch and flight. All nearby public will be warned and the launch will only take place if the site is not busy, exceeding 10 people. The launch site will not be close to any private property or populated areas.|
-| Descending debris falling onto persons or property | Health & Safety/Environmental Damage | 3 | 5 | The structural integrity of the rocket will be required to be very sturdy. All nearby public will be warned and the launch will only take place if the site is not busy, exceeding 10 people. The launch site will not be close to any private property or populated areas. |
-| Intercepting other aircraft | Health & Safety | 2 | 7 | The maximum possible height will be determined and if this exceeds the minimum height for aircraft a NOTAM will be made to meet CAA regulations. In addition, the launch site will not be near any aerodrome to minimalise potential hazards. |
-| Uncontrollable flight during launch | Health & Safety/Environmental Damage | 4 | 6 | All participants will remain at least 10 meters from the launch site during launch and flight. All nearby public will be warned and the launch will only take place if the site is not busy, exceeding 10 people. The launch site will not be close to any private property or populated areas. |
+| Descending Rocket falling onto persons or property | Health & Safety/Environmental Damage | 4 | 6 | All participants will remain at least 10 meters from the launch site during launch and flight. All nearby public will be warned and the launch will only take place if the site is not busy, if the site does not exceed 10 people. The launch site will not be close to any private property or populated areas.|
+| Descending debris falling onto persons or property | Health & Safety/Environmental Damage | 3 | 5 | The structural integrity of the rocket will be required to be very sturdy. All nearby public will be warned and the launch will only take place if the site is not busy, if the site does not exceed 10 people. The launch site will not be close to any private property or populated areas. |
+| Intercepting other aircraft | Health & Safety | 2 | 7 | The maximum possible height will be determined and if this exceeds the minimum height for an aircraft, a NOTAM will be made to meet CAA regulations. In addition, the launch site will not be near any aerodrome to minimalise potential hazards. |
+| Uncontrollable flight during launch | Health & Safety/Environmental Damage | 4 | 6 | All participants will remain at least 10 meters from the launch site during launch and flight. All nearby public will be warned and the launch will only take place if the site is not busy, if the site does not exceed 10 people. The launch site will not be close to any private property or populated areas. |
+| Pandemic outbreak due to Covid-19 | Health & Safety/Development | 3 | 7 | Strategies to mitigate this problem vary with the state of Country. If an alert Level 2 or greater is in place, social distance will be implaced which will mean at home communication and development. |
+| Crashing landing during test flights | Product Prototype | 2 | 5| To ensure the protoype is not damaged during test flights, vigorous tests will be implaced to make sure crucial elements are performing e.g parachute. |
 
 
 ### 5.4 Health and Safety
