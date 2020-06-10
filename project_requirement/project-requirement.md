@@ -458,7 +458,9 @@ Also document in this section any additional discussions with the School Safety 
 
 #### 5.4.1 Safety Plans
 
-Safety Plans may be required for some projects, depending on project requirements. Safety Plan templates are available on the course Health & Safety page. Two questions all teams must answer are:
+Safety Plans may be required for some projects, depending on project requirements.
+<br>
+<br>Two questions all teams must answer are:
 
 **Do project requirements involve anything that can cause serious harm or death?**  
 Examples: building/modifying devices using voltages > 60 V, chemicals, large moving machinery, flying devices, bodies of water.
@@ -472,7 +474,9 @@ If so, you will have to write a separate Safety Plan as part of project requirem
 
 If a safety plan is required, list in this section the date the School Safety officer accepted your Health and Safety plan (if accepted by submission date).
 
-_If the project is purely software and requires no contact risks involving physical harm, then state "Project requirements do not involve risk of death, serious harm, harm or injury." in this section._
+
+The project requirements may involve the risk of death, serious harm or injury to participants and members of the public. A safety plan is required to ensure all risks are addressed and planned for as the construction of the rocket progresses.  
+
 
 
 ## 6. Appendices
