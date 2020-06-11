@@ -27,11 +27,11 @@ One page overall introduction including sections 1.1 and 1.2 (ISO/IEC/IEEE 42010
 
 ### Client
 
-Identify the client and their contact details.
+Andre Geldenhuis is the client for this project. He can be contacted through email, Andre.Geldenhuis@vuw.ac.nz, or through the mattermost. He is an experienced rocket enthusiast and is a member of the New Zealand Rocketry Association who was the previous client of the 2018 project. 
 
 ### 1.1 Purpose
 
-One sentence describing the purpose of the system.
+The purpose of this system is to develop an existing rocket system and to improve its avionics and flight control, while also developing project managment skills.
 
 ### 1.2 Scope
 
