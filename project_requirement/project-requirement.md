@@ -539,7 +539,7 @@ One page glossary _as required_.
 | ---- | ---- |
 | Dylan Sukha | 3.2, 3.5, 4.2 |
 | Jason McCormick | 1.3.2, 3.5, 4.5|
-| Ketaki Bagal | 1.3.3, 2, 3.6, 3.7, 4.6, 5.4 |
+| Ketaki Bagal | 1.3.3, 2, 3.6, 4.6, 5.4 |
 | Penny Peneueta | 1.3.1, 3.3, 3.7, 4.3, 5.4.1,  |
 | Robert Reid | Project Charter, 2, 3.1, 3.4, 4.4, 4.1, 5.1, 5.3, 6.2, 7|
 | Rowan Rathod |1.1, 1.2, 3.7, 4.7|
