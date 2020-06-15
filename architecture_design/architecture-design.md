@@ -1,4 +1,3 @@
-
 ---
 
 # ENGR 301 Group 6 Architectural Design and Proof-of-Concept
@@ -7,23 +6,10 @@
 
 ## 1. Introduction
 
-The development of rockets over the last few decades has driven technlogy to grow in many different aspects that affect our everyday lives. Model rockets has become a growing concept globally that expands the knowledge greatly. 
+The development of rockets over the last few decades has driven technlogy to grow in many different aspects that affect our everyday lives. Model rockets has become a growing concept globally that has expanded the knowledge and interest greatly. Rockets are susceptible to a variety of disturbances during flight, particular duirng the early stages. Such as unexpected winds, irregulatory and non-symmetrical motors, imparting a random launch angle. These result in unstable flight, by implementing an active control system we can cope with these undesired attributes.
 
+The project aims to investigate and develop an existing avionics control and rocket system. This will implement the further design of an active control which will provide changes depending on the measured state of the rocket using sensors and actuators. This development will be supported by other teams working on a mission control aspect and others focusing on simulation of the rocket and flight.
 
-Amateur rockets are flown regularly worldwide. These rockets often exceed the speed of sound and altitudes
-above 30 km are not unheard of. These rockets are almost never controlled, they are stable due to passive
-aerodynamic features.
-
-While passively stable rockets are reasonably simple and reliable if well designed, they are susceptible to a
-variety of disturbances, particularly early in flight. Unexpected winds can cause the rocket to weathercock;
-flexibility in the launch tower/rail can cause railwhip, imparting a random launch angle to the rocket; the
-thrust from the rocket motor is also never perfectly symmetrical.
-
-The stabilising response afforded by active control provided changes depending on the measured state of the
-rocket. While it requires a significant overhead of weight and complexity; active control can provide course
-correction that passive stabilisation is not able to achieve.
-
-One page overall introduction including sections 1.1 and 1.2 (ISO/IEC/IEEE 42010:2011(E) clause 5.2)
 
 ### Client
 
