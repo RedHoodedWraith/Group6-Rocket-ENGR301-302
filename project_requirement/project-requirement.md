@@ -414,7 +414,7 @@ To verify the power consumption and supply performance requirements the systems 
 
 As shown in section 3.5 of the UML class diagram, the relationship of how each abstracted component is interfaced is likely to hold consistent. 
 
-From the perspective of the end user, the astracted relationship of components plays no relevant role in the verification of the final product's performance. 
+From the perspective of the end user, the abstracted relationship of components plays no relevant role in the verification of the final product's performance. 
 
 What will be required is that the documentation submitted has no conflicting design patterns and details with the finalised avionics package.
 
