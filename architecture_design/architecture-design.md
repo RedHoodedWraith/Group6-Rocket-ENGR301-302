@@ -2,7 +2,7 @@
 
 # ENGR 301 Group 6 Architectural Design and Proof-of-Concept
 
-**Dylan Sukha, Jason McCormick, Ketaki Bagal, Penny Peneueta, Robert Reid, Rowan Rathod, Sean Osborne-Curtis**
+* Dylan Sukha, Jason McCormick, Ketaki Bagal, Penny Peneueta, Robert Reid, Rowan Rathod, Sean Osborne-Curtis *
 
 ## 1. Introduction
 
