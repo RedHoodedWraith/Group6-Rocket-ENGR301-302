@@ -1,4 +1,3 @@
----
 
 # ENGR 301 Group 6 Architectural Design and Proof-of-Concept
 
