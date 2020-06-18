@@ -254,7 +254,57 @@ The core part of the systems performance is dependent on a power supply which ma
 
 ### 3.5 Logical database requirements
 
-See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
+In order to analyse the system that will be implemented, the use of a domain model for the purpose of demonstrating the logical database requirements would be useful. For the purposes of this design, elements that will be implemented include the use of inertial motion unit (IMU) that are the sensors that collect the data that will be provided for the use of the overall system, including the controller. Additionally, this data will be fed into a microcontroller. Additional data that will be fed into the microcontroller is the GPS data. However, this data will not be used for the actual control of the system. Furthermore, data from the microcontroller will be sent to the SD Card Data Writer for the purpose of locally saving the flight data. And finally, there will be a radio module that will be used to broadcast the data to mission control remotely.
+
+@startuml
+
+title Relationships - Class Diagram
+
+
+class IMU {
+  +Gyrometer
+  +Acceleromter
+  +Magnetometer
+}
+
+class Microcontroller
+class RadioModule
+class GPSModule
+class SDCardWriter
+
+IMU --> Microcontroller
+GPSModule --> Microcontroller
+Microcontroller --> SDCardWriter
+Microcontroller --> RadioModule
+
+@enduml
+
+**Gyroscope**
+
+A gyroscope will collect data with reference to the potential rotation of the rocket with reference to the ground. This will be a key data point for the determination by the microcontroller on if or when any changes need to be made with respect to the gimble. Rotational energy that deviates outside of an expected range could lead to the rocket flying fully off course or even catastrophic failure.
+
+**Accelerometer**
+
+This device will measure the change in velocity and acceleration with reference to the acceleration of gravity. This data can be used to determine altitude which will be  a key point for the determination of apogee and the initialisation of any recovery hardware.
+
+**Magnetometer**
+
+A magnetometer in this device can be used for the purpose of designing a form of a digital compass that can determine which side of the rocket is facing a given cardinal direction with respect to the magnetic north pole. This data would be useful for the purpose of the microcontroller to determine if any gimbal adjustments need to be made if there is an imbalance in the rocket. Or, in other words, the mass of the rocket is not centred around a centre point of a cylindrical shape.
+
+**GPS Module**
+
+The device will be used to collect positional data at the cessation of the rocket launch to determine where the rocket's landing area is. This is particularly useful if there is an extreme deviation of the rocket landing area from the rocket launch area.
+
+**Microcontroller**
+
+The microcontroller will handle the general integration of all the IMU componenets. This collective data will be interpreted by the microcontroller to determine if any positional changes to the control gimble will need to be made. Accurate and calibrated data collection is essential for any practical use of the microcontroller for this system.
+
+**SD Card Writer**
+
+The SD card writer will be the component that keeps the log of all the data collected during the flight from the IMUs. Furthermore, it will log any changes made to gimble positions. Furthermore, these can be timestamped to correspond with specific values from the IMUs including any data that is calculated by the microcontroller for the purpose of determining flight changes. These could include altitude, reduction in acceleration, positional data, etc. 
+
+**Radio Module**
+The radio module will retain the purpose of being able to send radio data (including that which would be written to the SD card) to mission control. The collection of this data during flight would allow for mission control to determine if any manual changes need to be made that override the microcontroller. As such, this radio module would also need to be able to receive signals from mission control. 
 
 You should use right tools, preferably PlantUML, to draw your URL diagrams which can be easily embedded into a Markdown file (PlantUML is also supported by GitLab and Foswiki).
 
