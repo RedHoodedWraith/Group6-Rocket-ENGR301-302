@@ -7,8 +7,8 @@
 | 2S 7.4V Battery  | To power rocket                         | ~$10        | 
 | Radio transceiver| RFM90                           | ~$28               |
 | GPS              | MPA\uc0\u8209 154\u8209 ANT L1 GPS              | $9.4   |
-| Servo            | SAVOX SC-0352 6.5KG              | $35                |
+| Servo            | Longruner 20KG Large Torque Digital          | $51                |
 | Signal receiver  | FUNcube dongle                   | $33.83             |
-| Voltage regulator| Longruner 20KG Large Torque Digital  | $2.25              |
+| Voltage regulator|******  | $2.25              |
 | QFN IMU  x2      | MPU-9250 QFN                     | ~$4                |
 | IMU              | MPU-9250                         | ~$22.5             |
