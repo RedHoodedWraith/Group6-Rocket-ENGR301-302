@@ -67,6 +67,39 @@ See ISO/IEC/IEEE 42010 clause 5.3 and ISO/IEC/IEEE 12207 clause 6.4.4.3(2).
 
 For most systems this will be about 2 pages, including a table mapping concerns to stakeholder.
 
+#### Client 
+The client for the rocket project is Andre Geldenhuis. 
+For the project, the client requires the avionics package to strictly comply with certain specifications both, software-related and hardware-related. 
+
+#### New Zealand Student Space Association (NZSSA)
+
+#### School of Engineering and Computer Science (ECS)
+
+#### Software Developers and Testers
+
+#### Wider Rocketry Community
+
+#### Civil Aviation Authority (CAA)
+
+#### Local Council
+The local council includes the following authoritative bodies: Wellington City Council, Hutt City Council and Upper Hutt City Council. As a collective, the three councils ensure that laws and regulations are complied with in their respective region. In relation to the avionics package, the local council will guarantee that the build and launch of the rocket is compliant with model rocket use requirements in the area. 
+
+#### Local Residents
+The local residents include persons who reside in the greater Wellington Region, specifically Upper Hutt City residents that populate the surrounding area of the launch site. 
+
+| Stakeholder  | Concerns |
+|--------------|---------|
+| Client       | The avionics package should not exceed the size of the rocket airframe, which will be specified. It is also expected that the avionics package will interface with the gimbal and guide the rocket in-flight. Additionally, the avionics package should stabilise the rocket in an upright position pre-launch. The avionics package-related information and data must be open-source and published on the client's GitHub.         |
+|  Civil Aviation Authority (CAA)            |         |
+| School of Engineering and Computer Science (ECS)             |         |
+| Software Developers and Testers            |         |
+| Wider Rocketry Community            |         |
+|  New Zealand Student Space Association (NZSSA)             |  The New Zealand Student Space Association (NZSSA) should regularly be kept up-to-date on the development of the avionics package and rocket.        |
+| Local Council             |         |
+| Local Residents             |         |
+
+
+
 ### 3.2 Architectural Viewpoints
 (1 page, 42010 5.4) 
 
