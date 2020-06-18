@@ -9,14 +9,19 @@
 
 class RocketControl{
 public:
-    RocketControl(float target, float errorLimit);
-    float getAdjustment(float current, float changeRate);
+    RocketControl(float target, float proportional);
+
+    float getAdjustment(float current);
 
 private:
     float target;
     float error = 0;
     float errorLimit;
-    void calculateError(float current);
+    float kP = 0;
+    float kI = 0;
+    float kD = 0;
+
+    void updateError(float current);
 };
 
 #endif //ROCKET_CONTROL_ROCKETCONTROL_H

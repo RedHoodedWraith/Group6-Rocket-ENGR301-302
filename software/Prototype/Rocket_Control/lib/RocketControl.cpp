@@ -8,33 +8,34 @@
  * Constructor: Constructs the Rocket PID Controller
  *
  * @param target    float   the target amount the "current" value should ideally be
- * @param errorLimit    float   the minimum/maximum error value allowed (gets converted to positive)
+ * @param proportional  float   the proportional constant amount to adjust
+ * @param integral  float   the integral gain value
+ * @param derivative    float
+ * @param errorLimit    float   the minimum/maximum error value allowed
  */
-RocketControl::RocketControl(float target, float errorLimit) {
+RocketControl::RocketControl(float target, float proportional) {
     RocketControl::target = target;
-    RocketControl::errorLimit = abs(errorLimit);
+    RocketControl::kP = proportional;
 }
 
 /**
- * Proportional:
  * Calculates the error value based on difference between the current value of the system
- * and the target value.
+ * and the target value. This also applies the integral component to the controller.
  *
  * @param current   float   the current value of the system
  */
-void RocketControl::calculateError(float current) {
+void RocketControl::updateError(float current) {
     error = current - target;
 }
 
 /**
- * Derivative:
  * Returns the amount to change the current value by.
  *
  * @param current   float   the current value of the system
- * @param changeRate    float   the amount to change by
  * @return  the calculated
  */
-float RocketControl::getAdjustment(float current, float changeRate){
-    calculateError(current);
-    
+float RocketControl::getAdjustment(float current){
+    updateError(current);
+    kI += error;
+    return error * (kP + kI);
 }
