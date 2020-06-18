@@ -5,8 +5,18 @@
 #ifndef ROCKET_CONTROL_ROCKETCONTROL_H
 #define ROCKET_CONTROL_ROCKETCONTROL_H
 
-#include <stdio.h>
+#include <cmath>
 
+class RocketControl{
+public:
+    RocketControl(float target);
+    RocketControl(float target, float errorLimit);
+    void calculateError(float current);
 
+private:
+    float target;
+    float error = 0;
+    float errorLimit;
+};
 
 #endif //ROCKET_CONTROL_ROCKETCONTROL_H
