@@ -71,8 +71,6 @@ For most systems this will be about 2 pages, including a table mapping concerns 
 The client for the rocket project is Andre Geldenhuis. 
 For the project, the client requires the avionics package to strictly comply with certain specifications both, software-related and hardware-related. 
 
-#### New Zealand Student Space Association (NZSSA)
-
 #### School of Engineering and Computer Science (ECS)
 
 #### Software Developers and Testers
@@ -80,6 +78,10 @@ For the project, the client requires the avionics package to strictly comply wit
 #### Wider Rocketry Community
 
 #### Civil Aviation Authority (CAA)
+
+#### New Zealand Student Space Association (NZSSA)
+
+The New Zealand Student Space Association (NZSSA) is a student-run organisation with the intentions of following the progress made on the avionics package and rocket. 
 
 #### Local Council
 The local council includes the following authoritative bodies: Wellington City Council, Hutt City Council and Upper Hutt City Council. As a collective, the three councils ensure that laws and regulations are complied with in their respective region. In relation to the avionics package, the local council will guarantee that the build and launch of the rocket is compliant with model rocket use requirements in the area. 
@@ -95,7 +97,7 @@ The local residents include persons who reside in the greater Wellington Region,
 | Software Developers and Testers            |         |
 | Wider Rocketry Community            |         |
 |  New Zealand Student Space Association (NZSSA)             |  The New Zealand Student Space Association (NZSSA) should regularly be kept up-to-date on the development of the avionics package and rocket.        |
-| Local Council             |         |
+| Local Council  | The local council requires that the rocket does not violate model rocket use-related laws and regulations. In addition, the council will strictly require that the launch and flight of the rocket does not pose a risk to persons in the vicinity or damage to property in the surrounding area.         |
 | Local Residents             |         |
 
 
