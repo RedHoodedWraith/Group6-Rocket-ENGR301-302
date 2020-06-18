@@ -3,6 +3,7 @@
 //
 
 #include "RocketControl.h"
+#include <cstdio>
 
 /**
  * Constructor: Constructs the Rocket PID Controller
@@ -13,9 +14,11 @@
  * @param derivative    float
  * @param errorLimit    float   the minimum/maximum error value allowed
  */
-RocketControl::RocketControl(float target, float proportional) {
+RocketControl::RocketControl(float target, float kP, float kI, float kD) {
     RocketControl::target = target;
-    RocketControl::kP = proportional;
+    RocketControl::kP = kP;
+    RocketControl::kI = kI;
+    RocketControl::kD = kD;
 }
 
 /**
@@ -27,7 +30,7 @@ RocketControl::RocketControl(float target, float proportional) {
 void RocketControl::updateError(float current) {
     float oldError = error;
     error = current - target;
-    kD = error - oldError;
+    direvative = error - oldError;
 }
 
 /**
@@ -38,6 +41,11 @@ void RocketControl::updateError(float current) {
  */
 float RocketControl::getAdjustment(float current){
     updateError(current);
-    kI += error;
-    return error * (kP + kI - kD);
+    integral += error;
+
+    float p = (kP * error);
+    float i = (kI * integral);
+    float d = (kD * direvative);
+    printf("Error: %d\tIntegral: %d\tDirevative: %d\n", p, i, d);
+    return (p + i + d);
 }

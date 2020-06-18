@@ -9,17 +9,18 @@
 
 class RocketControl{
 public:
-    RocketControl(float target, float proportional);
+    RocketControl(float target, float kP, float kI, float kD);
 
     float getAdjustment(float current);
 
 private:
     float target;
     float error = 0;
-    float errorLimit;
-    float kP = 0;
-    float kI = 0;
-    float kD = 0;
+    //float errorLimit;
+    float kP, kI, kD;
+    //float proportional = 0;
+    float integral = 0;
+    float direvative = 0;
 
     void updateError(float current);
 };
