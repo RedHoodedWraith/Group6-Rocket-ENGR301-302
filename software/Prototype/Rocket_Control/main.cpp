@@ -1,17 +1,39 @@
 #include "RocketControl.h"
 #include <stdio.h>
+#include <string>
+
+float target = 134;
+float changeBound = 10;
+
+float restrictChange(float c){
+    changeBound = abs(changeBound);
+
+    if(c > changeBound){
+        return changeBound;
+    }
+
+    if(c < -changeBound){
+        return -changeBound;
+    }
+
+    return c;
+}
 
 int main() {
-    RocketControl c(200, 1, 0.7, 0.1);
+    RocketControl c(target, 1, 0.25, 0.1);
 
-    int dir = 100;
-    int wdir = dir;
-    for(int i=0; i<300; i++){
+    float dir = 0;
+    float wdir = dir;
+    for(int i=0; i<200; i++){
+        printf("Iteration: %d\n", i);
         dir++;
         wdir++;
-        dir += c.getAdjustment(dir);
-        printf("With PID: %d\t\tWithout PID: %d\n\n", dir, wdir);
+        dir += restrictChange(c.getAdjustment(dir));
+        printf("With PID: %.2f\t\tWithout PID: %.2f\n\n", dir, wdir);
     }
+
+    std::string s = (dir == target) ? "Target Reached" : "Failed to Reach Target";
+    printf("%s\nIntended Target: %.2f", s.c_str(), target);
 
     return 0;
 }

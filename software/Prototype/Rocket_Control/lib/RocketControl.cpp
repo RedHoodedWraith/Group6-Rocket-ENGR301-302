@@ -46,6 +46,6 @@ float RocketControl::getAdjustment(float current){
     float p = (kP * error);
     float i = (kI * integral);
     float d = (kD * direvative);
-    printf("Error: %d\tIntegral: %d\tDirevative: %d\n", p, i, d);
-    return (p + i + d);
+    printf("Error: %.2f\t\tIntegral: %.2f\t\tDirevative: %.2f\n", p, i, d);
+    return -(p + i + d);
 }
