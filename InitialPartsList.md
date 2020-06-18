@@ -1,7 +1,7 @@
 | Component        |      Purpose                            |  Price(NZD) |
 |------------------|-----------------------------------------|-------------|
-| Teensy 3.6 board | Microcontroller for base station        | $47.75      |
-| Teensy 3.2 board | Microcontroller for rocket              | $32.48      |
+| Teensy 3.2 board | Microcontroller for base station        | $47.75      |
+| Teensy 3.6 board | Microcontroller for rocket              | $32.48      |
 | 3D printing      | Parts for rocket                        | depending   |
 | PCB              | Cicuitry for rocket and/or base station | depending   |
 | 2S 7.4V Battery  | To power rocket                         | ~$10        | 
