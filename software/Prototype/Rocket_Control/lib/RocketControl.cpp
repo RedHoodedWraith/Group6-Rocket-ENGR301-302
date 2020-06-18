@@ -25,7 +25,9 @@ RocketControl::RocketControl(float target, float proportional) {
  * @param current   float   the current value of the system
  */
 void RocketControl::updateError(float current) {
+    float oldError = error;
     error = current - target;
+    kD = error - oldError;
 }
 
 /**
@@ -37,5 +39,5 @@ void RocketControl::updateError(float current) {
 float RocketControl::getAdjustment(float current){
     updateError(current);
     kI += error;
-    return error * (kP + kI);
+    return error * (kP + kI - kD);
 }
