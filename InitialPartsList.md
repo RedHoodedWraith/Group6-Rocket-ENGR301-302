@@ -1,4 +1,3 @@
-
 | Component        |      Purpose                            |  Price(NZD) |
 |------------------|-----------------------------------------|-------------|
 | Teensy 3.6 board | Microcontroller for base station        | $47.75      |
@@ -10,6 +9,6 @@
 | GPS              | MPA\uc0\u8209 154\u8209 ANT L1 GPS              | $9.4   |
 | Servo            | SAVOX SC-0352 6.5KG              | $35                |
 | Signal receiver  | FUNcube dongle                   | $33.83             |
-| Voltage regulator| ***TRACO TSR 0.5-2450       ***  | $2.25              |
+| Voltage regulator| Longruner 20KG Large Torque Digital  | $2.25              |
 | QFN IMU  x2      | MPU-9250 QFN                     | ~$4                |
 | IMU              | MPU-9250                         | ~$22.5             |
