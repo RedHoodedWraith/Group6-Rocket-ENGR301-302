@@ -30,7 +30,11 @@ RocketControl::RocketControl(float target, float kP, float kI, float kD) {
 void RocketControl::updateError(float current) {
     float oldError = error;
     error = current - target;
-    direvative = error - oldError;
+    derivative = error - oldError;
+}
+
+void RocketControl::updateIntegral() {
+    integral = ((integral + error) > maxFloat ? maxFloat : ((integral + error) < minFloat ? minFloat : integral + error));
 }
 
 /**
@@ -41,11 +45,11 @@ void RocketControl::updateError(float current) {
  */
 float RocketControl::getAdjustment(float current){
     updateError(current);
-    integral += error;
+    updateIntegral();
 
     float p = (kP * error);
     float i = (kI * integral);
-    float d = (kD * direvative);
-    printf("Error: %.2f\t\tIntegral: %.2f\t\tDirevative: %.2f\n", p, i, d);
+    float d = (kD * derivative);
+    printf("Error: %.2f\t\tIntegral: %.2f\t\tDerivative: %.2f\n", p, i, d);
     return -(p + i + d);
 }

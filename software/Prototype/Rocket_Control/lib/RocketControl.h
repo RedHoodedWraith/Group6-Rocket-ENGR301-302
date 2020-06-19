@@ -6,6 +6,7 @@
 #define ROCKET_CONTROL_ROCKETCONTROL_H
 
 #include <cmath>
+#include <limits>
 
 class RocketControl{
 public:
@@ -14,15 +15,16 @@ public:
     float getAdjustment(float current);
 
 private:
+    float maxFloat = std::numeric_limits<float>::max();
+    float minFloat = std::numeric_limits<float>::min();
     float target;
-    float error = 0;
-    //float errorLimit;
     float kP, kI, kD;
-    //float proportional = 0;
+    float error = 0;
     float integral = 0;
-    float direvative = 0;
+    float derivative = 0;
 
     void updateError(float current);
+    void updateIntegral();
 };
 
 #endif //ROCKET_CONTROL_ROCKETCONTROL_H
