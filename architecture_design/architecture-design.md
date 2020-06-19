@@ -76,11 +76,11 @@ For the project, the client requires the avionics package to strictly comply wit
 #### Software Developers and Testers
 
 #### Wider Rocketry Community
+The wider rocketry community consists of persons with a profound interest in rocket-related development and innovation. The expectation is that information regarding the avionics package and rocket will be available and usable by the community. 
 
 #### Civil Aviation Authority (CAA)
 
 #### New Zealand Student Space Association (NZSSA)
-
 The New Zealand Student Space Association (NZSSA) is a student-run organisation with the intentions of following the progress made on the avionics package and rocket. 
 
 #### Local Council
@@ -91,12 +91,12 @@ The local residents include persons who reside in the greater Wellington Region,
 
 | Stakeholder  | Concerns |
 |--------------|---------|
-| Client       | The avionics package should not exceed the size of the rocket airframe, which will be specified. It is also expected that the avionics package will interface with the gimbal and guide the rocket in-flight. Additionally, the avionics package should stabilise the rocket in an upright position pre-launch. The avionics package-related information and data must be open-source and published on the client's GitHub.         |
+| Client       | The avionics package must be comprised of fixated and durable components, and should not exceed the specified size of the rocket airframe. It is also expected that the avionics package will interface with the base station and the gimbal to guide the rocket in-flight. Additionally, the avionics package should stabilise the rocket in an upright position pre-launch. The onboard power management must also be able to cope with each state of the rocket's execution. The avionics package-related information and data must be open source and published on the client's GitHub. The concerns listed are acknowledged in order to ensure a successful product for the client.        |
 |  Civil Aviation Authority (CAA)            | The CAA requires that all rockets conform to all regulations set out in the CAA rules Part 101 Gyrogliders and Parasails, Unmanned Aircraft (including Balloons), Kites, and Rockets Operating Rules [1]. |
 | School of Engineering and Computer Science (ECS)             | The VUW School of engineering and Computer Science requires all parts of the project; to be correctly licensed and follow all relevant guidelines set out by ECS (including but not limited to open software, health and safety, copyrighting, plagiarism etc). |
-| Software Developers and Testers            |         |
-| Wider Rocketry Community            |         |
-|  New Zealand Student Space Association (NZSSA)             |  The New Zealand Student Space Association (NZSSA) should regularly be kept up-to-date on the development of the avionics package and rocket.        |
+| Software Developers and Testers            | 
+| Wider Rocketry Community            |  The rocket project must be open source and available to the wider rocketry community. Open source software operates under a license that provides users with the rights to freely use, modify and distribute the software. In this case, the rocketry community would benefit greatly from the rocket project if it is open source, as it can be adapted to future developments.        |
+|  New Zealand Student Space Association (NZSSA)             |  The New Zealand Student Space Association (NZSSA) should regularly be kept up-to-date on the development of the avionics package and rocket. The organisation will be able to provide useful advice and information if they are often updated on the progress of the rocket.          |
 | Local Council  | The local council requires that the rocket does not violate model rocket use-related laws and regulations. In addition, the council will strictly require that the launch and flight of the rocket does not pose a risk to persons in the vicinity or damage to property in the surrounding area.         |
 | Local Residents             | The local residents require an ensurity to their safety. And so the avionics package must conform to all relevant safety regulations and guidelines from relevant organisations and ruling bodies.  |
 
