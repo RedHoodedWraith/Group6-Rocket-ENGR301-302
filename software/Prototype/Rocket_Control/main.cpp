@@ -20,7 +20,7 @@ float restrictChange(float c){
 }
 
 int main() {
-    RocketControl c(target, 1, 0.25, 0.1);
+    RocketControl c(target, 1, 1, 0.1);
 
     float dir = 0;
     float wdir = dir;
@@ -33,7 +33,7 @@ int main() {
     }
 
     std::string s = (dir == target) ? "Target Reached" : "Failed to Reach Target";
-    printf("%s\nIntended Target: %.2f", s.c_str(), target);
+    printf("%s\nFinal Value: %.2f\t\tIntended Target: %.2f\n", s.c_str(), dir, target);
 
     return 0;
 }
