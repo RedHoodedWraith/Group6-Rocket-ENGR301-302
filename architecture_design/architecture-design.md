@@ -1,4 +1,3 @@
-
 # ENGR 301 Group 6 Architectural Design and Proof-of-Concept
 
 * Dylan Sukha, Jason McCormick, Ketaki Bagal, Penny Peneueta, Robert Reid, Rowan Rathod, Sean Osborne-Curtis *
@@ -12,7 +11,8 @@ The project aims to investigate and develop an existing avionics control and roc
 
 ### Client
 
-Andre Geldenhuis is the client for this project. He can be contacted through email, Andre.Geldenhuis@vuw.ac.nz, or through the mattermost. He is an experienced rocket enthusiast and is a member of the New Zealand Rocketry Association who was the previous client of the 2018 project. 
+Andre Geldenhuis is the client for this project. He can be contacted through email, Andre.Geldenhuis@vuw.ac.nz, or through the mattermost. He is an experienced rocket enthusiast and is a member of the New Zealand Rocketry Association who was the previous client of the 2018 project. His previous experience within the model rocket community is with launching model rockets from high altitude balloons. 
+
 
 ### 1.1 Purpose
 
@@ -20,7 +20,12 @@ The purpose of this system is to develop an existing rocket system and to improv
 
 ### 1.2 Scope
 
-One paragraph describing the scope of the system.
+For this project, we are improving and/or fixing a previous team initial system design of a model rocket. Due to the current worldwide event (COVID-19), we have not been able to access hardware. This means that it still a little unclear what exactly requires fixing and what requires improvement. The current task that will need to be down are the following: 
+Take the existing avionics board and make it functional work 
+To produce a base station to communicate with the rocket 
+To develop and/or fix code to get the rocket functioning 
+To redesign any parts (I.E body or gimbal) if the said part is not functioning or efficient 
+
 
 ### 1.3 Changes to requirements
 
