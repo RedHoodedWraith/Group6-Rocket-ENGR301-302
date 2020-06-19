@@ -10,9 +10,9 @@
 
 class RocketControl{
 public:
-    RocketControl(float target, float kP, float kI, float kD);
-
+    RocketControl(float target, float changeBound, float kP, float kI, float kD);
     float getAdjustment(float current);
+    float getBoundedAdjustment(float current);
 
 private:
     float maxFloat = std::numeric_limits<float>::max();
@@ -22,7 +22,9 @@ private:
     float error = 0;
     float integral = 0;
     float derivative = 0;
+    float changeBound;
 
+    float restrictChange(float c);
     void updateError(float current);
     void updateIntegral();
 };

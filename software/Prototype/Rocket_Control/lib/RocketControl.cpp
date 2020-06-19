@@ -14,8 +14,9 @@
  * @param derivative    float
  * @param errorLimit    float   the minimum/maximum error value allowed
  */
-RocketControl::RocketControl(float target, float kP, float kI, float kD) {
+RocketControl::RocketControl(float target, float changeBound, float kP, float kI, float kD) {
     RocketControl::target = target;
+    RocketControl::changeBound = changeBound;
     RocketControl::kP = kP;
     RocketControl::kI = kI;
     RocketControl::kD = kD;
@@ -52,4 +53,28 @@ float RocketControl::getAdjustment(float current){
     float d = (kD * derivative);
     printf("Error: %.2f\t\tIntegral: %.2f\t\tDerivative: %.2f\n", p, i, d);
     return -(p + i + d);
+}
+
+/**
+ * Ensures the calculated adjustment value is within the
+ *
+ * @param c
+ * @return
+ */
+float RocketControl::restrictChange(float c){
+    changeBound = abs(changeBound);
+
+    if(c > changeBound){
+        return changeBound;
+    }
+
+    if(c < -changeBound){
+        return -changeBound;
+    }
+
+    return c;
+}
+
+float RocketControl::getBoundedAdjustment(float current){
+    return restrictChange(getAdjustment(current));
 }
