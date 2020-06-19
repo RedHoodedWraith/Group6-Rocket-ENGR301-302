@@ -56,10 +56,10 @@ float RocketControl::getAdjustment(float current){
 }
 
 /**
- * Ensures the calculated adjustment value is within the
+ * Ensures the calculated adjustment value is within the set bounds
  *
- * @param c
- * @return
+ * @param c float   The calculated raw adjustment value by the PID algorithm
+ * @return  c if float is between min and max float values, max float value if c is above it, min float value if c is below it
  */
 float RocketControl::restrictChange(float c){
     changeBound = abs(changeBound);
@@ -75,6 +75,12 @@ float RocketControl::restrictChange(float c){
     return c;
 }
 
+/**
+ * Calculates the PID adjustment value and restricts it to be between the set bounds
+ *
+ * @param current   float   The current value of the system
+ * @return  The calculated value to adjust the system by
+ */
 float RocketControl::getBoundedAdjustment(float current){
     return restrictChange(getAdjustment(current));
 }
