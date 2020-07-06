@@ -51,6 +51,22 @@ If the requirement have changed significantly since the requirements document, o
 
 References to other documents or standards. Follow the IEEE Citation Reference scheme, available from the [IEEE website](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf) (PDF; 20 KB). (1 page, longer if required)
 
+> Placeholders from requirements doc. 
+[x] Civil Aviation Authority of New Zealand, “Civil Aviation Rules, Part 101 Gyrogliders and Parasails, Unmanned Aircraft (including Balloons), Kites, and Rockets Operating Rules” December 31st, 2018 [Online]. 
+Available: https://www.aviation.govt.nz/assets/rules/consolidations/Part_101_Consolidation.pdf [Accessed: May 13th, 2020]. 
+
+[x] National Aeronautics and Space Administration, Vectored Thrust, Glenn Research Center, Nancy Hall, 05 May 2015.
+https://www.grc.nasa.gov/WWW/K-12/airplane/vecthrst.html
+
+[x] New Zealand Legislation, Radiocommunications Regulations 2001, 10 September 2001. 
+http://www.legislation.govt.nz/regulation/public/2001/0240/latest/DLM71513.html. 
+
+[x] The Model Rocket, Model Rocket Engine Sizes and Classifications, Charlie Gasmire, 2020.
+https://themodelrocket.com/model-rocket-engine-sizes-and-classifications/
+
+[x] New Zealand Rocketry Association, “Rocket Safety, Model Rocketry Safety Code” [Online]. 
+Available: https://www.nzrocketry.org.nz/rocketry/rocket-safety [Accessed: May 13th, 2020]
+
 ## 3. Architecture
 
 Describe your system's architecture according to ISO/IEC/IEEE 42010:2011(E), ISO/IEC/IEEE 12207, ISO/IEC/IEEE 15289 and ISO/IEC/IEEE 15288.
