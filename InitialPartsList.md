@@ -15,3 +15,11 @@
 | LMZM23600V3SIL   | Main Component/ICU in power supply | $2.60            |
 | GRM31CR61C106KA88L | Stabilizing Component for power supply | ~$0.12     | 
 | C3216X5R1E476M160AC | Stabilizing Component for power suppl | ~$0.61     |
+
+|Supplier|	Supplier Part Number|	Manufacturer Part Number|	Qty|	Description|	Price Indivdual|	Total|
+|------|-------|--------|-----|-----|-----|------|
+|Digi-key|		1738-1232-ND|		SER0011|	2|	"		DC Motor Servomotor, RC (Hobby) 6VDC"|	14.4095|	28.819|
+|Digi-key|	1597-1491-ND|	109990165|	2|	"General ISM < 1GHz LoRa™ Transceiver Module 433MHz Surface Mount	|	14.6625|	29.325|
+|Digi-key|	1528-3886-ND|	3886|	1 |	MPU-6050 - Accelerometer, Magnetometer Sensor Evaluation Board|	14.375|	14.375|
+|Digi-key|	1528-4382-ND|	4382|	1 |	STM32F405 Feather STM32F405 Express STM32F4 ARM® Cortex®-M4 MCU 32-Bit Embedded Evaluation Board|	51.6005|	51.6005|
+|Digi-key|	1528-1034-ND|	1893|	1 |	MPL3115A2 - Pressure, Temperature Sensor Evaluation Board|	$20.57|	20.5735|
