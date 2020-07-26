@@ -8,7 +8,7 @@ build:
   tags:
     - docker
   script:
-    - docker build -t the-docker-image .
+    - docker run -t the-docker-image .
   allow_failure: true
 
 unittest:
