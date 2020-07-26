@@ -9,7 +9,6 @@ build:
   tags:
     - shell
   script:
-    - RUN ls
     - RUN ./software_runner.sh
   allow_failure: true
 
