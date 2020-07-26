@@ -9,7 +9,7 @@ build:
   tags:
     - shell
   script:
-    - ls
+    - docker run
   allow_failure: true
 
 unittest:
