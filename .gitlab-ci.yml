@@ -8,6 +8,7 @@ build:
   tags:
     - docker
   script:
+    - ls
     - docker run -t the-docker-image .
   allow_failure: true
 
