@@ -7,7 +7,7 @@ COPY software /opt/workspace
 
 RUN ls
 
-RUN chmod +x /opt/workspace/software/software_runner.sh
+RUN chmod +x software_runner.sh
 
 RUN apt-get update -qq && apt-get install -qq -y --no-install-recommends wget unzip git make \
  srecord bc xz-utils gcc python curl python-pip python-dev build-essential \
