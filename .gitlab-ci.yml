@@ -6,7 +6,7 @@ stages:
 build:
   stage: Build
   tags:
-    - shell
+    - docker
   script:
     - docker build -t the-docker-image .
   allow_failure: true
