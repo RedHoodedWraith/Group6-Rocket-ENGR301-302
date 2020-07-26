@@ -8,7 +8,7 @@ build:
   tags:
     - shell
   script:
-    - docker build -t the-docker-image dockerfile1
+    - docker build -f dockerfile1
   allow_failure: true
 
 unittest:
