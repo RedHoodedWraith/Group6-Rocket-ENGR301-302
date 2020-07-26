@@ -2,8 +2,8 @@ FROM alpine
 MAINTAINER rathodrowa@myvuw.ac.nz
 
 RUN mkdir /opt/workspace
-WORKDIR /opt/workspace
 COPY Gimbal_Design /opt/workspace
+WORKDIR /opt/
 
 RUN apk add git
 
