@@ -9,8 +9,9 @@ RUN ls
 
 RUN chmod +x software_runner.sh
 
-RUN apt-get update && apt-get install -y wget unzip git make \
-srecord bc xz-utils gcc python curl python3-pip python-dev build-essential
+RUN apt-get update && apt-get install -qq -y --no-install-recommends wget \
+unzip git make srecord bc xz-utils gcc python curl python3-pip python-dev \
+build-essential
 
 RUN python3 -m pip install --upgrade pip setuptools
 
