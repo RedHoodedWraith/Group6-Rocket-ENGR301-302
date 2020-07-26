@@ -15,6 +15,5 @@ unittest:
   tags:
     - shell
   script:
-    - echo "test"
-    - exit 1
+    - docker build -t kicad_image -f ./Dockerfiles/kicad_dockerfile .
   allow_failure: true
