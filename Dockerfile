@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu
 MAINTAINER rathodrowa@myvuw.ac.nz
 
 RUN mkdir /opt/workspace
@@ -9,7 +9,7 @@ RUN ls
 
 RUN chmod +x software_runner.sh
 
-RUN apk update && apk add wget unzip git make \
+RUN apt update && apt install wget unzip git make \
 srecord bc xz-utils gcc python curl python-pip python-dev build-essential
 
 RUN python -m pip install --upgrade pip setuptools
