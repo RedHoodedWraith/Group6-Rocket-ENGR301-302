@@ -7,7 +7,8 @@ build:
   stage: Build
   tags:
     - docker
-  image: Dockerfile
+  script:
+    
   allow_failure: true
 
 unittest:
