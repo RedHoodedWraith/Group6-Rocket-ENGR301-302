@@ -6,9 +6,9 @@ stages:
 build:
   stage: Build
   tags:
-    - docker
+    - shell
   script:
-    - ./software/software_runner.py
+    - docker build -t the-docker-image .
   allow_failure: true
 
 unittest:
