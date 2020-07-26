@@ -5,9 +5,9 @@ stages:
 
 build:
   stage: Build
-  image: Dockerfile
   tags:
     - docker
+  image: Dockerfile
   allow_failure: true
 
 unittest:
