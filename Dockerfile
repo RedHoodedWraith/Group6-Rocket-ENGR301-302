@@ -9,10 +9,10 @@ RUN ls
 
 RUN chmod +x software_runner.sh
 
-RUN apt update && apt install wget unzip git make \
-srecord bc xz-utils gcc python curl python-pip python-dev build-essential
+RUN apt-get update && apt-get install wget unzip git make \
+srecord bc xz-utils gcc python curl python3-pip python-dev build-essential
 
-RUN python -m pip install --upgrade pip setuptools
+RUN python3 -m pip install --upgrade pip setuptools
 
 RUN pip install -U platformio
 
