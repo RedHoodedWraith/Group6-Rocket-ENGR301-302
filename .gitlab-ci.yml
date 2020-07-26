@@ -9,7 +9,7 @@ build:
     - docker
   script:
     - ls
-    - docker build .
+    - gitlab-runner run
   allow_failure: true
 
 unittest:
