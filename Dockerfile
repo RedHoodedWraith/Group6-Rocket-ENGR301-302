@@ -1,4 +1,9 @@
 FROM alpine
+MAINTAINER rathodrowa@myvuw.ac.nz
+
+RUN mkdir /opt/workspace
+WORKDIR /opt/workspace
+COPY software /opt/workspace
 
 RUN apt-get update -qq && apt-get install -qq -y --no-install-recommends wget unzip git make \
  srecord bc xz-utils gcc python curl python-pip python-dev build-essential \

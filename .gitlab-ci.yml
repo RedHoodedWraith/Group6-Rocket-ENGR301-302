@@ -5,11 +5,12 @@ stages:
 
 build:
   stage: Build
+  image: alpine:latest
   tags:
     - shell
   script:
-    - echo "static analysis"
-    - exit 1
+    - RUN pio run --target clean
+    - RUN pio run
   allow_failure: true
 
 unittest:
