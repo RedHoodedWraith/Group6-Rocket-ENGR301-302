@@ -12,4 +12,4 @@ RUN python3 -m pip install --upgrade pip setuptools
 RUN pip3 install -U platformio
 
 RUN chmod +x software_runner.py
-RUN software_runner.py
+RUN ./software_runner.py
