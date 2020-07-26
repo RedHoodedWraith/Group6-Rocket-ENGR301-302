@@ -7,9 +7,6 @@ build:
   stage: Build
   tags:
     - docker
-  script:
-    - ls
-    - docker run -t the-docker-image .
   allow_failure: true
 
 unittest:
