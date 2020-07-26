@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:latest
 MAINTAINER rathodrowa@myvuw.ac.nz
 
 RUN mkdir /opt/workspace
