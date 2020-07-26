@@ -9,7 +9,7 @@ build:
     - docker
   script:
     - ls
-    - ./software/software_runner.py
+    - docker build -t $REGISTRY .
   allow_failure: true
 
 unittest:
