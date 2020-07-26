@@ -7,7 +7,7 @@ build:
   stage: Build
   image: alpine:latest
   tags:
-    - Shell
+    - shell
   script:
     - RUN pio run --target clean
     - RUN pio run
@@ -16,7 +16,7 @@ build:
 unittest:
   stage: Test
   tags:
-    - Shell
+    - shell
   script:
     - echo "test"
     - exit 1
@@ -25,7 +25,7 @@ unittest:
 deploy:
   stage: Deploy
   tags:
-    - Shell
+    - shell
   script:
     - echo "deploy"
     - exit 1
