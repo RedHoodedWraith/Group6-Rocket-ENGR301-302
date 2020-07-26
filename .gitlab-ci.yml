@@ -9,7 +9,7 @@ build:
   tags:
     - shell
   script:
-    - RUN ./software_runner.sh
+    - ls
   allow_failure: true
 
 unittest:
