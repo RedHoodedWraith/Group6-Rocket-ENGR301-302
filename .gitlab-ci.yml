@@ -8,7 +8,7 @@ build:
   tags:
     - docker
   script:
-    
+    - ./software/software_runner.py
   allow_failure: true
 
 unittest:
