@@ -9,7 +9,7 @@ build:
     - docker
   script:
     - ls
-    - gitlab-runner run
+    - ./software/software_runner.py
   allow_failure: true
 
 unittest:
