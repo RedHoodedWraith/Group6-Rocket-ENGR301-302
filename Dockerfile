@@ -5,6 +5,8 @@ RUN mkdir /opt/workspace
 WORKDIR /opt/workspace
 COPY software /opt/workspace
 
+RUN ls
+
 RUN chmod +x /opt/workspace/software/software_runner.sh
 
 RUN apt-get update -qq && apt-get install -qq -y --no-install-recommends wget unzip git make \
