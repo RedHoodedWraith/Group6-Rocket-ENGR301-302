@@ -5,11 +5,9 @@ stages:
 
 build:
   stage: Build
+  image: Dockerfile
   tags:
     - docker
-  script:
-    - ls
-    - docker build -t $REGISTRY .
   allow_failure: true
 
 unittest:
