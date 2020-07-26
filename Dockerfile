@@ -12,3 +12,5 @@ RUN apt-get update -qq && apt-get install -qq -y --no-install-recommends wget un
  && python -m pip install --upgrade pip setuptools
 
 RUN pip install -U platformio
+
+RUN echo "This is a message from the Dockerfile"
