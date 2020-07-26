@@ -5,7 +5,7 @@ stages:
 
 build:
   stage: Build
-  image: alpine:latest
+  image: Dockerfile
   tags:
     - shell
   script:
