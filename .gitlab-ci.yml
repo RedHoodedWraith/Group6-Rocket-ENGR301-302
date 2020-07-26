@@ -9,8 +9,7 @@ build:
   tags:
     - shell
   script:
-    - RUN pio run --target clean
-    - RUN pio run
+    - RUN ./software_runner.sh
   allow_failure: true
 
 unittest:
