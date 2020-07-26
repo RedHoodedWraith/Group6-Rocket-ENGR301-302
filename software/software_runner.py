@@ -2,4 +2,4 @@
 
 print ("This is the script running!")
 
-sys.exit(0)
+exit(0)
