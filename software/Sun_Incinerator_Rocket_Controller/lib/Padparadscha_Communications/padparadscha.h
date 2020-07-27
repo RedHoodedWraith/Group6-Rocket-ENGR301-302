@@ -6,10 +6,15 @@
 #ifndef PADPARADSCHA
 #define PADPARADSCHA
 
+#include "lars_main.h"
+
 class Padparadscha{
 public:
     Padparadscha();
+    bool sendData();
 private:
+    String encodeData(String input);
+    String decodeData(String input);
 };
 
 #endif
