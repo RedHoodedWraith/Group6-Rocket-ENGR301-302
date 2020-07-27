@@ -1,16 +1,13 @@
 stages:
   - Build
   - Test
-  - Deploy
 
 build:
   stage: Build
-  image: alpine:latest
   tags:
     - shell
   script:
-    - RUN pio run --target clean
-    - RUN pio run
+    - docker build -t software_image -f ./Dockerfiles/software_dockerfile .
   allow_failure: true
 
 unittest:
@@ -18,15 +15,6 @@ unittest:
   tags:
     - shell
   script:
-    - echo "test"
-    - exit 1
-  allow_failure: true
-
-deploy:
-  stage: Deploy
-  tags:
-    - shell
-  script:
-    - echo "deploy"
-    - exit 1
+    - echo "To be implemented when needed"
+    - exit 0
   allow_failure: true
