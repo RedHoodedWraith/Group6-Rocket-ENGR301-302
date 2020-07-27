@@ -1,0 +1,11 @@
+Setting up and Test Servo Motors - GS-9025MG
+
+-Red is V++ (6V), Brown is Ground, Orange is PWM input
+-Functioning at 50HZ PWM
+-Duty Cycle vary from 0.45ms - 2.5ms, 2.25% - 12.5
+-Tested response when PWM is changed without source power then source power switched on. Servo responded instanteously, which is ideal if the power is to ever change.
+-Middle point for the Yaw Servo was set 1.4ms
+-Same for the Pitch Servo, @ 1.4ms
+-Pitch Axis Gimbal Operating Cycle: 1.19ms-159ms.
+-Yaw Axis Gimbal Operating Cycle: 1.05ms-159ms.
+-These are duty cycles that have the gimbal operating at maximum angles, these should not be exceeded as it will potentially damage the gimbal.
