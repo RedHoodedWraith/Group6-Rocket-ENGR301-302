@@ -1,12 +1,15 @@
 /**
- * Padparadcha 
+ * 'Padparadscha' Communications Library
+ *
+ * This library handles LoRa communications to the Mission Control station and encodes and decodes data for transmission.
  */
-#ifndef PADPARADCHA
-#define PADPARADCHA
+#ifndef PADPARADSCHA
+#define PADPARADSCHA
 
-class Padparadcha{
-    Padparadcha();
-
+class Padparadscha{
+public:
+    Padparadscha();
+private:
 };
 
 #endif
