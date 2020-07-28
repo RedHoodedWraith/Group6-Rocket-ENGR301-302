@@ -452,6 +452,12 @@ To verify the power consumption and supply performance requirements the systems 
 
 ### 4.5 Verification Logical Database Requirements
 
+As shown in section 3.5 of the UML class diagram, the relationship of how each abstracted component is interfaced is likely to hold consistent. 
+
+From the perspective of the end user, the abstracted relationship of components plays no relevant role in the verification of the final product's performance. 
+
+What will be required is that the documentation submitted has no conflicting design patterns and details with the finalised avionics package.
+
 ### 4.6 Verification Design Constraints
 
 To meet the requirements of open-source for the software side of the avionics package, only open-source resources will be used throughout. Software that is not open-source may only be used with client consent.
