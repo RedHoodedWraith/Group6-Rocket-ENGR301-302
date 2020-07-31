@@ -5,3 +5,5 @@
 22/7/20: Assembled first prototpye of gimbal.
 
 24/7/20: Soldered headers onto the microcontroller breakout for prototyping.
+
+29/7/20: Soldered headers onto the two of the sensor boards (IMU + barometer).
