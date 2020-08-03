@@ -17,7 +17,7 @@ public:
     }
 
 private:
-    float angel;
+    float angle;
 
     void setAngle(float a) {
         if ((a > 359.00) || (a < 0.00)){
