@@ -27,6 +27,9 @@ public:
     float getAltitude(){
         return altitude;
     }
+    float getAcceleration() {
+      return acceleration;
+    }
 
 private:
     float air_pressure; 
@@ -34,6 +37,7 @@ private:
     float longitude;
     float latitude;
     float altitude; 
+    float acceleration;
 
     void setAirPressure(float a) {
         air_pressure = a;
@@ -49,6 +53,9 @@ private:
     }
     void setAltitude(float a){
         altitude = a;
+    }
+    void setAltitude(float a){
+        acceleration = a;
     }
 }
 
