@@ -1,6 +1,5 @@
 
 
-
 |Supplier|	Supplier Part Number|	Manufacturer Part Number|	Qty|	Description|	Price Indivdual|	Total (NZD)|
 |------|-------|--------|-----|-----|-----|------|
 |Digi-key|		1738-1232-ND|		SER0011|	2|	"		DC Motor Servomotor, RC (Hobby) 6VDC"|	14.4095|	28.819|
