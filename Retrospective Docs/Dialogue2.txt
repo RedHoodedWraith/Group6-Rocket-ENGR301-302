@@ -1,0 +1,24 @@
+Retrospective Dialogue Sheet
+
+1.
+2.	
+3.	Andre is the Product Owner
+4.	The overall team has started out slow but the speed has picked up with more 
+    work. The hardware development has accelerate quickly compared to the last 
+    semester and the software is starting to get going with more understanding.
+5.	Issues are being completed.
+6.	There is minimal development carry over from previously apart from 
+    documentation that is quite behind.
+7.	The issue weighting is agreed to be good.
+8.	The team agrees that we are prioritising things right, but its still to
+    early in the project to really know.
+9.	We agree that our perspective agrees with the clients, we should increase
+    the communication with the client. Would be good to look at the previous 
+        years work and discuss if we are on track. 
+10.	The hardware estimations have been good, with issues being completed. 
+    Software estimations have been minimal so far with not much work completed,
+    hoping to be getting better with more work.
+11.	don't have cards
+12.	Everyone is content with the work load.
+13.	-more planning poker
+14.	
