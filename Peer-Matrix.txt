@@ -6,5 +6,5 @@ Peer Matrix to See who has worked with who:
 | Jason	|       |   ✔	|  ---	|   	|   	|   	|       |
 | Penny	|   	|   	|   	|  ---	|   	|   	|       |
 | Rowan	|   	|   	|   	|   	|  ---	|   	|       |
-| Ketaki|   	|   	|   	|   	|   	|  ---	|       |
+| Ketaki|   	|   	|   	|   ✔	|   ✔	|  ---	|       |
 | Dylan |   	|   ✔	|   	|   	|   	|       |  ---  |
