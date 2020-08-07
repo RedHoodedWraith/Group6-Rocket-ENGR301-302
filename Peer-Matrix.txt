@@ -1,10 +1,10 @@
 Peer Matrix to See who has worked with who:
 
 | Name  |  Sean | Robert| Jason | Penny | Rowan | Ketaki| Dylan |
-| Sean	|  --- 	|   ✔	|   	|   	|   	|   	|       |
+| Sean	|  --- 	|   ✔	|  ✔	|   	|   	|   	|   ✔   |
 | Robert|   ✔	|  ---	|   ✔	|   	|   	|   	|  ✔    |
-| Jason	|       |   ✔	|  ---	|   	|   	|   	|       |
+| Jason	|   ✔  |   ✔	|  ---	|   	|   	|   	|   ✔   |
 | Penny	|   	|   	|   	|  ---	|   	|   	|       |
 | Rowan	|   	|   	|   	|   	|  ---	|   	|       |
 | Ketaki|   	|   	|   	|   ✔	|   ✔	|  ---	|       |
-| Dylan |   	|   ✔	|   	|   	|   	|       |  ---  |
+| Dylan |   ✔   |   ✔	|   ✔   |   	|   	|       |  ---  |
