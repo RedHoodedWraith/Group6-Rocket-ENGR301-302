@@ -13,6 +13,10 @@ ever change.
 -These are duty cycles that have the gimbal operating at maximum angles, these
 should not be exceeded as it will potentially damage the gimbal.
 
+Resistance, determined from the datasheet (6V):
+-24 ohms @  at stopped
+-6 ohms @ no load
+
 From this anaylsis we can determine how we are going to control the servos from
 the MCU. By producing a modulated 50Hz square wave, aka PWM, on one of the pins
 we will be able to replocate these lab results. From the software integration we

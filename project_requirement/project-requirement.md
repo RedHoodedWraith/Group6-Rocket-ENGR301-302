@@ -545,9 +545,27 @@ The final prototype of the design will be completed by November 8th 2020 at the 
 Sections of work will be planned to be completed every 2 weeks in sprints. The content of these sections will be determined every fortnight on Monday and previous sprint will be reflected on.
 
 ### 5.2 Budget
+Currently known components:
 
-Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall).
+| Component        |      Purpose                            |  Price(NZD) |
+|------------------|-----------------------------------------|-------------|
+| Teensy 3.6 board | Microcontroller for base station        | $47.75      |
+| Teensy 3.2 board | Microcontroller for rocket              | $32.48      |
+| 3D printing      | Parts for rocket                        | depending   |
+| PCB              | Cicuitry for rocket and/or base station | depending   |
+| Batteries        | To power rocket                         | depending   | 
 
+
+Specific components to be confirmed: 
+
+| Component         | Previous team specific component | Price(NZD)          |
+|-------------------|----------------------------------|---------------------|
+| Radio transceiver |  RFM90                           | ~$28                |
+| GPS               |  MPA‑154‑ANT L1 GPS              | $9.45               |
+| Servo             | HK-282A                          | $8.21               |
+| Servo             | HC2422T 7.5kg                    | No longer continued |
+| Signal receiver   | FUNcube dongle                   | $33.83              |
+| Voltage regulator | L7805                            | $2.25               |
 ### 5.3 Risks
 
 This table identifies the most important risks to achieving project goals. The majority of these risks comes down to product testing. The likelihood and impact for each of these risks have been rated on a value from 1-10. Based on how likely is it that it will occur and how much damage this would cause people, product, or development.
@@ -581,7 +599,9 @@ Also document in this section any additional discussions with the School Safety 
 
 #### 5.4.1 Safety Plans
 
-Safety Plans may be required for some projects, depending on project requirements. Safety Plan templates are available on the course Health & Safety page. Two questions all teams must answer are:
+Safety Plans may be required for some projects, depending on project requirements.
+<br>
+<br>Two questions all teams must answer are:
 
 **Do project requirements involve anything that can cause serious harm or death?**  
 Examples: building/modifying devices using voltages > 60 V, chemicals, large moving machinery, flying devices, bodies of water.
@@ -595,7 +615,9 @@ If so, you will have to write a separate Safety Plan as part of project requirem
 
 If a safety plan is required, list in this section the date the School Safety officer accepted your Health and Safety plan (if accepted by submission date).
 
-_If the project is purely software and requires no contact risks involving physical harm, then state "Project requirements do not involve risk of death, serious harm, harm or injury." in this section._
+
+The project requirements may involve the risk of death, serious harm or injury to participants and members of the public. A safety plan is required to ensure all risks are addressed and planned for as the construction of the rocket progresses.  
+
 
 
 ## 6. Appendices
