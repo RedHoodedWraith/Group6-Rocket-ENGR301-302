@@ -8,7 +8,7 @@ build:
     - shell
   script:
     - docker build -t software_image -f ./Dockerfiles/software_dockerfile .
-  allow_failure: true
+  allow_failure: false
 
 unittest:
   stage: Test
