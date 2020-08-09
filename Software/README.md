@@ -11,7 +11,7 @@ To include a PlatformIO workspace to be a part of the automatic build checker, p
 include the name of the folder/workspace in its own line in the `platformio_workspace_paths.txt` file.
 
 For example:
-
+```
 |--software
 |  |
 |  |--MyWorkspace - (The Workspace to Add)
@@ -20,7 +20,7 @@ For example:
 |  |  -platformio.ini
 |  |
 |  |-platformio_workspace_paths.txt
-
+```
 We would add the following in the file `platformio_workspace_paths.txt`:
 ```
 MyWorkspace
