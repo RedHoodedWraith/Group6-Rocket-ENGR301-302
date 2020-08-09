@@ -1,0 +1,21 @@
+Cost Management Document:
+
+This doc contains all current funds spent on parts and remains funds for the
+project. Further information on specific parts and orders can be found in the
+past list document.
+
+Initial Funds $300.
+
+Costs:
+	- 2x DC servo motor ($14.4095 ea)	$28.819
+	- 2x Tx Rx Module ($14.6625 ea) 	$29.235
+	- MPU-6050 				        	$14.375
+	- STM32F405 Feather		        	$51.605
+	- MPL3115A2					        $20.57
+	- USB C Cable			        	$6.05
+	- 7.4v Battery				        $23
+	- 3.7v Battery				        $10
+
+Total Spent:					    	$193.654
+
+Total Remaining:					    $106.34
