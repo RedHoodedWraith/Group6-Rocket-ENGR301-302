@@ -7,24 +7,16 @@
 #ifndef RUTILE
 #define RUTILE
 
-#include "lars_main.h"
+#include "fluoride_dependencies.h"
 
 class Rutile{
 public:
     Rutile();
-    float getAngle (){
-        return angle; 
-    }
+    float getAngle();
 
 private:
     float angle;
-
-    void setAngle(float a) {
-        if ((a > 359.00) || (a < 0.00)){
-            perror("Invalid angle value"); 
-        }
-        angle = a;
-    }
+    void setAngle(float a);
 };
 
 #endif

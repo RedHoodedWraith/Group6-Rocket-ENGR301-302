@@ -1,9 +1,12 @@
 #include "lars_main.h"
 
+Padparadscha comms;
+
 void setup() {
-  // put your setup code here, to run once:
+    comms.begin();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  comms.sendDataSerial("Hello World!");
+  delay(1000);
 }
