@@ -15,7 +15,7 @@ public:
     Padparadscha(int baud_rate);
     bool sendData();
     void sendDataSerial(const String& message);
-    //PadparadschaSerial* getLocalSerial();
+    class PadparadschaSerial* getLocalSerial();
 private:
     class PadparadschaSerial* localSerial;
     String encodeData(String input);

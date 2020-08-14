@@ -29,7 +29,7 @@ void Padparadscha::sendDataSerial(const String& message) {
     localSerial->sendMessage(message);
 }
 
-/*PadparadschaSerial* Padparadscha::getLocalSerial() {
+class PadparadschaSerial* Padparadscha::getLocalSerial() {
     return localSerial;
-}*/
+}
 
