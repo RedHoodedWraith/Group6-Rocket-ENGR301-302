@@ -11,12 +11,13 @@
 
 class Rutile{
 public:
-    Rutile();
+    Rutile(Padparadscha& comms);
     float getAngle();
 
 private:
     float angle;
     void setAngle(float a);
+    ErrorHandler* error;
 };
 
 #endif

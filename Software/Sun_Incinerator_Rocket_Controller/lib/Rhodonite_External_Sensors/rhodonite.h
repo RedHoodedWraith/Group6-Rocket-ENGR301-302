@@ -11,7 +11,7 @@
 
 class Rhodonite{
 public: 
-    Rhodonite();
+    Rhodonite(Padparadscha& comms);
     float getAirPressure();
     float getTime();
     float getLongitude();
@@ -26,12 +26,14 @@ public:
     void setAcceleration(float a);
 
 private:
+    String classname = "Rhodonite";
     float air_pressure; 
     float time;
     float longitude;
     float latitude;
     float altitude; 
     float acceleration;
+    ErrorHandler* error;
 };
 
 #endif

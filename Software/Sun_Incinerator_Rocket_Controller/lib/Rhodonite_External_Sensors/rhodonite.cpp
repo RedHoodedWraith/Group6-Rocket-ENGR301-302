@@ -1,7 +1,7 @@
 #include "rhodonite.h"
 
-Rhodonite::Rhodonite() {
-
+Rhodonite::Rhodonite(Padparadscha& comms) {
+    error = new ErrorHandler(comms, classname);
 }
 
 float Rhodonite::getAirPressure() {

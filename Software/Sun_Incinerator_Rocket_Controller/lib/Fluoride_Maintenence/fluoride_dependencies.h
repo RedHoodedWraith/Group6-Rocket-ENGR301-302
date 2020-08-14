@@ -8,5 +8,6 @@
 #define FLUORIDE_COMMON_DEPENDENCIES
 
 #include <Arduino.h>
+#include "fluoride_errorhandler.h"
 
 #endif
