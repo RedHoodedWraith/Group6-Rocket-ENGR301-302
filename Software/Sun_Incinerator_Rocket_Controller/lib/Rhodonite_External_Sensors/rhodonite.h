@@ -11,7 +11,7 @@
 
 class Rhodonite{
 public: 
-    Rhodonite(Padparadscha& comms);
+    Rhodonite(PadparadschaSerial& comms);
     float getAirPressure();
     float getTime();
     float getLongitude();
@@ -33,7 +33,7 @@ private:
     float latitude;
     float altitude; 
     float acceleration;
-    DiagnosticHandler* error;
+    class DiagnosticHandler* error;
 };
 
 #endif

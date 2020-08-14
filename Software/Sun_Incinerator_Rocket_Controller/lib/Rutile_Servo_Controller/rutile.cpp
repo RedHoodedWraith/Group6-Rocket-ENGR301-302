@@ -1,6 +1,6 @@
 #include "rutile.h"
 
-Rutile::Rutile(Padparadscha &comms) {
+Rutile::Rutile(PadparadschaSerial &comms) {
     angle = START_ANGLE;
     error = new DiagnosticHandler(comms, classname);
 }

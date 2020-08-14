@@ -3,7 +3,7 @@
 Padparadscha comms;
 
 void setup() {
-    comms.begin();
+
 }
 
 void loop() {

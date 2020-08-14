@@ -2,12 +2,12 @@
 
 void DiagnosticHandler::report_error(String message) {
     String finalMessage = constructMessage(ERROR, message);
-    comms->sendDataSerial(finalMessage);
+    comms->sendMessage(finalMessage);
 }
 
 void DiagnosticHandler::report_message(String message) {
     String finalMessage = constructMessage(REPORT, message);
-    comms->sendDataSerial(finalMessage);
+    comms->sendMessage(finalMessage);
 }
 
 String DiagnosticHandler::constructMessage(DiagnosticType type, String message) {

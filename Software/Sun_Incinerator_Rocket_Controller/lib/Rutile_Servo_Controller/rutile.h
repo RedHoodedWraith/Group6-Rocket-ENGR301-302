@@ -13,13 +13,13 @@
 
 class Rutile{
 public:
-    Rutile(Padparadscha& comms);
+    Rutile(PadparadschaSerial& comms);
     float getAngle();
 
 private:
     const String classname = "Rutile";
     float angle;
-    DiagnosticHandler* error;
+    class DiagnosticHandler* error;
 
     void reportInvalidValueError(float val);
     void setAngle(float a);

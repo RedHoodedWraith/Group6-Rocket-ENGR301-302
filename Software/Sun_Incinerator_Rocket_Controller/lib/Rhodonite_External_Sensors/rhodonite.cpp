@@ -1,6 +1,6 @@
 #include "rhodonite.h"
 
-Rhodonite::Rhodonite(Padparadscha& comms) {
+Rhodonite::Rhodonite(PadparadschaSerial& comms) {
     error = new DiagnosticHandler(comms, classname);
 }
 

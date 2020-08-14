@@ -5,13 +5,13 @@
 
 class DiagnosticHandler{
 public:
-    DiagnosticHandler(class Padparadscha& comms, String classname): comms(&comms){
+    DiagnosticHandler(class PadparadschaSerial& comms, String classname): comms(&comms){
         DiagnosticHandler::classname = classname;
     };
     void report_error(String message);
     void report_message(String message);
 private:
-    Padparadscha* comms;
+    PadparadschaSerial* comms;
     String classname;
 
     enum DiagnosticType {

@@ -7,17 +7,17 @@
 #define PADPARADSCHA
 
 #include "fluoride_dependencies.h"
-
-#define DEFAULT_BAUD_RATE 9600
+#include "padparadscha_serial.h"
 
 class Padparadscha{
 public:
     Padparadscha();
-    bool begin(int baud_rate);
-    bool begin();
+    Padparadscha(int baud_rate);
     bool sendData();
-    void sendDataSerial(String message);
+    void sendDataSerial(const String& message);
+    //PadparadschaSerial* getLocalSerial();
 private:
+    class PadparadschaSerial* localSerial;
     String encodeData(String input);
     String decodeData(String input);
 };
