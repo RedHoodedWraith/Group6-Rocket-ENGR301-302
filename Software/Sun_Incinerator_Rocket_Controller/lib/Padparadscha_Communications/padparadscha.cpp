@@ -1,7 +1,7 @@
 #include "padparadscha.h"
 
 Padparadscha::Padparadscha() {
-
+    begin(DEFAULT_BAUD_RATE);
 }
 
 /**
