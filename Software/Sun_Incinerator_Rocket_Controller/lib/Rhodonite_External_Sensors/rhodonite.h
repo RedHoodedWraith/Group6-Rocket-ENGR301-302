@@ -33,7 +33,7 @@ private:
     float latitude;
     float altitude; 
     float acceleration;
-    ErrorHandler* error;
+    DiagnosticHandler* error;
 };
 
 #endif

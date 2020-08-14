@@ -2,7 +2,7 @@
 
 Rutile::Rutile(Padparadscha &comms) {
     angle = START_ANGLE;
-    error = new ErrorHandler(comms, classname);
+    error = new DiagnosticHandler(comms, classname);
 }
 
 void Rutile::setAngle(float a) {

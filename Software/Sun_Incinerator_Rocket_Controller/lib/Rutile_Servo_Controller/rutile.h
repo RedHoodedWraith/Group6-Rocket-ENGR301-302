@@ -19,7 +19,7 @@ public:
 private:
     const String classname = "Rutile";
     float angle;
-    ErrorHandler* error;
+    DiagnosticHandler* error;
 
     void reportInvalidValueError(float val);
     void setAngle(float a);
