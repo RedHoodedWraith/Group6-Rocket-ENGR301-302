@@ -1,13 +1,23 @@
 #include "rutile.h"
 
+Rutile::Rutile(Padparadscha &comms) {
+    angle = START_ANGLE;
+    error = new ErrorHandler(comms, classname);
+}
+
 void Rutile::setAngle(float a) {
     if ((a > 359.00) || (a < 0.00)){
-        //perror("Invalid angle value");
+        reportInvalidValueError(a);
+    } else {
+        angle = a;
     }
-    angle = a;
 }
 
 float Rutile::getAngle(){
     return angle;
+}
+
+void Rutile::reportInvalidValueError(float val) {
+    error->report_error("Invalid Angle Value: " + String(val));
 }
 

@@ -9,15 +9,20 @@
 
 #include "fluoride_dependencies.h"
 
+#define START_ANGLE 0
+
 class Rutile{
 public:
     Rutile(Padparadscha& comms);
     float getAngle();
 
 private:
+    const String classname = "Rutile";
     float angle;
-    void setAngle(float a);
     ErrorHandler* error;
+
+    void reportInvalidValueError(float val);
+    void setAngle(float a);
 };
 
 #endif
