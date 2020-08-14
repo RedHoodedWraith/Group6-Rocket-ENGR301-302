@@ -12,4 +12,15 @@
 #include "rhodonite.h"  // External Sensors
 #include "rutile.h" // Servo Controls
 
+class RocketController{
+public:
+    RocketController();
+    class Padparadscha* communicator;
+    class Rhodonite* sensors;
+    class Rutile* servos;
+
+private:
+    class PadparadschaSerial* serial_channel;
+};
+
 #endif

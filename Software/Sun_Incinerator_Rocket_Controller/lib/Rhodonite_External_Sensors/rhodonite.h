@@ -11,7 +11,7 @@
 
 class Rhodonite{
 public: 
-    Rhodonite(PadparadschaSerial& comms);
+    Rhodonite(PadparadschaSerial* comms);
     float getAirPressure();
     float getTime();
     float getLongitude();

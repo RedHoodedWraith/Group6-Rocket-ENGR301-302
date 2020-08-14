@@ -13,7 +13,7 @@
 
 class Rutile{
 public:
-    Rutile(PadparadschaSerial& comms);
+    Rutile(PadparadschaSerial* comms);
     float getAngle();
 
 private:

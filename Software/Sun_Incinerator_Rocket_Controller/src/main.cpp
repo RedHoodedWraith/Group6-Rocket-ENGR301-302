@@ -1,12 +1,12 @@
 #include "lars_main.h"
 
-Padparadscha comms;
+RocketController rocket;
 
 void setup() {
 
 }
 
 void loop() {
-  comms.sendDataSerial("Hello World!");
+  rocket.communicator->sendDataSerial("Hello World!");
   delay(1000);
 }

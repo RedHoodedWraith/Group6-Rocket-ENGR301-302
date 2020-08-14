@@ -5,7 +5,7 @@
 
 class DiagnosticHandler{
 public:
-    DiagnosticHandler(class PadparadschaSerial& comms, String classname): comms(&comms){
+    DiagnosticHandler(class PadparadschaSerial* comms, String classname): comms(comms){
         DiagnosticHandler::classname = classname;
     };
     void report_error(String message);
