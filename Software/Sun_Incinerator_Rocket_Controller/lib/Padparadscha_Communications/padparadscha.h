@@ -6,13 +6,18 @@
 #ifndef PADPARADSCHA
 #define PADPARADSCHA
 
-#include "lars_main.h"
+#include "fluoride_dependencies.h"
+#include "padparadscha_serial.h"
 
 class Padparadscha{
 public:
     Padparadscha();
+    Padparadscha(int baud_rate);
     bool sendData();
+    void sendDataSerial(const String& message);
+    class PadparadschaSerial* getLocalSerial();
 private:
+    class PadparadschaSerial* localSerial;
     String encodeData(String input);
     String decodeData(String input);
 };

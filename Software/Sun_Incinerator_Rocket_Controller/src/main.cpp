@@ -1,9 +1,12 @@
 #include "lars_main.h"
 
+RocketController rocket;
+
 void setup() {
-  // put your setup code here, to run once:
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  rocket.communicator->sendDataSerial("Hello World!");
+  delay(1000);
 }

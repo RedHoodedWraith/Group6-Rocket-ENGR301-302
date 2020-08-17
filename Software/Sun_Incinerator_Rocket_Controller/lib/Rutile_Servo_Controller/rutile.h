@@ -7,24 +7,22 @@
 #ifndef RUTILE
 #define RUTILE
 
-#include "lars_main.h"
+#include "fluoride_dependencies.h"
+
+#define START_ANGLE 0
 
 class Rutile{
 public:
-    Rutile();
-    float getAngle (){
-        return angle; 
-    }
+    Rutile(PadparadschaSerial* comms);
+    float getAngle();
 
 private:
+    const String classname = "Rutile";
     float angle;
+    class DiagnosticHandler* error;
 
-    void setAngle(float a) {
-        if ((a > 359.00) || (a < 0.00)){
-            perror("Invalid angle value"); 
-        }
-        angle = a;
-    }
+    void reportInvalidValueError(float val);
+    void setAngle(float a);
 };
 
 #endif
