@@ -17,3 +17,5 @@
 6/8/20: Test sketch confirming the MCU can control the gimbal servos via PWM and external PSU.
 
 20/8/20: Got HAL framework setup as a possible option.
+
+24/8/20: Got USB-Serial debug statements working between IDE and the Feather.
