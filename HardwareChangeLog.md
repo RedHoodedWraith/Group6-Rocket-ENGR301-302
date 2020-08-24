@@ -15,3 +15,5 @@
 5/8//20: Feather configured with PlatformIO on the computers of two of the group members.
 
 6/8/20: Test sketch confirming the MCU can control the gimbal servos via PWM and external PSU.
+
+20/8/20: Got HAL framework setup as a possible option.
