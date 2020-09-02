@@ -8,8 +8,6 @@
 
 #include "fluoride_dependencies.h"
 #include "padparadscha_serial.h"
-#include <SPI.h>
-#include <RH_RF95.h>
 
 class Padparadscha{
 public:
@@ -22,7 +20,6 @@ private:
     class PadparadschaSerial* localSerial;
     String encodeData(String input);
     String decodeData(String input);
-    class RH_RF95* rf95;
 };
 
 #endif
