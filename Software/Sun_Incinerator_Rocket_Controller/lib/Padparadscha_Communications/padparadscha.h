@@ -8,6 +8,8 @@
 
 #include "fluoride_dependencies.h"
 #include "padparadscha_serial.h"
+#include <SPI.h>
+#include <RH_RF95.h>
 
 class Padparadscha{
 public:
