@@ -6,7 +6,7 @@
  *
  */
 Padparadscha::Padparadscha() {
-    localSerial = new PadparadschaSerial();
+    localSerial = new PadparadschaSerial(); 
 }
 
 /**
