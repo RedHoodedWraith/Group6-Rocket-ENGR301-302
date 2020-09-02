@@ -1,0 +1,7 @@
+
+An Initial Investigation into Interrupt Driven PWM
+
+ADAPTED FROM STM32 Datasheet
+There is a nested vectored interrupt controller that is able to manage 16 priority levels and handle 82 maskable interrupt channels. Additionally, there are 16 interrupt lines of the Cortex M4. This is primarily to do with the onboard interrupt processing that is handled by the core and making sure that the interrupts are handled by priority levels while an interrupt entry can be restored on interrupt exit. This is useful information with regard to the onboard processing of interrupt, but doesn’t seem to have much effect on how it could be used to drive the PWM control.
+The aspect of the board that appears to have a more direct effect on the control of OWM is going to be the external interrupt/event controller (EXTI). This controller has 23 edge-detector liens that can be used to generate interrupt/event requests. Additionally, each line can be independently configured to select what the trigger event will be. And this can be the rising edge, falling edge or both and all can be masked independently. Apparently, the EXTI can detect a line with a pulse width that is shorter than the onboard clock period.
+It would appear that the use of this channel and directing the driving event can be used as an interrupt controller for the STM32.
