@@ -7,6 +7,7 @@
  */
 Padparadscha::Padparadscha() {
     localSerial = new PadparadschaSerial();
+    rf95 = new RH_RF95();
 }
 
 /**
