@@ -14,47 +14,161 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F4:Adafruit-STM32F405 U?
-U 1 1 5F283914
-P 3100 4300
-F 0 "U?" H 3075 7206 50  0000 C CNN
-F 1 "Adafruit-STM32F405" H 3075 7115 50  0000 C CNN
-F 2 "" H 3050 5500 50  0001 C CNN
-F 3 "" H 3050 5500 50  0001 C CNN
-	1    3100 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_ST_STM32F4:MPU-6050-Board U?
 U 1 1 5F287F85
-P 5900 3150
-F 0 "U?" H 5950 5206 50  0000 C CNN
-F 1 "MPU-6050-Board" H 5950 5115 50  0000 C CNN
-F 2 "" H 5900 3150 50  0001 C CNN
-F 3 "" H 5900 3150 50  0001 C CNN
-	1    5900 3150
-	1    0    0    -1  
+P 2100 5200
+F 0 "U?" H 2150 7256 50  0000 C CNN
+F 1 "MPU-6050-Board" H 2150 7165 50  0000 C CNN
+F 2 "" H 2100 5200 50  0001 C CNN
+F 3 "" H 2100 5200 50  0001 C CNN
+	1    2100 5200
+	0    1    1    0   
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M1
 U 1 1 5F51985B
-P 8450 2400
-F 0 "M?" H 8782 2465 50  0000 L CNN
-F 1 "Motor_Servo" H 8782 2374 50  0000 L CNN
-F 2 "" H 8450 2210 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8450 2210 50  0001 C CNN
-	1    8450 2400
+P 9050 2400
+F 0 "M1" H 9382 2465 50  0000 L CNN
+F 1 "Motor_Servo" H 9382 2374 50  0000 L CNN
+F 2 "" H 9050 2210 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 9050 2210 50  0001 C CNN
+	1    9050 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M2
 U 1 1 5F51A508
 P 8450 3000
-F 0 "M?" H 8782 3065 50  0000 L CNN
+F 0 "M2" H 8782 3065 50  0000 L CNN
 F 1 "Motor_Servo" H 8782 2974 50  0000 L CNN
 F 2 "" H 8450 2810 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8450 2810 50  0001 C CNN
 	1    8450 3000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F51CDC3
+P 1500 1100
+F 0 "BT1" H 1618 1196 50  0000 L CNN
+F 1 "7.4V" H 1618 1105 50  0000 L CNN
+F 2 "" V 1500 1160 50  0001 C CNN
+F 3 "~" V 1500 1160 50  0001 C CNN
+	1    1500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 5F51D5BE
+P 800 1100
+F 0 "BT2" H 918 1196 50  0000 L CNN
+F 1 "3.7V" H 918 1105 50  0000 L CNN
+F 2 "" V 800 1160 50  0001 C CNN
+F 3 "~" V 800 1160 50  0001 C CNN
+	1    800  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Pressure:MPL3115A2 U?
+U 1 1 5F5202E7
+P 6950 2250
+F 0 "U?" H 6950 1661 50  0000 C CNN
+F 1 "MPL3115A2" H 6950 1570 50  0000 C CNN
+F 2 "Package_LGA:NXP_LGA-8_3x5mm_P1.25mm_H1.1mm" H 7950 1800 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/MPL3115A2.pdf" H 6950 2250 50  0001 C CNN
+	1    6950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F52CDC7
+P 800 1200
+F 0 "#PWR?" H 800 950 50  0001 C CNN
+F 1 "GND" H 805 1027 50  0000 C CNN
+F 2 "" H 800 1200 50  0001 C CNN
+F 3 "" H 800 1200 50  0001 C CNN
+	1    800  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F52D39B
+P 1500 1200
+F 0 "#PWR?" H 1500 950 50  0001 C CNN
+F 1 "GND" H 1505 1027 50  0000 C CNN
+F 2 "" H 1500 1200 50  0001 C CNN
+F 3 "" H 1500 1200 50  0001 C CNN
+	1    1500 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 800  850  1    50   Input ~ 0
+3.7_Battery
+Wire Wire Line
+	800  900  800  850 
+Text GLabel 1500 800  1    50   Input ~ 0
+7.4
+Wire Wire Line
+	1500 800  1500 900 
+Text GLabel 3600 3250 3    50   Input ~ 0
+3.7_Battery
+Wire Wire Line
+	3600 3250 3600 2850
+Text GLabel 4000 3250 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	4000 3250 4000 2850
+$Comp
+L MCU_ST_STM32F4:Adafruit-STM32F405 U?
+U 1 1 5F283914
+P 1900 2450
+F 0 "U?" H 1875 5356 50  0000 C CNN
+F 1 "Adafruit-STM32F405" H 1875 5265 50  0000 C CNN
+F 2 "" H 1850 3650 50  0001 C CNN
+F 3 "" H 1850 3650 50  0001 C CNN
+	1    1900 2450
+	0    1    1    0   
+$EndComp
+Text GLabel 3250 4300 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	3250 4750 3250 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5F54ABC4
+P 3100 4350
+F 0 "#PWR?" H 3100 4100 50  0001 C CNN
+F 1 "GND" H 3105 4177 50  0000 C CNN
+F 2 "" H 3100 4350 50  0001 C CNN
+F 3 "" H 3100 4350 50  0001 C CNN
+	1    3100 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 4350 3100 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5F54BC23
+P 3900 3350
+F 0 "#PWR?" H 3900 3100 50  0001 C CNN
+F 1 "GND" H 3905 3177 50  0000 C CNN
+F 2 "" H 3900 3350 50  0001 C CNN
+F 3 "" H 3900 3350 50  0001 C CNN
+	1    3900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3350 3900 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5F54CD80
+P 3700 1550
+F 0 "#PWR?" H 3700 1300 50  0001 C CNN
+F 1 "GND" H 3705 1377 50  0000 C CNN
+F 2 "" H 3700 1550 50  0001 C CNN
+F 3 "" H 3700 1550 50  0001 C CNN
+	1    3700 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 1550 3700 2000
 $EndSCHEMATC
