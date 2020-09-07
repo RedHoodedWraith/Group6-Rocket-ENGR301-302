@@ -272,4 +272,76 @@ Wire Wire Line
 Connection ~ 4150 4450
 Wire Wire Line
 	4150 4450 3450 4450
+Text Notes 7450 7500 0    50   ~ 0
+Avionics package system Design\n
+Text Notes 7000 6750 0    118  ~ 0
+Contributors: Robert Reid
+$Comp
+L Device:R R_S
+U 1 1 5F595077
+P 6400 1250
+F 0 "R_S" V 6193 1250 50  0000 C CNN
+F 1 "R" V 6284 1250 50  0000 C CNN
+F 2 "" V 6330 1250 50  0001 C CNN
+F 3 "~" H 6400 1250 50  0001 C CNN
+	1    6400 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener Vz
+U 1 1 5F595B70
+P 6700 1650
+F 0 "Vz" V 6654 1730 50  0000 L CNN
+F 1 "D_Zener" V 6745 1730 50  0000 L CNN
+F 2 "" H 6700 1650 50  0001 C CNN
+F 3 "~" H 6700 1650 50  0001 C CNN
+	1    6700 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R_L
+U 1 1 5F596884
+P 7250 1650
+F 0 "R_L" H 7320 1696 50  0000 L CNN
+F 1 "R" H 7320 1605 50  0000 L CNN
+F 2 "" V 7180 1650 50  0001 C CNN
+F 3 "~" H 7250 1650 50  0001 C CNN
+	1    7250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1250 6700 1250
+Wire Wire Line
+	6700 1250 6700 1500
+Wire Wire Line
+	7250 1250 7250 1500
+Connection ~ 6700 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5F599671
+P 6450 1950
+F 0 "#PWR?" H 6450 1700 50  0001 C CNN
+F 1 "GND" V 6455 1822 50  0000 R CNN
+F 2 "" H 6450 1950 50  0001 C CNN
+F 3 "" H 6450 1950 50  0001 C CNN
+	1    6450 1950
+	0    1    1    0   
+$EndComp
+Text GLabel 6000 1250 0    50   Input ~ 0
+3.7_Battery
+Wire Wire Line
+	6000 1250 6250 1250
+Text GLabel 7600 1250 2    50   Input ~ 0
+~6V_Source
+Wire Wire Line
+	6700 1250 7600 1250
+Wire Wire Line
+	6450 1950 6700 1950
+Wire Wire Line
+	6700 1800 6700 1950
+Connection ~ 6700 1950
+Wire Wire Line
+	6700 1950 7250 1950
+Wire Wire Line
+	7250 1950 7250 1800
 $EndSCHEMATC
