@@ -19,3 +19,5 @@
 20/8/20: Got HAL framework setup as a possible option.
 
 24/8/20: Got USB-Serial debug statements working between IDE and the Feather.
+
+11/9/20: Test program for IMU is working.
