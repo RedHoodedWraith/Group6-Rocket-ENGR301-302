@@ -1,6 +1,6 @@
 
 
-|Supplier|	Supplier Part Number|	Manufacturer Part Number|	Qty|	Description|	Price Indivdual|	Total (NZD)|
+|Supplier|	Supplier Part Number|	Manufacturer Part Number|	Qty|	Description|	Price Indivdual|	Total (NZD) incl GST|
 |------|-------|--------|-----|-----|-----|------|
 |Digi-key|		1738-1232-ND|		SER0011|	2|	"		DC Motor Servomotor, RC (Hobby) 6VDC"|	14.4095|	28.819|
 |Digi-key|	1597-1491-ND|	109990165|	2|	"General ISM < 1GHz LoRa™ Transceiver Module 433MHz Surface Mount	|	14.6625|	29.325|
@@ -9,7 +9,8 @@
 |Digi-key|	1528-1034-ND|	1893|	1 |	MPL3115A2 - Pressure, Temperature Sensor Evaluation Board|	$20.57|	20.5735|
 |Digi-key|	123-A-USB31C-20A-050A-ND |	A-USB31C-20A-050A|	1 |	USB 3.1 Type C to A Cable|	$6.05|	6.05|
 |Mr Positive|	N/A |	SKU: F182|	1 |	7.4v 500mah DiFeida Quadrocopter Lipo Battery|	$23.00|	23.00|
-
+|Mr Positive|	N/A |	SKU: GP37580GT|	1 |	Giant Power 1s 3.7v 580mah 25c 1-24 Carisma |	$13.00|	13.00|
+|Seed Studio|	N/A |	SKU: 113020003|	1 |	Grove - GPS Module |	$40.595|	40.595|
 
 
 | Component        |      Purpose                            |  Price(NZD) |

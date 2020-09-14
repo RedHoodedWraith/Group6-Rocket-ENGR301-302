@@ -34,6 +34,7 @@ private:
     float altitude; 
     float acceleration;
     class DiagnosticHandler* error;
+    
 };
 
 #endif
