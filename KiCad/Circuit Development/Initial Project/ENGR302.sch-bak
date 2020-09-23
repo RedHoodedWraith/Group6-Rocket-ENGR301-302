@@ -432,4 +432,130 @@ Wire Wire Line
 	9250 1800 9400 1800
 Wire Wire Line
 	9400 1250 9400 1800
+$Comp
+L Switch:SW_SPST SafetySwitch
+U 1 1 5F6AF5C8
+P 7600 3800
+F 0 "SafetySwitch" H 7600 4035 50  0000 C CNN
+F 1 "SW_SPST" H 7600 3944 50  0000 C CNN
+F 2 "" H 7600 3800 50  0001 C CNN
+F 3 "~" H 7600 3800 50  0001 C CNN
+	1    7600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5F6B0116
+P 8100 3800
+F 0 "D?" H 8100 4065 50  0000 C CNN
+F 1 "DIODE" H 8100 3974 50  0000 C CNN
+F 2 "" H 8100 3800 50  0001 C CNN
+F 3 "~" H 8100 3800 50  0001 C CNN
+	1    8100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C Super_C
+U 1 1 5F6B0EA1
+P 8600 3800
+F 0 "Super_C" V 8348 3800 50  0000 C CNN
+F 1 "C" V 8439 3800 50  0000 C CNN
+F 2 "" H 8638 3650 50  0001 C CNN
+F 3 "~" H 8600 3800 50  0001 C CNN
+	1    8600 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R Igition
+U 1 1 5F6B19F9
+P 9050 4050
+F 0 "Igition" H 9120 4096 50  0000 L CNN
+F 1 "R" H 9120 4005 50  0000 L CNN
+F 2 "" V 8980 4050 50  0001 C CNN
+F 3 "~" H 9050 4050 50  0001 C CNN
+	1    9050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Ignition
+U 1 1 5F6B21A9
+P 9650 4050
+F 0 "Ignition" H 9720 4096 50  0000 L CNN
+F 1 "R" H 9720 4005 50  0000 L CNN
+F 2 "" V 9580 4050 50  0001 C CNN
+F 3 "~" H 9650 4050 50  0001 C CNN
+	1    9650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 5F6B51D4
+P 8950 4550
+F 0 "Q?" H 9154 4596 50  0000 L CNN
+F 1 "2N7000" H 9154 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9150 4475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 8950 4550 50  0001 L CNN
+	1    8950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 5F6B665C
+P 9550 4550
+F 0 "Q?" H 9754 4596 50  0000 L CNN
+F 1 "2N7000" H 9754 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9750 4475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 9550 4550 50  0001 L CNN
+	1    9550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6B7AB0
+P 9050 4950
+F 0 "#PWR?" H 9050 4700 50  0001 C CNN
+F 1 "GND" H 9055 4777 50  0000 C CNN
+F 2 "" H 9050 4950 50  0001 C CNN
+F 3 "" H 9050 4950 50  0001 C CNN
+	1    9050 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6B7E5A
+P 9650 4950
+F 0 "#PWR?" H 9650 4700 50  0001 C CNN
+F 1 "GND" H 9655 4777 50  0000 C CNN
+F 2 "" H 9650 4950 50  0001 C CNN
+F 3 "" H 9650 4950 50  0001 C CNN
+	1    9650 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4950 9650 4750
+Wire Wire Line
+	9050 4750 9050 4950
+Wire Wire Line
+	9050 4350 9050 4200
+Wire Wire Line
+	9650 4350 9650 4200
+Wire Wire Line
+	7800 3800 7900 3800
+Wire Wire Line
+	8300 3800 8450 3800
+Wire Wire Line
+	8750 3800 9050 3800
+Wire Wire Line
+	9650 3800 9650 3900
+Wire Wire Line
+	9050 3900 9050 3800
+Connection ~ 9050 3800
+Wire Wire Line
+	9050 3800 9650 3800
+Wire Wire Line
+	8500 4300 9350 4300
+Wire Wire Line
+	9350 4300 9350 4550
+Wire Wire Line
+	8500 4550 8750 4550
 $EndSCHEMATC
