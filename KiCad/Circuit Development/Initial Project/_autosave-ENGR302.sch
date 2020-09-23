@@ -1,0 +1,574 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Motor:Motor_Servo M1
+U 1 1 5F51985B
+P 4350 5950
+F 0 "M1" H 4682 6015 50  0000 L CNN
+F 1 "Motor_Servo" H 4682 5924 50  0000 L CNN
+F 2 "" H 4350 5760 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4350 5760 50  0001 C CNN
+	1    4350 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Motor:Motor_Servo M2
+U 1 1 5F51A508
+P 3850 5950
+F 0 "M2" H 4182 6015 50  0000 L CNN
+F 1 "Motor_Servo" H 4182 5924 50  0000 L CNN
+F 2 "" H 3850 5760 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 3850 5760 50  0001 C CNN
+	1    3850 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F51CDC3
+P 1500 1300
+F 0 "BT1" H 1618 1396 50  0000 L CNN
+F 1 "7.4V" H 1618 1305 50  0000 L CNN
+F 2 "" V 1500 1360 50  0001 C CNN
+F 3 "~" V 1500 1360 50  0001 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 5F51D5BE
+P 800 1300
+F 0 "BT2" H 918 1396 50  0000 L CNN
+F 1 "3.7V" H 918 1305 50  0000 L CNN
+F 2 "" V 800 1360 50  0001 C CNN
+F 3 "~" V 800 1360 50  0001 C CNN
+	1    800  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F52CDC7
+P 800 1400
+F 0 "#PWR?" H 800 1150 50  0001 C CNN
+F 1 "GND" H 805 1227 50  0000 C CNN
+F 2 "" H 800 1400 50  0001 C CNN
+F 3 "" H 800 1400 50  0001 C CNN
+	1    800  1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F52D39B
+P 1500 1400
+F 0 "#PWR?" H 1500 1150 50  0001 C CNN
+F 1 "GND" H 1505 1227 50  0000 C CNN
+F 2 "" H 1500 1400 50  0001 C CNN
+F 3 "" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 800  1050 1    50   Input ~ 0
+3.7_Battery
+Wire Wire Line
+	800  1100 800  1050
+Text GLabel 1500 1000 1    50   Input ~ 0
+7.4
+Wire Wire Line
+	1500 1000 1500 1100
+Wire Wire Line
+	4150 4450 4150 4050
+Wire Wire Line
+	4450 4550 4450 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5F54CD80
+P 4250 2750
+F 0 "#PWR?" H 4250 2500 50  0001 C CNN
+F 1 "GND" H 4255 2577 50  0000 C CNN
+F 2 "" H 4250 2750 50  0001 C CNN
+F 3 "" H 4250 2750 50  0001 C CNN
+	1    4250 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 2750 4250 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5F54BC23
+P 4450 4550
+F 0 "#PWR?" H 4450 4300 50  0001 C CNN
+F 1 "GND" H 4455 4377 50  0000 C CNN
+F 2 "" H 4450 4550 50  0001 C CNN
+F 3 "" H 4450 4550 50  0001 C CNN
+	1    4450 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 4450 3    50   Input ~ 0
+3.7_Battery
+$Comp
+L MCU_ST_STM32F4:MPU-6050-Board U?
+U 1 1 5F287F85
+P 1350 5350
+F 0 "U?" H 1400 7406 50  0000 C CNN
+F 1 "MPU-6050-Board" H 1400 7315 50  0000 C CNN
+F 2 "" H 1350 5350 50  0001 C CNN
+F 3 "" H 1350 5350 50  0001 C CNN
+	1    1350 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 5650 3850 5350
+Wire Wire Line
+	4350 5350 4350 5650
+Text GLabel 4750 5350 2    50   Input ~ 0
+~6V_Source
+Wire Wire Line
+	3850 5350 4350 5350
+Connection ~ 4350 5350
+Wire Wire Line
+	4350 5350 4750 5350
+Wire Wire Line
+	4250 5600 4250 5650
+$Comp
+L power:GND #PWR?
+U 1 1 5F56E80B
+P 1700 2700
+F 0 "#PWR?" H 1700 2450 50  0001 C CNN
+F 1 "GND" H 1705 2527 50  0000 C CNN
+F 2 "" H 1700 2700 50  0001 C CNN
+F 3 "" H 1700 2700 50  0001 C CNN
+	1    1700 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 2700 1700 3150
+$Comp
+L Sensor_Pressure:MPL3115A2 U?
+U 1 1 5F5202E7
+P 1700 3650
+F 0 "U?" H 1700 3061 50  0000 C CNN
+F 1 "MPL3115A2" H 1700 2970 50  0000 C CNN
+F 2 "Package_LGA:NXP_LGA-8_3x5mm_P1.25mm_H1.1mm" H 2700 3200 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/MPL3115A2.pdf" H 1700 3650 50  0001 C CNN
+	1    1700 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 3750 2750 4250
+Wire Wire Line
+	2750 4250 3150 4250
+Wire Wire Line
+	3150 4250 3150 4050
+Wire Wire Line
+	2100 3750 2750 3750
+Wire Wire Line
+	2100 3650 2700 3650
+Wire Wire Line
+	2700 3650 2700 4150
+Wire Wire Line
+	2700 4150 3050 4150
+Wire Wire Line
+	3050 4150 3050 4050
+Wire Wire Line
+	4550 4350 4550 4050
+Text Notes 7450 7500 0    50   ~ 0
+Avionics package system Design\n
+Text Notes 7000 6750 0    118  ~ 0
+Contributors: Robert Reid
+$Comp
+L Device:R R_S
+U 1 1 5F595077
+P 3250 1200
+F 0 "R_S" V 3043 1200 50  0000 C CNN
+F 1 "R" V 3134 1200 50  0000 C CNN
+F 2 "" V 3180 1200 50  0001 C CNN
+F 3 "~" H 3250 1200 50  0001 C CNN
+	1    3250 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener Vz
+U 1 1 5F595B70
+P 3550 1600
+F 0 "Vz" V 3504 1680 50  0000 L CNN
+F 1 "D_Zener" V 3595 1680 50  0000 L CNN
+F 2 "" H 3550 1600 50  0001 C CNN
+F 3 "~" H 3550 1600 50  0001 C CNN
+	1    3550 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R_L
+U 1 1 5F596884
+P 4100 1600
+F 0 "R_L" H 4170 1646 50  0000 L CNN
+F 1 "R" H 4170 1555 50  0000 L CNN
+F 2 "" V 4030 1600 50  0001 C CNN
+F 3 "~" H 4100 1600 50  0001 C CNN
+	1    4100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1200 3550 1200
+Wire Wire Line
+	3550 1200 3550 1450
+Wire Wire Line
+	4100 1200 4100 1450
+Connection ~ 3550 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5F599671
+P 3300 1900
+F 0 "#PWR?" H 3300 1650 50  0001 C CNN
+F 1 "GND" V 3305 1772 50  0000 R CNN
+F 2 "" H 3300 1900 50  0001 C CNN
+F 3 "" H 3300 1900 50  0001 C CNN
+	1    3300 1900
+	0    1    1    0   
+$EndComp
+Text GLabel 2850 1200 0    50   Input ~ 0
+3.7_Battery
+Wire Wire Line
+	2850 1200 3100 1200
+Text GLabel 4450 1200 2    50   Input ~ 0
+~6V_Source
+Wire Wire Line
+	3550 1200 4100 1200
+Wire Wire Line
+	3300 1900 3550 1900
+Wire Wire Line
+	3550 1750 3550 1900
+Connection ~ 3550 1900
+Wire Wire Line
+	3550 1900 4100 1900
+Wire Wire Line
+	4100 1900 4100 1750
+$Comp
+L MCU_ST_STM32F4:Adafruit-STM32F405 U?
+U 1 1 5F283914
+P 2450 3650
+F 0 "U?" H 2425 6556 50  0000 C CNN
+F 1 "Adafruit-STM32F405" H 2425 6465 50  0000 C CNN
+F 2 "" H 2400 4850 50  0001 C CNN
+F 3 "" H 2400 4850 50  0001 C CNN
+	1    2450 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F60EDCB
+P 3750 5650
+F 0 "#PWR?" H 3750 5400 50  0001 C CNN
+F 1 "GND" H 3755 5477 50  0000 C CNN
+F 2 "" H 3750 5650 50  0001 C CNN
+F 3 "" H 3750 5650 50  0001 C CNN
+	1    3750 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 4900 1900 4450
+Wire Wire Line
+	1900 4450 3250 4450
+Wire Wire Line
+	3250 4450 3250 4050
+Wire Wire Line
+	1800 4150 1800 4350
+Wire Wire Line
+	1800 4350 3950 4350
+Wire Wire Line
+	2050 4850 2050 4150
+Wire Wire Line
+	2050 4150 2700 4150
+Connection ~ 2700 4150
+Wire Wire Line
+	2200 4900 2200 4250
+Wire Wire Line
+	2200 4250 2750 4250
+Connection ~ 2750 4250
+Wire Wire Line
+	2650 4900 2650 4550
+Wire Wire Line
+	2650 4550 3950 4550
+Wire Wire Line
+	3950 4550 3950 4350
+Connection ~ 3950 4350
+Wire Wire Line
+	3950 4350 4550 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5F57AF46
+P 4250 5600
+F 0 "#PWR?" H 4250 5350 50  0001 C CNN
+F 1 "GND" H 4255 5427 50  0000 C CNN
+F 2 "" H 4250 5600 50  0001 C CNN
+F 3 "" H 4250 5600 50  0001 C CNN
+	1    4250 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6290C2
+P 1800 5950
+F 0 "#PWR?" H 1800 5700 50  0001 C CNN
+F 1 "GND" H 1805 5777 50  0000 C CNN
+F 2 "" H 1800 5950 50  0001 C CNN
+F 3 "" H 1800 5950 50  0001 C CNN
+	1    1800 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 5950 1900 5950
+Wire Wire Line
+	1900 5950 1900 5800
+Wire Wire Line
+	3350 4050 3350 4950
+Wire Wire Line
+	3950 5750 3950 5650
+Wire Wire Line
+	3350 4950 3950 4950
+Connection ~ 3950 5650
+Wire Wire Line
+	3950 5650 3950 4950
+Wire Wire Line
+	4450 5750 4450 5650
+Wire Wire Line
+	4450 5050 3450 5050
+Wire Wire Line
+	3450 4050 3450 5050
+Connection ~ 4450 5650
+Wire Wire Line
+	4450 5650 4450 5050
+Connection ~ 4100 1200
+Wire Wire Line
+	4100 1200 4450 1200
+$Comp
+L RF_Module:RFM98W-433S2 TX
+U 1 1 5F638DD7
+P 5550 2350
+F 0 "TX" H 5550 3031 50  0000 C CNN
+F 1 "RFM98W-433S2" H 5550 2940 50  0000 C CNN
+F 2 "" H 2250 4000 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcdb5e17543.pdf" H 2250 4000 50  0001 C CNN
+	1    5550 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2950 4800 2950
+Wire Wire Line
+	4800 2950 4800 2800
+Wire Wire Line
+	4800 2800 4250 2800
+Connection ~ 4250 2800
+Wire Wire Line
+	4250 2800 4250 3200
+Wire Wire Line
+	4550 3200 4550 1850
+Wire Wire Line
+	4550 1850 5550 1850
+$Comp
+L Device:Antenna AE1
+U 1 1 5F6482FD
+P 6350 1450
+F 0 "AE1" H 6430 1439 50  0000 L CNN
+F 1 "Antenna" H 6430 1348 50  0000 L CNN
+F 2 "" H 6350 1450 50  0001 C CNN
+F 3 "~" H 6350 1450 50  0001 C CNN
+	1    6350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1650 6350 2050
+Wire Wire Line
+	6350 2050 6050 2050
+Wire Wire Line
+	6050 2750 6050 4400
+Wire Wire Line
+	6050 4400 3550 4400
+Wire Wire Line
+	3550 4400 3550 4050
+Wire Wire Line
+	3650 4050 3650 4500
+Wire Wire Line
+	3650 4500 6150 4500
+Wire Wire Line
+	6150 4500 6150 2650
+Wire Wire Line
+	6150 2650 6050 2650
+$Comp
+L RF_Module:RFM98W-433S2 RX
+U 1 1 5F6505C6
+P 8750 2100
+F 0 "RX" H 8750 2781 50  0000 C CNN
+F 1 "RFM98W-433S2" H 8750 2690 50  0000 C CNN
+F 2 "" H 5450 3750 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcdb5e17543.pdf" H 5450 3750 50  0001 C CNN
+	1    8750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Antenna AE2
+U 1 1 5F651E11
+P 9400 1050
+F 0 "AE2" H 9480 1039 50  0000 L CNN
+F 1 "Antenna" H 9480 948 50  0000 L CNN
+F 2 "" H 9400 1050 50  0001 C CNN
+F 3 "~" H 9400 1050 50  0001 C CNN
+	1    9400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1800 9400 1800
+Wire Wire Line
+	9400 1250 9400 1800
+$Comp
+L Switch:SW_SPST SafetySwitch
+U 1 1 5F6AF5C8
+P 7600 3800
+F 0 "SafetySwitch" H 7600 4035 50  0000 C CNN
+F 1 "SW_SPST" H 7600 3944 50  0000 C CNN
+F 2 "" H 7600 3800 50  0001 C CNN
+F 3 "~" H 7600 3800 50  0001 C CNN
+	1    7600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5F6B0116
+P 8100 3800
+F 0 "D?" H 8100 4065 50  0000 C CNN
+F 1 "DIODE" H 8100 3974 50  0000 C CNN
+F 2 "" H 8100 3800 50  0001 C CNN
+F 3 "~" H 8100 3800 50  0001 C CNN
+	1    8100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C Super_C
+U 1 1 5F6B0EA1
+P 7850 3950
+F 0 "Super_C" V 7598 3950 50  0000 C CNN
+F 1 "C" V 7689 3950 50  0000 C CNN
+F 2 "" H 7888 3800 50  0001 C CNN
+F 3 "~" H 7850 3950 50  0001 C CNN
+	1    7850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Ignition/R_L
+U 1 1 5F6B19F9
+P 9050 4050
+F 0 "Ignition/R_L" H 9120 4096 50  0000 L CNN
+F 1 "R" H 9120 4005 50  0000 L CNN
+F 2 "" V 8980 4050 50  0001 C CNN
+F 3 "~" H 9050 4050 50  0001 C CNN
+	1    9050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 5F6B51D4
+P 8950 4550
+F 0 "Q?" H 9154 4596 50  0000 L CNN
+F 1 "2N7000" H 9154 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9150 4475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 8950 4550 50  0001 L CNN
+	1    8950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6B7AB0
+P 9050 4950
+F 0 "#PWR?" H 9050 4700 50  0001 C CNN
+F 1 "GND" H 9055 4777 50  0000 C CNN
+F 2 "" H 9050 4950 50  0001 C CNN
+F 3 "" H 9050 4950 50  0001 C CNN
+	1    9050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4750 9050 4950
+Wire Wire Line
+	9050 4350 9050 4200
+Wire Wire Line
+	7800 3800 7850 3800
+Wire Wire Line
+	7850 4250 7850 4100
+Wire Wire Line
+	10500 3300 10500 3400
+Wire Wire Line
+	9050 3900 9050 3800
+$Comp
+L Device:R R_pulldown
+U 1 1 5F6CD418
+P 8600 4800
+F 0 "R_pulldown" H 8670 4846 50  0000 L CNN
+F 1 "10k-100k" H 8670 4755 50  0000 L CNN
+F 2 "" V 8530 4800 50  0001 C CNN
+F 3 "~" H 8600 4800 50  0001 C CNN
+	1    8600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4650 8600 4550
+Connection ~ 8600 4550
+Wire Wire Line
+	8600 4550 8750 4550
+Wire Wire Line
+	8600 4950 9050 4950
+Connection ~ 9050 4950
+Connection ~ 7850 3800
+Wire Wire Line
+	7850 3800 7900 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5F6D4040
+P 7850 4250
+F 0 "#PWR?" H 7850 4000 50  0001 C CNN
+F 1 "GND" H 7855 4077 50  0000 C CNN
+F 2 "" H 7850 4250 50  0001 C CNN
+F 3 "" H 7850 4250 50  0001 C CNN
+	1    7850 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 3800 0    50   Input ~ 0
+7.4
+Wire Wire Line
+	7200 3800 7400 3800
+Text GLabel 8250 4550 0    50   Input ~ 0
+Control
+Wire Wire Line
+	8250 4550 8600 4550
+Wire Wire Line
+	8300 3800 9050 3800
+Text GLabel 8000 3350 0    50   Input ~ 0
+Feather_Pin_Sensor
+Wire Wire Line
+	8000 3350 9050 3350
+Wire Wire Line
+	9050 3350 9050 3800
+Connection ~ 9050 3800
+$Comp
+L RF_GPS:SIM28ML U?
+U 1 1 5F6E0F59
+P 6600 5600
+F 0 "U?" H 6600 4911 50  0000 C CNN
+F 1 "SIM28ML" H 6600 4820 50  0000 C CNN
+F 2 "RF_GPS:SIM28ML" H 6600 5600 50  0001 C CNN
+F 3 "https://simcom.ee/documents/SIM28ML/SIM28ML_Hardware%20Design_V1.01.pdf" H 6600 5600 50  0001 C CNN
+	1    6600 5600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
