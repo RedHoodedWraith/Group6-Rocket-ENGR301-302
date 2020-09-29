@@ -25,3 +25,5 @@
 11/9/20: Configure wiring onto breadboard.
 
 11/9/20: Soldered wires for LoRa TX
+
+18/9/20: Successful build of temperature/barometer sensor board.
