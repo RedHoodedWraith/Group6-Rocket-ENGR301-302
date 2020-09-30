@@ -21,6 +21,9 @@ File myFile;
 
 void setup()
 {
+  pinMode(13, OUTPUT);
+
+  digitalWrite(13, HIGH);
   // Open serial communications and wait for port to open:
   Serial.begin(9600);
   while (!Serial) {
@@ -46,9 +49,16 @@ void setup()
     // close the file:
     myFile.close();
     Serial.println("done.");
+    while(true){
+      digitalWrite(13, HIGH);
+      delay(1000);
+      digitalWrite(13, LOW);
+      delay(1000);
+    }
   } else {
     // if the file didn't open, print an error:
     Serial.println("error opening test.txt");
+    digitalWrite(13, HIGH);
   }
 
   // re-open the file for reading:
