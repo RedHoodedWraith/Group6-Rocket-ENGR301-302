@@ -1,7 +1,7 @@
 #ifndef FLUORIDE_ERRORHANDLER_H
 #define FLUORIDE_ERRORHANDLER_H
 
-#include "padparadscha.h"
+#include "padparadscha_serial.h"
 
 class DiagnosticHandler{
 public:

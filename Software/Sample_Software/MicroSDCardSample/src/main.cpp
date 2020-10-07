@@ -9,6 +9,7 @@
 
  */
 
+#include <Arduino.h>
 #include <STM32SD.h>
 
 // If SD card slot has no detect pin then define it as SD_DETECT_NONE
