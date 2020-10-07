@@ -1,3 +1,7 @@
+#ifndef SD_LOGGER
+#define SD_LOGGER
+
+#include <Arduino.h>
 #include <STM32SD.h>
 
 // If SD card slot has no detect pin then define it as SD_DETECT_NONE
@@ -12,3 +16,5 @@ class SD_Handler{
     private:
         File theFile;
 };
+
+#endif

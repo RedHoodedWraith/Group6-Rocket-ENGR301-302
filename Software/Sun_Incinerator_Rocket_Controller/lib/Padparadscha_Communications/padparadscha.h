@@ -7,7 +7,6 @@
 #define PADPARADSCHA
 
 #include "fluoride_dependencies.h"
-#include "padparadscha_serial.h"
 
 class Padparadscha{
 public:

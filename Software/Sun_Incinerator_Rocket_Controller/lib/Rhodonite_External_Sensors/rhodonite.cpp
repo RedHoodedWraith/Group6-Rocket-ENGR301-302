@@ -1,5 +1,4 @@
 #include "rhodonite.h"
-#include <SPI.h>
 
 
 Rhodonite::Rhodonite(PadparadschaSerial* comms) {
