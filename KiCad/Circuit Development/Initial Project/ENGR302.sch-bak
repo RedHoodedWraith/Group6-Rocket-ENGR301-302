@@ -19,7 +19,7 @@ U 1 1 5F51985B
 P 4350 5950
 F 0 "M1" H 4682 6015 50  0000 L CNN
 F 1 "Motor_Servo" H 4682 5924 50  0000 L CNN
-F 2 "" H 4350 5760 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4350 5760 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4350 5760 50  0001 C CNN
 	1    4350 5950
 	0    1    1    0   
@@ -30,7 +30,7 @@ U 1 1 5F51A508
 P 3850 5950
 F 0 "M2" H 4182 6015 50  0000 L CNN
 F 1 "Motor_Servo" H 4182 5924 50  0000 L CNN
-F 2 "" H 3850 5760 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 5760 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 3850 5760 50  0001 C CNN
 	1    3850 5950
 	0    1    1    0   
@@ -90,7 +90,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 4450 4150 4050
 Wire Wire Line
-	4450 4550 4450 4450
+	5500 3900 5500 3800
 $Comp
 L power:GND #PWR0103
 U 1 1 5F54CD80
@@ -105,12 +105,12 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5F54BC23
-P 4450 4550
-F 0 "#PWR0104" H 4450 4300 50  0001 C CNN
-F 1 "GND" H 4455 4377 50  0000 C CNN
-F 2 "" H 4450 4550 50  0001 C CNN
-F 3 "" H 4450 4550 50  0001 C CNN
-	1    4450 4550
+P 5500 3900
+F 0 "#PWR0104" H 5500 3650 50  0001 C CNN
+F 1 "GND" H 5505 3727 50  0000 C CNN
+F 2 "" H 5500 3900 50  0001 C CNN
+F 3 "" H 5500 3900 50  0001 C CNN
+	1    5500 3900
 	1    0    0    -1  
 $EndComp
 Text GLabel 4150 4450 3    50   Input ~ 0
@@ -141,35 +141,10 @@ F 3 "" H 1700 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 2700 1700 2850
-$Comp
-L Sensor_Pressure:MPL3115A2 U2
-U 1 1 5F5202E7
-P 1700 3650
-F 0 "U2" H 1700 3061 50  0000 C CNN
-F 1 "MPL3115A2" H 1700 2970 50  0000 C CNN
-F 2 "Package_LGA:NXP_LGA-8_3x5mm_P1.25mm_H1.1mm" H 2700 3200 50  0001 C CNN
-F 3 "https://www.nxp.com/docs/en/data-sheet/MPL3115A2.pdf" H 1700 3650 50  0001 C CNN
-	1    1700 3650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2750 3750 2750 4250
-Wire Wire Line
-	2750 4250 3150 4250
 Wire Wire Line
 	3150 4250 3150 4050
 Wire Wire Line
-	2100 3750 2750 3750
-Wire Wire Line
-	2100 3650 2700 3650
-Wire Wire Line
-	2700 3650 2700 4150
-Wire Wire Line
-	2700 4150 3050 4150
-Wire Wire Line
 	3050 4150 3050 4050
-Wire Wire Line
-	4550 4350 4550 4050
 Text Notes 7450 7500 0    50   ~ 0
 Avionics package system Design\n
 Text Notes 7000 6750 0    118  ~ 0
@@ -192,19 +167,13 @@ Wire Wire Line
 Wire Wire Line
 	3250 4450 3250 4050
 Wire Wire Line
-	1800 4150 1800 4350
-Wire Wire Line
 	1800 4350 3950 4350
 Wire Wire Line
 	2050 4850 2050 4150
 Wire Wire Line
-	2050 4150 2700 4150
-Connection ~ 2700 4150
-Wire Wire Line
 	2200 4900 2200 4250
 Wire Wire Line
-	2200 4250 2750 4250
-Connection ~ 2750 4250
+	2200 4250 2700 4250
 Wire Wire Line
 	2650 4900 2650 4550
 Wire Wire Line
@@ -212,8 +181,6 @@ Wire Wire Line
 Wire Wire Line
 	3950 4550 3950 4350
 Connection ~ 3950 4350
-Wire Wire Line
-	3950 4350 4550 4350
 $Comp
 L power:GND #PWR0108
 U 1 1 5F57AF46
@@ -236,7 +203,7 @@ U 1 1 5F638DD7
 P 6150 3700
 F 0 "TX1" H 6150 4381 50  0000 C CNN
 F 1 "RFM98W-433S2" H 6150 4290 50  0000 C CNN
-F 2 "" H 2850 5350 50  0001 C CNN
+F 2 "RFM98W-433S2:XCVR_RFM98W-433S2" H 2850 5350 50  0001 C CNN
 F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcdb5e17543.pdf" H 2850 5350 50  0001 C CNN
 	1    6150 3700
 	0    1    1    0   
@@ -258,7 +225,7 @@ U 1 1 5F6AF5C8
 P 8800 1650
 F 0 "SafetySwitch1" H 8800 1885 50  0000 C CNN
 F 1 "SW_SPST" H 8800 1794 50  0000 C CNN
-F 2 "" H 8800 1650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8800 1650 50  0001 C CNN
 F 3 "~" H 8800 1650 50  0001 C CNN
 	1    8800 1650
 	1    0    0    -1  
@@ -269,7 +236,7 @@ U 1 1 5F6B0116
 P 9300 1650
 F 0 "D1" H 9300 1915 50  0000 C CNN
 F 1 "DIODE" H 9300 1824 50  0000 C CNN
-F 2 "" H 9300 1650 50  0001 C CNN
+F 2 "digikey-footprints:Diode_DO-35_P10mm" H 9300 1650 50  0001 C CNN
 F 3 "~" H 9300 1650 50  0001 C CNN
 	1    9300 1650
 	1    0    0    -1  
@@ -280,7 +247,7 @@ U 1 1 5F6B0EA1
 P 9050 1800
 F 0 "Super_C1" V 8798 1800 50  0000 C CNN
 F 1 "C" V 8889 1800 50  0000 C CNN
-F 2 "" H 9088 1650 50  0001 C CNN
+F 2 "Capacitors_THT:C_Axial_L5.1mm_D3.1mm_P10.00mm_Horizontal" H 9088 1650 50  0001 C CNN
 F 3 "~" H 9050 1800 50  0001 C CNN
 	1    9050 1800
 	1    0    0    -1  
@@ -291,7 +258,7 @@ U 1 1 5F6B51D4
 P 10150 2400
 F 0 "Q1" H 10354 2446 50  0000 L CNN
 F 1 "2N7000" H 10354 2355 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10350 2325 50  0001 L CIN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10350 2325 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 10150 2400 50  0001 L CNN
 	1    10150 2400
 	1    0    0    -1  
@@ -319,7 +286,7 @@ U 1 1 5F6CD418
 P 9800 2650
 F 0 "R_pulldown1" H 9870 2696 50  0000 L CNN
 F 1 "10k-100k" H 9870 2605 50  0000 L CNN
-F 2 "" V 9730 2650 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9730 2650 50  0001 C CNN
 F 3 "~" H 9800 2650 50  0001 C CNN
 	1    9800 2650
 	1    0    0    -1  
@@ -366,7 +333,7 @@ U 1 1 5F283914
 P 2450 3650
 F 0 "U3" H 2425 6556 50  0000 C CNN
 F 1 "Adafruit-STM32F405" H 2425 6465 50  0000 C CNN
-F 2 "" H 2400 4850 50  0001 C CNN
+F 2 "digikey-footprints:Adafruit_Feather" H 2400 4850 50  0001 C CNN
 F 3 "" H 2400 4850 50  0001 C CNN
 	1    2450 3650
 	0    1    1    0   
@@ -400,32 +367,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 3200 5950 2950
 Wire Wire Line
-	5950 2950 5000 2950
-Wire Wire Line
-	5000 2950 5000 4650
-Wire Wire Line
-	5000 4650 3850 4650
-Wire Wire Line
-	3850 4650 3850 4050
-Wire Wire Line
-	6150 3200 6150 3050
-Wire Wire Line
-	6150 3050 5100 3050
-Wire Wire Line
-	5100 3050 5100 4750
-Wire Wire Line
-	5100 4750 3750 4750
-Wire Wire Line
-	3750 4750 3750 4050
-Wire Wire Line
 	5550 3600 5500 3600
-Wire Wire Line
-	5250 3600 5250 4450
-Wire Wire Line
-	5250 4450 4450 4450
-Connection ~ 4450 4450
-Wire Wire Line
-	4450 4450 4450 4050
 Wire Wire Line
 	5750 4200 5750 4850
 Wire Wire Line
@@ -457,7 +399,7 @@ U 1 1 5F856D65
 P 2650 2150
 F 0 "U4" H 2778 1801 50  0000 L CNN
 F 1 "GPS_Connector" H 2778 1710 50  0000 L CNN
-F 2 "" H 2650 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2650 2150 50  0001 C CNN
 F 3 "" H 2650 2150 50  0001 C CNN
 	1    2650 2150
 	1    0    0    -1  
@@ -480,8 +422,6 @@ Wire Wire Line
 	2400 2850 1700 2850
 Connection ~ 1700 2850
 Wire Wire Line
-	1700 2850 1700 3150
-Wire Wire Line
 	2500 2500 2500 2600
 Wire Wire Line
 	2500 2600 4350 2600
@@ -494,7 +434,7 @@ U 1 1 5F871388
 P 8600 3750
 F 0 "U5" H 8600 3992 50  0000 C CNN
 F 1 "LM317_3PinPackage" H 8600 3901 50  0000 C CNN
-F 2 "" H 8600 4000 50  0001 C CIN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8600 4000 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 8600 3750 50  0001 C CNN
 	1    8600 3750
 	1    0    0    -1  
@@ -516,7 +456,7 @@ U 1 1 5F88BCE2
 P 7950 4000
 F 0 "C1" H 8065 4046 50  0000 L CNN
 F 1 "C" H 8065 3955 50  0000 L CNN
-F 2 "" H 7988 3850 50  0001 C CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal" H 7988 3850 50  0001 C CNN
 F 3 "~" H 7950 4000 50  0001 C CNN
 	1    7950 4000
 	1    0    0    -1  
@@ -538,7 +478,7 @@ U 1 1 5F8A990F
 P 9100 3950
 F 0 "R1" H 9170 3996 50  0000 L CNN
 F 1 "R" H 9170 3905 50  0000 L CNN
-F 2 "" V 9030 3950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9030 3950 50  0001 C CNN
 F 3 "~" H 9100 3950 50  0001 C CNN
 	1    9100 3950
 	1    0    0    -1  
@@ -549,7 +489,7 @@ U 1 1 5F8AA751
 P 9500 3900
 F 0 "C2" H 9615 3946 50  0000 L CNN
 F 1 "CP1" H 9615 3855 50  0000 L CNN
-F 2 "" H 9500 3900 50  0001 C CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal" H 9500 3900 50  0001 C CNN
 F 3 "~" H 9500 3900 50  0001 C CNN
 	1    9500 3900
 	1    0    0    -1  
@@ -572,7 +512,7 @@ U 1 1 5F8BF2A2
 P 8850 4300
 F 0 "RV1" V 8735 4300 50  0000 C CNN
 F 1 "R_POT_TRIM" V 8644 4300 50  0000 C CNN
-F 2 "" H 8850 4300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8850 4300 50  0001 C CNN
 F 3 "~" H 8850 4300 50  0001 C CNN
 	1    8850 4300
 	0    -1   -1   0   
@@ -637,7 +577,7 @@ U 1 1 5F903DD6
 P 10250 1900
 F 0 "J1" V 10254 1980 50  0000 L CNN
 F 1 "Conn_02x01" V 10345 1980 50  0000 L CNN
-F 2 "" H 10250 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10250 1900 50  0001 C CNN
 F 3 "~" H 10250 1900 50  0001 C CNN
 	1    10250 1900
 	0    1    1    0   
@@ -668,7 +608,7 @@ U 1 1 5F287F85
 P 1350 5350
 F 0 "U1" H 1400 7406 50  0000 C CNN
 F 1 "MPU-6050-Board" H 1400 7315 50  0000 C CNN
-F 2 "" H 1350 5350 50  0001 C CNN
+F 2 "digikey-footprints:MPU_6050_Board" H 1350 5350 50  0001 C CNN
 F 3 "" H 1350 5350 50  0001 C CNN
 	1    1350 5350
 	0    1    1    0   
@@ -690,9 +630,6 @@ Wire Wire Line
 	5550 3700 5500 3700
 Wire Wire Line
 	5500 3700 5500 3600
-Connection ~ 5500 3600
-Wire Wire Line
-	5500 3600 5250 3600
 Wire Wire Line
 	5550 3800 5500 3800
 Wire Wire Line
@@ -704,7 +641,7 @@ U 1 1 5F95AF93
 P 10050 1100
 F 0 "R2" H 10120 1146 50  0000 L CNN
 F 1 "R" H 10120 1055 50  0000 L CNN
-F 2 "" V 9980 1100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9980 1100 50  0001 C CNN
 F 3 "~" H 10050 1100 50  0001 C CNN
 	1    10050 1100
 	0    -1   -1   0   
@@ -715,7 +652,7 @@ U 1 1 5F96C1E9
 P 10350 1100
 F 0 "R3" H 10420 1146 50  0000 L CNN
 F 1 "R" H 10420 1055 50  0000 L CNN
-F 2 "" V 10280 1100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 10280 1100 50  0001 C CNN
 F 3 "~" H 10350 1100 50  0001 C CNN
 	1    10350 1100
 	0    -1   -1   0   
@@ -740,4 +677,66 @@ Wire Wire Line
 Connection ~ 10200 1100
 Wire Wire Line
 	9600 1100 9900 1100
+Wire Wire Line
+	4450 3200 4450 3050
+Wire Wire Line
+	4450 3050 4850 3050
+Wire Wire Line
+	4850 3050 4850 4350
+Wire Wire Line
+	3950 4350 4850 4350
+Connection ~ 5500 3800
+Wire Wire Line
+	2050 4150 2750 4150
+Wire Wire Line
+	2700 3650 2700 4250
+Connection ~ 2700 4250
+Wire Wire Line
+	2700 4250 3150 4250
+Wire Wire Line
+	2750 3750 2750 4150
+Connection ~ 2750 4150
+Wire Wire Line
+	2750 4150 3050 4150
+$Comp
+L Analog:MPL3115a2_Board U2
+U 1 1 5F7FDC56
+P 1100 3150
+F 0 "U2" H 1718 2746 50  0000 L CNN
+F 1 "MPL3115a2_Board" H 1718 2655 50  0000 L CNN
+F 2 "digikey-footprints:mpl3115a2" V 1100 2700 50  0001 C CNN
+F 3 "" V 1100 2700 50  0001 C CNN
+	1    1100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3900 1350 3900
+Wire Wire Line
+	1800 3900 1800 4350
+Wire Wire Line
+	1350 3800 1700 3800
+Wire Wire Line
+	1700 2850 1700 3800
+Wire Wire Line
+	1850 3650 1850 3400
+Wire Wire Line
+	1850 3400 1350 3400
+Wire Wire Line
+	1850 3650 2700 3650
+Wire Wire Line
+	1350 3300 1950 3300
+Wire Wire Line
+	1950 3300 1950 3750
+Wire Wire Line
+	1950 3750 2750 3750
+Wire Wire Line
+	3950 2950 3950 3200
+Wire Wire Line
+	3950 2950 5950 2950
+Wire Wire Line
+	6150 2850 3850 2850
+Wire Wire Line
+	3850 2850 3850 3200
+Wire Wire Line
+	6150 2850 6150 3200
 $EndSCHEMATC
