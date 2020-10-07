@@ -18,6 +18,7 @@ public:
     class Padparadscha* communicator;
     class Rhodonite* sensors;
     class Rutile* servos;
+    class SD_Handler* sdcard;
 
 private:
     class PadparadschaSerial* serial_channel;

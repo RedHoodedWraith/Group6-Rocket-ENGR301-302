@@ -2,6 +2,7 @@
 #define FLUORIDE_ERRORHANDLER_H
 
 #include "padparadscha_serial.h"
+#include "fluoride_sd_logger.h"
 
 class DiagnosticHandler{
 public:

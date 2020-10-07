@@ -9,4 +9,5 @@ RocketController::RocketController() {
     serial_channel = communicator->getLocalSerial();
     sensors = new Rhodonite(serial_channel);
     servos = new Rutile(serial_channel);
+    sdcard = new SD_Handler();
 }

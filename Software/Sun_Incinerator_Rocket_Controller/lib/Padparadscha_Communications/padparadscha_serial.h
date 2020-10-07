@@ -5,7 +5,7 @@
 #ifndef PADPARADSCHA_SERIAL_H
 #define PADPARADSCHA_SERIAL_H
 
-#include "fluoride_dependencies.h"
+#include <Arduino.h>
 
 #define DEFAULT_BAUD_RATE 9600
 

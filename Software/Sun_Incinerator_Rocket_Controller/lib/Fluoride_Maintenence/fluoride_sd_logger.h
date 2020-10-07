@@ -1,4 +1,3 @@
-#include "fluoride_dependencies.h"
 #include <STM32SD.h>
 
 // If SD card slot has no detect pin then define it as SD_DETECT_NONE
@@ -6,3 +5,10 @@
 #ifndef SD_DETECT_PIN
 #define SD_DETECT_PIN SD_DETECT_NONE
 #endif
+
+class SD_Handler{
+    public:
+        SD_Handler();
+    private:
+        File theFile;
+};
