@@ -16,7 +16,7 @@
 Adafruit_MPU6050 mpu;
 
 const int MPU_addr = 0x68;
-int16_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ;
+int16_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ; //int16_t
 
 int minVal = 265;
 int maxVal = 402;
@@ -28,8 +28,8 @@ double baseX;
 double baseY;
 double baseZ;
 
-uint8_t Tp = 50; //Ms
-uint8_t tdc = 25;
+float Tp = 50; //Ms
+float tdc = 25; //uint_8
 
 void setup()
 {
@@ -53,15 +53,16 @@ void setup()
   baseX = RAD_TO_DEG * (atan2(-yAng, -zAng) + PI);
   baseY = RAD_TO_DEG * (atan2(-xAng, -zAng) + PI);
   baseZ = RAD_TO_DEG * (atan2(-yAng, -xAng) + PI);
+  pinMode(5, OUTPUT);
 }
-int angyX(double baseAng, double ang) {
+float angyX(double baseAng, double ang) {
   double zing = (baseAng - ang);
   if (zing>180) zing = zing-360;
   return zing;
 }
 
 int angyY(double baseAng, double ang) {
-  double zing = abs((baseAng - ang));
+  double zing = (double)abs((baseAng - ang));
   if (zing>180) zing = zing-360;
   //Serial.printf("B:A %i %i", baseAng, ang);
   return zing;
@@ -76,26 +77,48 @@ void loop()
   AcX = Wire.read() << 8 | Wire.read();
   AcY = Wire.read() << 8 | Wire.read();
   AcZ = Wire.read() << 8 | Wire.read();
-  int xAng = map(AcX, minVal, maxVal, -90, 90);
-  int yAng = map(AcY, minVal, maxVal, -90, 90);
-  int zAng = map(AcZ, minVal, maxVal, -90, 90);
+  double xAng = map(AcX, minVal, maxVal, -90, 90);
+  double yAng = map(AcY, minVal, maxVal, -90, 90);
+  double zAng = map(AcZ, minVal, maxVal, -90, 90);
+
+  //delay(700);
 
   x = RAD_TO_DEG * (atan2(-yAng, -zAng) + PI);
   y = RAD_TO_DEG * (atan2(-xAng, -zAng) + PI);
   z = RAD_TO_DEG * (atan2(-yAng, -xAng) + PI);
-/*
-  Serial.print("AngleX= ");
+
+
+
+  /*Serial.print("AngleX= ");
   Serial.println(angyX(baseX,x));
 
   Serial.print("AngleY= ");
   Serial.println(angyY(baseY,y));
 
-  Serial.println("-----------------------------------------"); */
+  Serial.println("-----------------------------------------"); 
+  delay(300);*/
   
   //Calculate duty cycle with respect to error. 
   //Set high
-  delay(tdc);
+  //delay(tdc);
   //Set low
-  delay(Tp-tdc)
-
+  //delay(Tp-tdc)
+  
+  //0 deg: 50% DC, 10 deg : 44% DC, -10 deg : 56%
+  double xxAng = (angyX(baseX,x));
+  if(xxAng>0) {
+    //if (xxAng > 10) xxAng = 10;
+    tdc = 3 + (Tp*xxAng/180) * 0.2;
+    //Serial.println(tdc);
+  }
+  else if(xxAng<0) {
+    //if (xxAng < -10) xxAng = -10;
+    tdc = 3 + (Tp*xxAng/180) * 0.2;
+    //Serial.println(tdc);
+    //Serial.println("poo");
+  }
+  digitalWrite(5, HIGH);
+  delay(tdc);
+  digitalWrite(5, LOW);
+  delay((Tp-tdc));
 }
