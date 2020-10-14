@@ -27,3 +27,7 @@
 11/9/20: Soldered wires for LoRa TX
 
 18/9/20: Successful build of temperature/barometer sensor board.
+
+04/10/20: Calibrated gyro algorithm.
+
+09/10/20:
