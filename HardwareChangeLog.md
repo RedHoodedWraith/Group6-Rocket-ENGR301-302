@@ -30,4 +30,4 @@
 
 04/10/20: Calibrated gyro algorithm.
 
-09/10/20:
+09/10/20: Gyroscope orientation has direct control over servos. 
