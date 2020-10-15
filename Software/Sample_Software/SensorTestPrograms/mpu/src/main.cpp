@@ -29,7 +29,7 @@ double baseX;
 double baseY;
 double baseZ;
 
-float Tp = 50; //Ms
+float Tp = 50; //Duty cycle period (20 Hz), is later converted to 60 Hz.
 float tdc = 25; //uint_8
 
 void setup()
@@ -62,7 +62,7 @@ float angyX(double baseAng, double ang) {
   return zing;
 }
 
-int angyY(double baseAng, double ang) {
+float angyY(double baseAng, double ang) {
   double zing = (double)abs((baseAng - ang));
   if (zing>180) zing = zing-360;
   //Serial.printf("B:A %i %i", baseAng, ang);
@@ -99,27 +99,30 @@ void loop()
   Serial.println("-----------------------------------------"); 
   delay(300);*/
   
-  //Calculate duty cycle with respect to error. 
-  //Set high
-  //delay(tdc);
-  //Set low
-  //delay(Tp-tdc)
   
-  //0 deg: 50% DC, 10 deg : 44% DC, -10 deg : 56%
+  /*
+    Duty-cycle of 6% positions the servo at midpoint, 90 degrees. 
+    0% is 0 degrees, 12% is 180 degrees. 
+
+    The current code is a proof of functionality expirement. 
+    It is currently implemented with a polling approach. 
+    For greater responsivness upon integration with the wider avionics system,
+     It is strongly advised to call this module via timer-based interrupts. 
+  */
   double xxAng = (angyX(baseX,x));
   if(xxAng>0) {
-    //if (xxAng > 10) xxAng = 10;
-    tdc = 3 + (Tp*xxAng/180) * 0.2;
+    if (xxAng > 10) xxAng = 10;
+    tdc = 3 + (Tp*xxAng/180) * 0.12; //Where the '3' constant is 6%. (3/50).
     //Serial.println(tdc);
   }
   else if(xxAng<0) {
-    //if (xxAng < -10) xxAng = -10;
-    tdc = 3 + (Tp*xxAng/180) * 0.2;
+    if (xxAng < -10) xxAng = -10;
+    tdc = 3 + (Tp*xxAng/180) * 0.12;
     //Serial.println(tdc);
-    //Serial.println("poo");
   }
+
   digitalWrite(5, HIGH);
-  delay(tdc);
+  delay(tdc/3);
   digitalWrite(5, LOW);
-  delay((Tp-tdc));
+  delay((Tp-tdc)/3);
 }
