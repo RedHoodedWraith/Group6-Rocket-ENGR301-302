@@ -1,9 +1,10 @@
 #include <Arduino.h>
-// Basic demo for accelerometer readings from Adafruit MPU6050
 
-/** Sample Orientation Program with calibration.
- * NOTE/BUG: the decimal value is getting trimmed somewhere.
- *  -Dylan
+/** IMU-Controlled Servo Orientation.
+ * Rocket is placed upright vertically. 
+ * Orientation is calibrated at 0 degrees for two axis.
+ * 
+ * Required duty cycle is then calculated to drive the servos.
  * 
  * Other 'main copy.txt' was the original test program that
  * just recorded angular velocity, not position.
