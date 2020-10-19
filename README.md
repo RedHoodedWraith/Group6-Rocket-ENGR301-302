@@ -4,8 +4,8 @@
 ### Modules:
 
 Software Development
-* Sun Incinerator
+* Sun Incinerator Rocket Controller | PID system.
 
 Software Development > Sensor Test Programs
 * MPLI2C | Barometer + temperature readings.
-* MPU | | Gyro + Acceleartion readings.
+* MPU | | Gyro + Acceleartion readings, IMU+Servo Control.
