@@ -11,7 +11,7 @@ While this project is incomplete and isn't likely to be worked on, anyone is wel
 ## Contributors
 
 ### Software
-* Asami De Almeida (formerly Rowan Rathod)
+* Asami De Almeida
 * Ketaki Bagal
 * Penny Peneuta
 
