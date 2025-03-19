@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Software Compiler Script
-# Original Author: Rowan Rathod
+# Original Author: Asami De Almeida
 # Made for the ENGR301/302 Group Project at VUW (2020)
 #
 # Description: This script checks if the provided software in this repository
