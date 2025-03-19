@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER rathodrowa@myvuw.ac.nz
+LABEL nz.ac.wgtn.2020.engr302-group-6-rocket.image.authors = "stem@redwraith.me"
 
 RUN mkdir /opt/workspace
 WORKDIR /opt/workspace
