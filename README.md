@@ -21,8 +21,9 @@ While this project is incomplete and isn't likely to be worked on, anyone is wel
 * Robert Reid
 * Dylan Sukha
 
-### University Staff Involved & Original Project Client
+### University Staff Involved
 * Andre Geldenhuis
+* Aaron Chen
 
 ## Modules:
 
