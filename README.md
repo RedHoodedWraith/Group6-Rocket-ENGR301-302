@@ -24,9 +24,9 @@ While this project is incomplete and isn't likely to be worked on, anyone is wel
 ### University Staff Involved & Original Project Client
 * Andre Geldenhuis
 
-### Modules:
+## Modules:
 
-#### Software Development
+### Software Development
 * Sun Incinerator Rocket Controller | PID system
 * Sensor Test Programs
     * MPLI2C | Barometer + temperature readings.
