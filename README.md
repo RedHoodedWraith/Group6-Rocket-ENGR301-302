@@ -21,9 +21,9 @@ While the students who worked on this project passed the aforementioned courses,
 ### University Staff
 * Andre Geldenhuis
 
-### Modules:
+## Modules:
 
-#### Software Development
+### Software Development
 * Sun Incinerator Rocket Controller | PID system
 * Sensor Test Programs
     * MPLI2C | Barometer + temperature readings.
